@@ -28,7 +28,7 @@ body {
 .title-picture {
   height: 32px;
   width: 32px;
-  background-image: url("assets/favicons/favicon-32.ico");
+  background-image: url("assets/favicons/favicon.ico");
   background-size: contain;
   background-repeat: no-repeat;
 }
