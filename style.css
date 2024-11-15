@@ -28,7 +28,7 @@ body {
 .title-picture {
   height: 48px;
   width: 48px;
-  background-image: url("assets/favicons/favicon.ico");
+  background-image: url("https://diquoks.github.io/assets/favicons/favicon.ico");
   background-size: contain;
   background-repeat: no-repeat;
 }
