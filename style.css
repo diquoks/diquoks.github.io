@@ -28,7 +28,7 @@ body {
 .title-picture {
   height: 36px;
   width: 36px;
-  background-image: url("https://diquoks.ru/assets/favicons/favicon.png");
+  background-image: url("/assets/favicons/favicon.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -63,7 +63,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: url("assets/images/discord-logo.png");
+  background-image: url("/assets/images/discord-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.2s;
@@ -89,7 +89,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: url("assets/images/telegram-logo.png");
+  background-image: url("/assets/images/telegram-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.2s;
@@ -115,7 +115,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: url("assets/images/steam-logo.png");
+  background-image: url("/assets/images/steam-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.2s;
@@ -147,7 +147,7 @@ body {
   width: 100%;
   opacity: 0%;
   position: absolute;
-  background-image: url("assets/images/osu-bg.png");
+  background-image: url("/assets/images/osu-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.2s;
@@ -157,7 +157,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: url("assets/images/osu-logo.png");
+  background-image: url("/assets/images/osu-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.2s;
