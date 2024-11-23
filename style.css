@@ -6,7 +6,7 @@ body {
 .header {
   --icons-size: 90px;
   background: linear-gradient(to top left, #73A4FF, rgba(180, 100, 255, 0.5), #FF49F8), linear-gradient(to top right, #5F55FF, rgba(180, 100, 255, 0.5), #EC76FF);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
 }
 
