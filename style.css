@@ -1,176 +1,90 @@
 body {
-  margin: 0;
-  background-color: #F4F4F4;
+    --color-background: #111111;
+    --color-white: #F4F4F4;
+    margin: 0;
+    background-color: var(--color-background);
 }
 
 .header {
-  --icons-size: 90px;
-  background: linear-gradient(to top left, #73A4FF, rgba(180, 100, 255, 0.5), #FF49F8), linear-gradient(to top right, #5F55FF, rgba(180, 100, 255, 0.5), #EC76FF);
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: color;
+    background: linear-gradient(to top left, #73A5FF, #B464FF80, #FF4BFF), linear-gradient(to top right, #5F55FF, #B464FF80, #EC76FF);
+    background-color: #00000099;
+    background-blend-mode: color;
 }
 
 .title {
-  padding: 18px 0 calc(calc(calc(200px + var(--icons-size)) - calc(60px + var(--icons-size))) / 2) 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
-.title-text {
-  margin: 0 10px 0 0;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  color: #F4F4F4;
-  text-transform: uppercase;
+.title > * {
+    margin: 10px;
 }
 
 .title-picture {
-  height: 36px;
-  width: 36px;
-  background-image: url("assets/favicons/favicon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+    height: 48px;
+    width: 48px;
+    position: relative;
 }
 
-.header-links {
-  padding-bottom: calc(calc(calc(200px + var(--icons-size)) - calc(60px + var(--icons-size))) / 2);
-  display: flex;
-  justify-content: center;
+.title-picture-link {
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
-.header-links > * {
-  margin: 0 10px;
+.title-picture-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 6px;
+    transition: 0.2s;
 }
 
-.discord-server {
-  width: var(--icons-size);
-  aspect-ratio: 1;
-  position: relative;
+.title-picture:hover .title-picture-image {
+    transform: scale(110%);
 }
 
-.discord-server:hover .discord-logo {
-  transform: scale(110%);
+.title-text {
+    font-family: Torus, Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-white);
 }
 
-.discord-server-link {
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.header-fade {
+    height: 16px;
+    background: linear-gradient(to bottom, transparent, var(--color-background));
 }
 
-.discord-logo {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-image: url("assets/images/discord-logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: 0.2s;
+.under-construction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
 }
 
-.telegram-profile {
-  width: var(--icons-size);
-  aspect-ratio: 1;
-  position: relative;
+.under-construction > * {
+    margin: 10px;
 }
 
-.telegram-profile:hover .telegram-logo {
-  transform: scale(110%);
+.under-construction-text {
+    margin: 0;
+    font-family: Torus, Inter, sans-serif;
+    font-size: 14px;
+    color: var(--color-white);
+    text-align: center;
 }
 
-.telegram-profile-link {
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.github-repository {
+    margin-top: 20px;
 }
 
-.telegram-logo {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-image: url("assets/images/telegram-logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: 0.2s;
-}
-
-.steam-profile {
-  width: var(--icons-size);
-  aspect-ratio: 1;
-  position: relative;
-}
-
-.steam-profile:hover .steam-logo {
-  transform: scale(110%);
-}
-
-.steam-profile-link {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.steam-logo {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-image: url("assets/images/steam-logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: 0.2s;
-}
-
-.osu-profile {
-  width: var(--icons-size);
-  aspect-ratio: 1;
-  position: relative;
-}
-
-.osu-profile:hover .osu-bg {
-  transform: scale(110%);
-  opacity: 100%;
-}
-
-.osu-profile:hover .osu-logo {
-  transform: scale(110%);
-}
-
-.osu-profile-link {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.osu-bg {
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  position: absolute;
-  background-image: url("assets/images/osu-bg.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: 0.2s;
-}
-
-.osu-logo {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-image: url("assets/images/osu-logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: 0.2s;
-}
-
-.github-project {
-  margin-top: 20px;
-}
-
-.github-project-text {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  color: #111111;
-  text-align: center;
+.github-repository-text {
+    margin: 0;
+    font-family: Torus, Inter, sans-serif;
+    font-size: 14px;
+    color: var(--color-white);
+    text-align: center;
 }
