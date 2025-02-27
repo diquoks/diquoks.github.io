@@ -1,6 +1,6 @@
 # diquoks.github.io
 
-Тестовый сайт diquoks на GitHub Pages.
+Тестовый сайт на GitHub Pages.
 
 Скоро превратится в сайт-визитку,\
 но до этого ещё далеко...
