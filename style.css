@@ -58,6 +58,20 @@ body {
     background: linear-gradient(to bottom, transparent, var(--color-background));
 }
 
+/*.projects {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.projects_header {*/
+/*    justify-content: left;*/
+/*    margin: 20px 40px;*/
+/*    font-family: Torus, Inter, sans-serif;*/
+/*    font-size: 28px;*/
+/*    color: var(--color-white);*/
+/*    text-align: center;*/
+/*}*/
+
 .under-construction {
     display: flex;
     justify-content: center;
@@ -78,7 +92,7 @@ body {
 }
 
 .github-repository {
-    margin-top: 20px;
+    margin-top: 20px; /* Отступ на случай отсутствия Under Construction */
 }
 
 .github-repository-text {
