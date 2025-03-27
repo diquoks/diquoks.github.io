@@ -1,17 +1,14 @@
 # diquoks.github.io
 
-Тестовый сайт diquoks на GitHub Pages.
-
-Скоро превратится в сайт-визитку,\
-но до этого ещё далеко...
+Скоро превратится в сайт-визитку, но до этого ещё далеко...
 
 ### Контакты
 
-Telegram для связи:\
-https://t.me/diquoks
+#### Связь с разработчиком
 
-Telegram-канал с новостями о разработке:\
-https://t.me/diquoks_channel
+[Telegram для связи](https://t.me/diquoks)\
+[Почта для связи](mailto:den232titovets@yandex.ru)
 
-Почта для связи:\
-den232titovets@yandex.ru
+#### Прочие ссылки
+
+[Telegram-канал с новостями](https://t.me/diquoks_channel)
