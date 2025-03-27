@@ -58,19 +58,21 @@ body {
     background: linear-gradient(to bottom, transparent, var(--color-background));
 }
 
-/*.projects {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
+.projects {
+    display: none;
+    /*Список проектов сейчас находится в разработке, поэтому пока этот элемент не отображается!*/
+    /*display: flex;*/
+    align-items: center;
+}
 
-/*.projects_header {*/
-/*    justify-content: left;*/
-/*    margin: 20px 40px;*/
-/*    font-family: Torus, Inter, sans-serif;*/
-/*    font-size: 28px;*/
-/*    color: var(--color-white);*/
-/*    text-align: center;*/
-/*}*/
+.projects_header {
+    justify-content: left;
+    margin: 20px 40px;
+    font-family: Torus, Inter, sans-serif;
+    font-size: 28px;
+    color: var(--color-white);
+    text-align: center;
+}
 
 .under-construction {
     display: flex;
@@ -101,4 +103,8 @@ body {
     font-size: 14px;
     color: var(--color-white);
     text-align: center;
+}
+
+.assets {
+    display: none;
 }
