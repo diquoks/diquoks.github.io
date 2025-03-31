@@ -1,8 +1,12 @@
 body {
     --color-background: #111111;
     --color-white: #F0F0F0;
-    margin: 0;
     background-color: var(--color-background);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: Torus, Inter, sans-serif;
 }
 
 .header {
@@ -12,10 +16,10 @@ body {
 }
 
 .title {
-    padding: 18px;
     display: flex;
+    justify-content: left;
     align-items: center;
-    justify-content: start;
+    padding: 18px;
 }
 
 .title > * {
@@ -23,20 +27,20 @@ body {
 }
 
 .title-picture {
-    height: 48px;
     width: 48px;
+    height: 48px;
     position: relative;
 }
 
 .title-picture-link {
-    height: 100%;
     width: 100%;
+    height: 100%;
     position: absolute;
 }
 
 .title-picture-image {
-    height: 100%;
     width: 100%;
+    height: 100%;
     position: absolute;
     border-radius: 6px;
     transition: 0.2s;
@@ -47,7 +51,6 @@ body {
 }
 
 .title-text {
-    font-family: Torus, Inter, sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: var(--color-white);
@@ -59,52 +62,126 @@ body {
 }
 
 .projects {
-    display: none;
-    /*Список проектов сейчас находится в разработке, поэтому пока этот элемент не отображается!*/
-    /*display: flex;*/
-    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_header {
     justify-content: left;
-    margin: 20px 40px;
-    font-family: Torus, Inter, sans-serif;
     font-size: 28px;
     color: var(--color-white);
-    text-align: center;
+    text-align: left;
+    margin: 20px 40px;
 }
 
-.under-construction {
+.projects_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects_items > * {
+    width: 35%;
+    min-width: 350px;
+    max-width: 1100px;
+    aspect-ratio: 11/6;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.project-osu-parser {
+    background-image: url("assets/images/svg/osu-parser/Banner.svg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    aspect-ratio: 11/6;
+}
+
+.project-osu-parser-title > * {
+    margin: 16px;
+}
+
+.project-osu-parser-title-picture {
+    width: 35%;
+    /*TODO: Заменить на ограничение по высоте*/
+    margin-right: 0;
+}
+
+.project-osu-parser-content {
+
+}
+
+.project-under-construction {
+    display: flex;
+    flex-direction: column;
+    background-image: url("assets/images/svg/under-construction/LegacyBackground.svg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    aspect-ratio: 11/6;
+}
+
+.project-under-construction-title {
+    display: flex;
+}
+
+.project-under-construction-title > * {
+    margin: 16px;
+}
+
+.project-under-construction-title-picture {
+    width: 10%;
+    /*TODO: Заменить на ограничение по высоте*/
+    margin-right: 0;
+}
+
+.project-under-construction-title-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 0;
+    font-size: 18px;
+    color: var(--color-white);
+    text-align: center;
 }
 
-.under-construction > * {
-    margin: 10px;
+.project-under-construction-content {
+    display: flex;
+    flex: content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 20px;
 }
 
-.under-construction-text {
-    margin: 0;
-    font-family: Torus, Inter, sans-serif;
+.project-under-construction-content-text {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     color: var(--color-white);
     text-align: center;
+    margin: 0;
 }
 
 .github-repository {
-    margin-top: 20px; /* Отступ на случай отсутствия Under Construction */
+    margin: 40px;
 }
 
 .github-repository-text {
-    margin: 0;
-    font-family: Torus, Inter, sans-serif;
     font-size: 14px;
     color: var(--color-white);
     text-align: center;
+    margin: 0;
 }
 
-.assets {
+.github-repository-link {
+    font-size: 14px;
+    color: var(--color-white);
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.hidden-assets {
     display: none;
 }
