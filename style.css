@@ -90,12 +90,17 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 20px;
 }
 
+.project-osu-parser-link:hover .project-osu-parser {
+     transform: scale(101.5%);
+}
+
 .project-osu-parser {
     background-image: url("assets/images/svg/osu-parser/Banner.svg");
     background-position: center;
     background-size: cover;
     border-radius: 16px;
     aspect-ratio: 11/6;
+    transition: 0.2s;
 }
 
 .project-osu-parser-title > * {
