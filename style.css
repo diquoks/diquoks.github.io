@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     background: linear-gradient(to bottom, transparent, var(--color-background));
 }
 
+/*TODO: привести карточки к одному стилю*/
 .projects {
     display: flex;
     flex-direction: column;
@@ -109,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .project-osu-parser-title-picture {
     width: 35%;
-    /*TODO: Заменить на ограничение по высоте*/
+    /*TODO: заменить на ограничение по высоте*/
     margin-right: 0;
 }
 
@@ -137,7 +138,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .project-under-construction-title-picture {
     width: 10%;
-    /*TODO: Заменить на ограничение по высоте*/
+    /*TODO: заменить на ограничение по высоте*/
     margin-right: 0;
 }
 
