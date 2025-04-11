@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .project-osu-parser-link:hover .project-osu-parser {
-     transform: scale(101.5%);
+    transform: scale(101.5%);
 }
 
 .project-osu-parser {
@@ -188,6 +188,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-top: 20px;
 }
 
-.hidden-assets {
+.external-assets {
     display: none;
 }
