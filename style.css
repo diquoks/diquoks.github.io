@@ -102,9 +102,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .project-osu-parser-title {
     display: flex;
-}
-
-.project-osu-parser-title > * {
+    gap: 16px;
     margin: 16px;
 }
 
@@ -112,7 +110,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     display: flex;
     width: 35%;
     /*TODO: заменить на ограничение по высоте*/
-    margin-right: 0;
 }
 
 .project-osu-parser-title-text {
@@ -153,9 +150,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .project-under-construction-title {
     display: flex;
-}
-
-.project-under-construction-title > * {
+    gap: 16px;
     margin: 16px;
 }
 
@@ -163,7 +158,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     display: flex;
     width: 10%;
     /*TODO: заменить на ограничение по высоте*/
-    margin-right: 0;
 }
 
 .project-under-construction-title-text {
