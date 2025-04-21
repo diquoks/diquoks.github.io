@@ -102,14 +102,20 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .project-osu-parser-title {
     display: flex;
-    gap: 16px;
+    align-items: center;
+    gap: 12px;
     margin: 16px;
 }
 
 .project-osu-parser-title-image {
+    /*TODO: разбить иконку на элементы*/
+    /*aspect-ratio: 1/1;*/
+    /*display: flex;*/
+    /*width: 10%;*/
+
+    /*Костыль для монолитной иконки*/
     display: flex;
     width: 35%;
-    /*TODO: заменить на ограничение по высоте*/
 }
 
 .project-osu-parser-title-text {
@@ -150,14 +156,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .project-under-construction-title {
     display: flex;
-    gap: 16px;
+    align-items: center;
+    gap: 12px;
     margin: 16px;
 }
 
 .project-under-construction-title-image {
+    aspect-ratio: 1/1;
     display: flex;
     width: 10%;
-    /*TODO: заменить на ограничение по высоте*/
 }
 
 .project-under-construction-title-text {

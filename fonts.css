@@ -1,9 +1,12 @@
 @font-face {
-    font-family: "Torus";
-    src: url("assets/fonts/torus/Torus-Regular.otf") format("opentype");
-}
-
-@font-face {
     font-family: "Inter";
     src: url("assets/fonts/inter/Inter-Medium.ttf") format("truetype");
+}
+
+/*TODO: Добавить шрифт `Torus-Bold.otf`*/
+/*Нужно научиться расширять семейства шрифтов*/
+
+@font-face {
+    font-family: "Torus";
+    src: url("assets/fonts/torus/Torus-Regular.otf") format("opentype");
 }
