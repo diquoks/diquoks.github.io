@@ -15,36 +15,36 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-blend-mode: color;
 }
 
-.title {
+.header-title {
     display: flex;
     justify-content: left;
     align-items: center;
     padding: 18px;
 }
 
-.title > * {
+.header-title > * {
     margin: 10px;
 }
 
-.title-picture {
+.header-title-picture {
     width: 48px;
     height: 48px;
     transition: 0.2s;
     position: relative;
 }
 
-.title-picture:hover {
+.header-title-picture:hover {
     transform: scale(110%);
 }
 
-.title-picture-image {
+.header-title-picture-image {
     width: 100%;
     height: 100%;
     border-radius: 6px;
     position: absolute;
 }
 
-.title-text {
+.header-title-text {
     font-size: 18px;
     font-weight: 600;
     color: var(--color-white);
@@ -55,7 +55,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     background: linear-gradient(to bottom, transparent, var(--color-background));
 }
 
-/*TODO: привести карточки к одному стилю*/
 .projects {
     display: flex;
     flex-direction: column;
@@ -74,6 +73,8 @@ h1, h2, h3, h4, h5, h6, p, a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    gap: 40px;
 }
 
 .projects_items > * {
@@ -82,14 +83,11 @@ h1, h2, h3, h4, h5, h6, p, a {
     max-width: 1100px;
     aspect-ratio: 11/6;
     text-decoration: none;
-    margin: 20px;
-}
-
-.project-osu-parser-link:hover .project-osu-parser {
-    transform: scale(101.5%);
 }
 
 .project-osu-parser {
+    display: flex;
+    flex-direction: column;
     background-image: url("assets/images/svg/projects/osu-parser/Banner.svg");
     background-position: center;
     background-size: cover;
@@ -98,18 +96,44 @@ h1, h2, h3, h4, h5, h6, p, a {
     transition: 0.2s;
 }
 
+.project-osu-parser:hover {
+    transform: scale(102%);
+}
+
+.project-osu-parser-title {
+    display: flex;
+}
+
 .project-osu-parser-title > * {
     margin: 16px;
 }
 
-.project-osu-parser-title-picture {
+.project-osu-parser-title-image {
+    display: flex;
     width: 35%;
     /*TODO: заменить на ограничение по высоте*/
     margin-right: 0;
 }
 
-.project-osu-parser-content {
+.project-osu-parser-title-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: var(--color-white);
+    text-align: center;
+}
 
+.project-osu-parser-description {
+    display: flex;
+    flex: content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    font-size: 14px;
+    color: var(--color-white);
+    text-align: center;
+    margin: 20px;
 }
 
 .project-under-construction {
@@ -120,6 +144,11 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-size: cover;
     border-radius: 16px;
     aspect-ratio: 11/6;
+    transition: 0.2s;
+}
+
+.project-under-construction:hover {
+    transform: scale(102%);
 }
 
 .project-under-construction-title {
@@ -130,7 +159,8 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 16px;
 }
 
-.project-under-construction-title-picture {
+.project-under-construction-title-image {
+    display: flex;
     width: 10%;
     /*TODO: заменить на ограничение по высоте*/
     margin-right: 0;
@@ -145,22 +175,16 @@ h1, h2, h3, h4, h5, h6, p, a {
     text-align: center;
 }
 
-.project-under-construction-content {
+.project-under-construction-description {
     display: flex;
     flex: content;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    margin: 20px;
-}
-
-.project-under-construction-content-text {
-    display: flex;
-    align-items: center;
     font-size: 14px;
     color: var(--color-white);
     text-align: center;
-    margin: 0;
+    margin: 20px;
 }
 
 .github-repository {
@@ -172,14 +196,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: var(--color-white);
     text-align: center;
     margin: 0;
-}
-
-.github-repository-link {
-    font-size: 14px;
-    color: var(--color-white);
-    text-align: center;
-    margin: 0;
-    margin-top: 20px;
 }
 
 .external-assets {
