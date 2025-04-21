@@ -29,25 +29,19 @@ h1, h2, h3, h4, h5, h6, p, a {
 .title-picture {
     width: 48px;
     height: 48px;
+    transition: 0.2s;
     position: relative;
 }
 
-.title-picture-link {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.title-picture:hover {
+    transform: scale(110%);
 }
 
 .title-picture-image {
     width: 100%;
     height: 100%;
-    position: absolute;
     border-radius: 6px;
-    transition: 0.2s;
-}
-
-.title-picture:hover .title-picture-image {
-    transform: scale(110%);
+    position: absolute;
 }
 
 .title-text {
@@ -96,7 +90,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .project-osu-parser {
-    background-image: url("assets/images/svg/osu-parser/Banner.svg");
+    background-image: url("assets/images/svg/projects/osu-parser/Banner.svg");
     background-position: center;
     background-size: cover;
     border-radius: 16px;
@@ -121,7 +115,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .project-under-construction {
     display: flex;
     flex-direction: column;
-    background-image: url("assets/images/svg/under-construction/LegacyBackground.svg");
+    background-image: url("assets/images/svg/projects/under-construction/LegacyBackground.svg");
     background-position: center;
     background-size: cover;
     border-radius: 16px;

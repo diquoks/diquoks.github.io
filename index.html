@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>diquoks Web</title>
+    <meta name="title" content="diquoks Web">
     <meta name="description" content="Скоро превратится в сайт-визитку, но до этого ещё далеко...">
     <meta name="author" content="diquoks">
     <meta name="keywords" content="diquoks, github, pages, github pages">
@@ -16,11 +17,9 @@
 <body>
 <div class="header">
     <div class="title">
-        <div class="title-picture">
-            <a class="title-picture-link" href="https://diquoks.ru" title="Главная страница">
-                <img class="title-picture-image" src="assets/favicons/apple-touch.png" alt>
-            </a>
-        </div>
+        <a class="title-picture" href="https://diquoks.ru" title="Главная страница">
+            <img class="title-picture-image" src="assets/favicons/apple-touch.png" alt>
+        </a>
         <h2 class="title-text">diquoks Web</h2>
     </div>
     <div class="header-fade"></div>
@@ -32,7 +31,7 @@
         <a class="project-osu-parser-link" href="https://github.com/diquoks/osu-parser" title="Репозиторий osu!parser">
             <div class="project-osu-parser">
                 <div class="project-osu-parser-title">
-                    <img class="project-osu-parser-title-picture" src="assets/images/svg/osu-parser/Logo.svg" alt>
+                    <img class="project-osu-parser-title-picture" src="assets/images/svg/projects/osu-parser/Logo.svg" alt>
                     <!--TODO: заменить иконку на текст и добавить шрифт `Torus-Bold.otf`-->
                 </div>
                 <div class="project-osu-parser-content"></div>
@@ -41,7 +40,7 @@
         <!--TODO: добавить ссылку на файл в заметках iCloud <a class="project-under-construction-link" href="" title="Статус разработки сайта">-->
         <div class="project-under-construction">
             <div class="project-under-construction-title">
-                <img class="project-under-construction-title-picture" src="assets/images/webp/under-construction/peepoChat.webp" alt>
+                <img class="project-under-construction-title-picture" src="assets/images/webp/projects/under-construction/peepoChat.webp" alt>
                 <p class="project-under-construction-title-text">Сайт в разработке...</p>
             </div>
             <div class="project-under-construction-content">
@@ -63,6 +62,37 @@
     <link href="assets/images/png/collabs/MinecraftPenisCollab.png"/>
     <link href="assets/files/Aristia (Edit).osk"/>
     <link href="assets/files/StrelkaBalance.shortcut"/>
+</div>
+<div class="Yandex.Metrika">
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (let j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t);
+            a = e.getElementsByTagName(t)[0];
+            k.async = true;
+            k.src = r;
+            a.parentNode.insertBefore(k, a);
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        // noinspection JSUnresolvedReference
+        ym(101245412, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/101245412" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
 </div>
 </body>
 </html>
