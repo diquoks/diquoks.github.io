@@ -11,5 +11,5 @@
 
 #### Прочие ссылки
 
-[Статус разработки diquoks-Web](https://www.icloud.com/notes/0c5flUnwNT7OljCh13DCbZRdw)\
+[Статус разработки diquoks Web](https://www.icloud.com/notes/0c5flUnwNT7OljCh13DCbZRdw)\
 [Telegram-канал с новостями](https://t.me/diquoks_channel)
