@@ -7,7 +7,7 @@
 #### Связь с разработчиком
 
 [Telegram для связи](https://t.me/diquoks)\
-[Почта для связи](mailto:den232titovets@yandex.ru)
+[Почта для связи](mailto:diquoks@yandex.ru)
 
 #### Прочие ссылки
 
