@@ -1,6 +1,7 @@
 body {
     --color-background: #111111;
     --color-white: #F0F0F0;
+    --color-black: #000000;
     background-color: var(--color-background);
     margin: 0;
 }
@@ -120,11 +121,12 @@ h1, h2, h3, h4, h5, h6, p, a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: calc(14px + 4 * (100vw - 320px) / 880);
     font-weight: 700;
     color: var(--color-white);
     text-align: center;
     margin: 0;
+    margin-top: -4px;
 }
 
 .projects-items-unit-description {
@@ -133,22 +135,26 @@ h1, h2, h3, h4, h5, h6, p, a {
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    font-size: 14px;
+    font-size: calc(12px + 2 * (100vw - 320px) / 880);
     color: var(--color-white);
     text-align: center;
     margin: 20px;
 }
 
 .projects-items-unit.project-osu-parser {
-    background-image: url("assets/images/svg/projects/osu-parser/Banner.svg");
-}
-
-.projects-items-unit-title-text.project-osu-parser {
-    margin-top: -4px;
+    background-image: url("assets/images/svg/projects/osu-parser/LazerBackground.svg");
 }
 
 .projects-items-unit.project-diquoks-web {
     background-image: url("assets/images/svg/projects/diquoks-web/LegacyBackground.svg");
+}
+
+.projects-items-unit.project-osu-wiki {
+    background-image: url("assets/images/svg/projects/osu-wiki/Background.svg");
+}
+
+.projects-items-unit-title-text.project-osu-wiki {
+    color: var(--color-black);
 }
 
 .footer {
