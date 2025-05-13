@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .header {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to top left, #73A5FF, #B464FF80, #FF4BFF), linear-gradient(to top right, #5F55FF, #B464FF80, #EC76FF);
+    background-image: linear-gradient(to top left, #73A5FF, #B464FF80, #FF4BFF), linear-gradient(to top right, #5F55FF, #B464FF80, #EC76FF);
     background-color: #00000099;
     background-blend-mode: color;
 }
@@ -62,8 +62,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: 18px;
     font-weight: 700;
     color: var(--color-white);
-    margin: 0;
-    margin-top: -2px;
+    margin: -2px 0 0 0;
 }
 
 .header-content-version {
@@ -75,7 +74,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .header-fade {
     height: 16px;
-    background: linear-gradient(to bottom, transparent, var(--color-background));
+    background-image: linear-gradient(to bottom, transparent, var(--color-background));
 }
 
 .projects {
@@ -143,8 +142,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-weight: 700;
     color: var(--color-white);
     text-align: center;
-    margin: 0;
-    margin-top: -4px;
+    margin: -4px 0 0 0;
 }
 
 .projects-items-unit-description {
@@ -178,8 +176,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .footer {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    margin-top: 40px;
+    margin: 40px 0 0 0;
 }
 
 .external-assets {
