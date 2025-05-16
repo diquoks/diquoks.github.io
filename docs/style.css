@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .header-content-title-text {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-white);
     margin: -2px 0 0 0;
 }
@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .projects-header {
     justify-content: left;
     font-size: 28px;
+    font-weight: 500;
     color: var(--color-white);
     text-align: left;
     margin: 20px 40px;
