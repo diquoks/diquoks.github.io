@@ -188,6 +188,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: var(--color-black);
 }
 
+.projects-items-unit.project-diquoks-assets {
+    background-image: url("assets/images/projects/diquoks-assets/ProfileBGDark.png");
+}
+
 footer {
     display: flex;
     flex-direction: column;

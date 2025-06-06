@@ -4,6 +4,9 @@ window.addEventListener("DOMContentLoaded", async function () {
     data = await (await data).json();
     let loadingImage = document.querySelector(".loading-image");
     let headerContentVersion = document.querySelector(".header-content-version");
+    document.querySelectorAll(".private-repository").forEach(privateRepository => privateRepository.onclick = function () {
+        return confirm(data["confirm"]["private-repository"]);
+    });
     loadingImage.src = (function () {
         let min = 1, max = 4;
         switch (Math.floor(Math.random() * (max - min + 1)) + min) {
