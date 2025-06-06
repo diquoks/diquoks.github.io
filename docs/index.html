@@ -7,6 +7,9 @@
     <meta name="description" content="Скоро превратится в сайт-визитку, но до этого ещё далеко...">
     <meta name="author" content="diquoks">
     <meta name="keywords" content="diquoks Web, diquoks-web, diquoks, web, github, pages, github pages">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="diquoks Web">
     <link rel="apple-touch-icon" href="assets/favicons/apple-touch.png" sizes="180x180">
     <link rel="icon" href="assets/favicons/favicon.png" sizes="48x48">
     <link rel="yandex-tableau-widget" href="tableau.json">
@@ -18,19 +21,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<!--noindex-->
 <div class="loading">
-    <img class="loading-image" src="assets/images/loading/ppHop.webp" alt="">
+    <img class="loading-image" src="" alt="">
 </div>
 <header class="header">
     <div class="header-content">
         <div class="header-content-title">
-            <a class="header-content-title-picture" href="https://diquoks.ru" title="Главная страница"></a>
+            <a class="header-content-title-home" href="https://diquoks.ru" title="Главная страница">
+                <object class="header-content-title-home-picture" type="image/svg+xml" data="assets/favicons/favicon.svg"></object>
+            </a>
             <h1 class="header-content-title-text">diquoks Web</h1>
         </div>
-        <p class="header-content-version">Тестовый шаблон #2.33</p>
+        <p class="header-content-version">Тестовый шаблон #2.34</p>
     </div>
-    <div class="header-fade"></div>
 </header>
+<div class="header-padding"></div>
 <div class="projects">
     <h2 class="projects-header">Мои проекты ⚒️</h2>
     <div class="projects-items">
@@ -57,7 +63,8 @@
         </a>
     </div>
 </div>
-<footer class="footer"></footer>
+<footer></footer>
+<!--/noindex-->
 <div class="hidden">
     <div class="external-assets">
         <link rel="prefetch" href="assets/images/collabs/MinecraftPenisCollab.png">

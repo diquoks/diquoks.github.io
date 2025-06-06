@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     display: flex;
     position: fixed;
     inset: 0;
-    z-index: 9999;
+    z-index: 99999;
     justify-content: center;
     align-items: center;
     background-color: var(--color-background);
@@ -35,9 +35,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to top left, #73A5FF, #B464FF80, #FF4BFF), linear-gradient(to top right, #5F55FF, #B464FF80, #EC76FF);
+    background-image: linear-gradient(to top left, #73A5FF, #FF4BFF), linear-gradient(to top right, #5F55FF, #EC76FF);
     background-color: #00000099;
     background-blend-mode: color;
 }
@@ -47,7 +50,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 16px 24px;
 }
 
 .header-content-title {
@@ -55,21 +58,22 @@ h1, h2, h3, h4, h5, h6, p, a {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
-.header-content-title-picture {
-    background-image: url("assets/favicons/apple-touch.png");
-    background-position: center;
-    background-size: cover;
+.header-content-title-home {
     width: 48px;
     height: 48px;
-    border-radius: 6px;
     transition: 0.2s;
     position: relative;
 }
 
-.header-content-title-picture:hover {
+.header-content-title-home-picture {
+    width: 90%;
+    margin: 5%;
+}
+
+.header-content-title-home:hover {
     transform: scale(110%);
 }
 
@@ -85,11 +89,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: var(--color-white);
     text-align: center;
     margin: 0;
-}
-
-.header-fade {
-    height: 16px;
-    background-image: linear-gradient(to bottom, transparent, var(--color-background));
 }
 
 .projects {
@@ -189,10 +188,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: var(--color-black);
 }
 
-.footer {
+footer {
     display: flex;
     flex-direction: column;
-    margin: 16px 0 0 0;
+    margin: 8px 0 0 0;
 }
 
 .hidden {
