@@ -1,6 +1,10 @@
-window.addEventListener("DOMContentLoaded", function () {
-    let loading_image = document.querySelector(".loading-image");
-    loading_image.src = (function () {
+let data = fetch("data.json");
+
+window.addEventListener("DOMContentLoaded", async function () {
+    data = await (await data).json();
+    let loadingImage = document.querySelector(".loading-image");
+    let headerContentVersion = document.querySelector(".header-content-version");
+    loadingImage.src = (function () {
         let min = 1, max = 4;
         switch (Math.floor(Math.random() * (max - min + 1)) + min) {
             case max:
@@ -9,18 +13,20 @@ window.addEventListener("DOMContentLoaded", function () {
                 return "assets/images/loading/ppHop.webp";
         }
     })()
+    headerContentVersion.textContent = data["version"];
 });
 
-window.addEventListener("load", function () {
-    let header = document.querySelector("header");
-    let header_padding = document.querySelector(".header-padding");
-    header_padding.style.cssText = `margin-top: ${header.clientHeight}px;`;
+window.addEventListener("load", async function () {
     let loading = document.querySelector(".loading");
+    let header = document.querySelector("header");
+    let headerPadding = document.querySelector(".header-padding");
+    headerPadding.style.cssText = `margin-top: ${header.clientHeight}px;`;
     loading.style.cssText = "pointer-events: none; opacity: 0;";
     try {
-        let d = fetch("strings.json").then(response => response.json()).then(response => response["alert"][new URLSearchParams(document.location.search).get("from")]);
-        d.then(d => (d !== undefined) ? alert(d) : null);
+        (function (res) {
+            (res !== undefined) ? alert(res) : null
+        })(data["alert"][new URLSearchParams(document.location.search).get("from")]);
     } catch (e) {
-        console.error(e);
+        console.warn(e);
     }
 });
