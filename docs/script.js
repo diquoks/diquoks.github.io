@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", async function () {
         return confirm(data["confirm"]["private-repository"]);
     });
     loadingImage.src = (function () {
-        let min = 1, max = 4;
+        let min = 1, max = 3;
         switch (Math.floor(Math.random() * (max - min + 1)) + min) {
             case max:
                 return "assets/images/loading/ppCircle.webp";
