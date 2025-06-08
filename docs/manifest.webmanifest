@@ -3,6 +3,7 @@
    "description": "Скоро превратится в сайт-визитку, но до этого ещё далеко...",
    "background_color": "#111111",
    "theme_color": "#111111",
+   "display": "standalone",
    "icons": [
       {
         "src": "assets/favicons/favicon-192.png",
