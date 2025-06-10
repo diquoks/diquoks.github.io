@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-weight: 700;
     color: var(--color-white);
     text-align: center;
-    margin: -4px 0 0 0;
+    margin: 0;
 }
 
 .projects-items-unit-description {
@@ -184,12 +184,48 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-image: url("assets/images/projects/osu-wiki/WikiBackground.jpg");
 }
 
-.projects-items-unit-title-text.project-osu-wiki {
-    color: var(--color-black);
+.projects-items-unit.project-diquoks-server {
+    background-image: url("assets/images/projects/diquoks-server/ProfileBGDusk.png");
+}
+
+.projects-items-unit.project-music-bot {
+    background-image: url("assets/images/projects/music-bot/DiscordBackground.png");
+}
+
+.projects-items-unit.project-nasa-apod {
+    background-image: url("assets/images/projects/nasa-apod/APODBackground.jpg");
 }
 
 .projects-items-unit.project-diquoks-assets {
     background-image: url("assets/images/projects/diquoks-assets/ProfileBGDark.png");
+}
+
+.projects-items-unit.project-schedule-bot {
+    background-image: url("assets/images/projects/schedule-bot/EKBackground.jpg");
+}
+
+.projects-items-unit-title-text.project-osu-parser,
+.projects-items-unit-title-text.project-osu-wiki,
+.projects-items-unit-title-text.project-nasa-apod {
+    margin-top: -4px;
+}
+
+.projects-items-unit-title-text.project-osu-wiki,
+.projects-items-unit-title-text.project-schedule-bot,
+.projects-items-unit-description.project-schedule-bot {
+    color: var(--color-black);
+}
+
+.projects-items-unit-title-image.project-osu-parser,
+.projects-items-unit-title-image.project-diquoks-web {
+    width: 9%;
+    padding: 0.5%;
+}
+
+.projects-items-unit-title-image.project-osu-wiki,
+.projects-items-unit-title-image.project-music-bot {
+    width: 8%;
+    padding: 1%;
 }
 
 footer {
