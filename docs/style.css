@@ -184,16 +184,16 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-image: url("assets/images/projects/osu-wiki/WikiBackground.jpg");
 }
 
+.projects-items-unit.project-nasa-apod {
+    background-image: url("assets/images/projects/nasa-apod/APODBackground.jpg");
+}
+
 .projects-items-unit.project-diquoks-server {
     background-image: url("assets/images/projects/diquoks-server/ProfileBGDusk.png");
 }
 
 .projects-items-unit.project-music-bot {
     background-image: url("assets/images/projects/music-bot/DiscordBackground.png");
-}
-
-.projects-items-unit.project-nasa-apod {
-    background-image: url("assets/images/projects/nasa-apod/APODBackground.jpg");
 }
 
 .projects-items-unit.project-diquoks-assets {
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     padding: 1%;
 }
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
     margin: 8px 0 0 0;
