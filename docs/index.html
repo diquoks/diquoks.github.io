@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="preload" href="assets/images/loading/ppHop.webp" as="image">
+    <link rel="preload" href="assets/images/loading/ppCircle.webp" as="image">
     <link rel="apple-touch-icon" href="assets/favicons/apple-touch.png" sizes="180x180">
     <link rel="icon" href="assets/favicons/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="assets/favicons/favicon.ico" sizes="any">
@@ -24,9 +26,7 @@
 </head>
 <body>
 <!--noindex-->
-<div class="loading">
-    <img class="loading-image" src="assets/images/loading/ppHop.webp" alt="Загрузка...">
-</div>
+<div class="loading"></div>
 <header class="header">
     <div class="header-content">
         <div class="header-content-title">
@@ -39,6 +39,7 @@
     </div>
 </header>
 <div class="header-padding"></div>
+<!--TODO: внедрить https://skillicons.dev/-->
 <div class="projects">
     <h2 class="projects-header">Мои проекты ⚒️</h2>
     <div class="projects-items">
@@ -47,7 +48,7 @@
                 <object class="projects-items-unit-title-image project-osu-parser" type="image/svg+xml" data="assets/images/projects/osu-parser/LazerCookie.svg"></object>
                 <h3 class="projects-items-unit-title-text project-osu-parser">osu!parser</h3>
             </div>
-            <p class="projects-items-unit-description project-osu-parser">Программа для парсинга рекордов и<br>других данных с помощью osu!api v2</p>
+            <p class="projects-items-unit-description project-osu-parser">Парсинг рекордов и других данных<br>с помощью osu!api v2</p>
         </a>
         <a class="projects-items-unit project-diquoks-web" href="https://github.com/diquoks/diquoks-web" title="Репозиторий diquoks Web" target="_blank">
             <div class="projects-items-unit-title project-diquoks-web">
@@ -84,14 +85,14 @@
             </div>
             <p class="projects-items-unit-description project-music-bot">Музыкальный бот от diquoks для<br>воспроизведения музыки в Discord</p>
         </a>
-        <a class="projects-items-unit project-diquoks-assets private-repository" href="https://github.com/diquoks/diquoks-assets" title="Репозиторий diquoks Assets" target="_blank">
+        <a class="projects-items-unit project-diquoks-assets" href="https://github.com/diquoks/diquoks-assets" title="Репозиторий diquoks Assets" target="_blank">
             <div class="projects-items-unit-title project-diquoks-assets">
                 <object class="projects-items-unit-title-image project-diquoks-assets" type="image/svg+xml" data="assets/favicons/favicon.svg"></object>
                 <h3 class="projects-items-unit-title-text project-diquoks-assets">diquoks Assets</h3>
             </div>
             <p class="projects-items-unit-description project-diquoks-assets">Фирменный стиль diquoks и<br>другие используемые файлы</p>
         </a>
-        <a class="projects-items-unit project-schedule-bot private-repository" href="https://github.com/diquoks/ElkollegeScheduleBot" title="Репозиторий ElkollegeScheduleBot" target="_blank">
+        <a class="projects-items-unit project-schedule-bot archived-repository" href="https://github.com/diquoks/ElkollegeScheduleBot" title="Репозиторий ElkollegeScheduleBot" target="_blank">
             <div class="projects-items-unit-title project-schedule-bot">
                 <img class="projects-items-unit-title-image project-schedule-bot" src="assets/images/projects/schedule-bot/EKLogo.png" alt="Логотип ЭК">
                 <h3 class="projects-items-unit-title-text project-schedule-bot">ElkollegeScheduleBot</h3>

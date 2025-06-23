@@ -1,22 +1,31 @@
 let data = fetch("data.json");
+let loadingImageValues = function () {
+    let min = 1, max = 3;
+    return [Math.floor(Math.random() * (max - min + 1)) + min, max];
+}();
 
 window.addEventListener("DOMContentLoaded", async function () {
     data = await (await data).json();
-    let loadingImage = document.querySelector(".loading-image");
+    let loadingParent = document.querySelector(".loading");
     let headerContentVersion = document.querySelector(".header-content-version");
-    document.querySelectorAll(".private-repository").forEach(privateRepository => privateRepository.onclick = function () {
-        return confirm(data["confirm"]["private-repository"]);
-    });
+    for (let type in data["confirm"]) {
+        document.querySelectorAll(type).forEach(repository => repository.onclick = function () {
+            return confirm(data["confirm"][type]);
+        })
+    }
+    headerContentVersion.textContent = data["version"];
+    let loadingImage = document.createElement("img");
+    loadingImage.className = "loading-image";
     loadingImage.src = (function () {
-        let min = 1, max = 3;
-        switch (Math.floor(Math.random() * (max - min + 1)) + min) {
-            case max:
+        switch (loadingImageValues[0]) {
+            case loadingImageValues[1]:
                 return "assets/images/loading/ppCircle.webp";
             default:
                 return "assets/images/loading/ppHop.webp";
         }
     })()
-    headerContentVersion.textContent = data["version"];
+    loadingImage.alt = "Загрузка...";
+    loadingParent.appendChild(loadingImage);
 });
 
 window.addEventListener("load", async function () {
