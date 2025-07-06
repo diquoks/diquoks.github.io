@@ -8,9 +8,9 @@ window.addEventListener("DOMContentLoaded", async function () {
     data = await (await data).json();
     let loadingParent = document.querySelector(".loading");
     let headerContentVersion = document.querySelector(".header-content-version");
-    for (let type in data["confirm"]) {
+    for (let type in data["confirm"]["class"]) {
         document.querySelectorAll(type).forEach(repository => repository.onclick = function () {
-            return confirm(data["confirm"][type]);
+            return confirm(data["confirm"]["class"][type]);
         })
     }
     headerContentVersion.textContent = data["version"];
@@ -39,11 +39,11 @@ window.addEventListener("load", async function () {
             try {
                 (function (res) {
                     (res !== undefined) ? alert(res) : null
-                })(data["alert"][new URLSearchParams(document.location.search).get("from")]);
+                })(data["alert"]["from"][new URLSearchParams(document.location.search).get("from")]);
             } catch (e) {
                 console.warn(e);
             }
         },
-        700
+        800
     )
 });
