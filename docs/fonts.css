@@ -1,8 +1,15 @@
 @font-face {
-    font-family: "Inter";
-    src: url("assets/fonts/inter/Inter-Regular.ttf") format("truetype");
+    font-family: "Comfortaa";
+    src: url("assets/fonts/comfortaa/Comfortaa-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("assets/fonts/comfortaa/Comfortaa-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
 }
 
 @font-face {
