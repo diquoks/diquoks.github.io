@@ -1,5 +1,5 @@
 {
-  "version": "v0.7.2",
+  "version": "v0.7.3",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",

@@ -16,7 +16,7 @@ object {
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
-    font-family: Torus, Comfortaa, sans-serif;
+    font-family: Torus, Comfortaa, Inter, sans-serif;
 }
 
 .loading {
@@ -172,8 +172,9 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 20px;
 }
 
-.projects-items-unit.project-osu-parser {
-    background-image: url("assets/images/projects/osu-parser/LazerBackground.svg");
+.projects-items-unit.project-osu-parser,
+.projects-items-unit.project-osu-lazer {
+    background-image: url("assets/images/projects/osu-lazer/LazerBackground.svg");
 }
 
 .projects-items-unit.project-diquoks-web {
