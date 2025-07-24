@@ -34,11 +34,13 @@ window.addEventListener("load", async function () {
     let headerPadding = document.querySelector(".header-padding");
     headerPadding.style.cssText = `margin-top: ${header.clientHeight}px;`;
     loading.style.cssText = "pointer-events: none; opacity: 0;";
-    try {
-        (function (res) {
-            (res !== undefined) ? alert(res) : null
-        })(data["alert"]["from"][new URLSearchParams(document.location.search).get("from")]);
-    } catch (e) {
-        console.warn(e);
-    }
+    setTimeout(function () {
+        try {
+            (function (res) {
+                (res !== undefined) ? alert(res) : null
+            })(data["alert"]["from"][new URLSearchParams(document.location.search).get("from")]);
+        } catch (e) {
+            console.warn(e);
+        }
+    }, 1000);
 });
