@@ -2,40 +2,40 @@
     font-family: "Comfortaa";
     src: url("assets/fonts/comfortaa/Comfortaa-Regular.ttf") format("truetype");
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 @font-face {
     font-family: "Comfortaa";
     src: url("assets/fonts/comfortaa/Comfortaa-Bold.ttf") format("truetype");
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 @font-face {
     font-family: "Inter";
     src: url("assets/fonts/inter/Inter-Regular.ttf") format("truetype");
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 @font-face {
     font-family: "Inter";
     src: url("assets/fonts/inter/Inter-Bold.ttf") format("truetype");
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 @font-face {
     font-family: "Torus";
     src: url("assets/fonts/torus/Torus-Regular.otf") format("opentype");
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 @font-face {
     font-family: "Torus";
     src: url("assets/fonts/torus/Torus-Bold.otf") format("opentype");
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
 }
