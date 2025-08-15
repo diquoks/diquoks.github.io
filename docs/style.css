@@ -20,6 +20,15 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-family: Torus, Comfortaa, Inter, sans-serif;
 }
 
+.resizable-link {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.resizable-link:hover {
+    transform: scale(1.05);
+}
+
 .loading {
     display: flex;
     position: fixed;
@@ -35,7 +44,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     width: max(10vw, 20vh);
 }
 
-.header {
+header {
     display: flex;
     position: fixed;
     z-index: 9999;
@@ -169,6 +178,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     align-items: center;
     font-size: calc(12px + 2 * (100vw - 300px) / 900);
     text-align: center;
+    white-space: pre-wrap;
     color: var(--color-white);
     margin: 20px;
 }
@@ -235,7 +245,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     padding: 1%;
 }
 
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -267,11 +277,5 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .footer-link {
     font-size: 14px;
-    text-decoration: none;
     color: var(--color-white);
-    transition: 0.2s;
-}
-
-.footer-link:hover {
-    transform: scale(1.05);
 }

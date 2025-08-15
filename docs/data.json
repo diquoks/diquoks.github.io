@@ -1,5 +1,5 @@
 {
-  "version": "v0.8.2",
+  "version": "v0.9",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -11,5 +11,133 @@
       ".private-repository": "Этот репозиторий является приватным и может быть недоступен.\nВсё равно перейти по ссылке?",
       ".archived-repository": "Этот репозиторий архивирован и работа над ним приостановлена.\nВсё равно перейти по ссылке?"
     }
-  }
+  },
+  "projects": [
+    {
+      "name": "project-osu-parser",
+      "repository": null,
+      "link": "https://github.com/diquoks/osu-parser",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/projects/osu-lazer/LazerCookie.svg"
+      },
+      "title": "osu!parser",
+      "description": "Парсинг рекордов и других данных\nс помощью osu!api v2"
+    },
+    {
+      "name": "project-diquoks-web",
+      "repository": null,
+      "link": "https://github.com/diquoks/diquoks-web",
+      "image": {
+        "type": "image/webp",
+        "data": "assets/images/projects/diquoks-web/peepoChat.webp"
+      },
+      "title": "diquoks Web",
+      "description": "Скоро превратится в сайт-визитку,\nно до этого ещё далеко..."
+    },
+    {
+      "name": "project-nasa-apod",
+      "repository": "private-repository",
+      "link": "https://github.com/diquoks/NASA-APOD",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/projects/nasa-apod/NASALogo.svg"
+      },
+      "title": "NASA APOD",
+      "description": "Приложение для получения\nAstronomic Picture of the Day"
+    },
+    {
+      "name": "project-music-bot",
+      "repository": "private-repository",
+      "link": "https://github.com/diquoks/DiscordMusicBot",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/projects/music-bot/DiscordLogo.svg"
+      },
+      "title": "DiscordMusicBot",
+      "description": "Музыкальный бот от diquoks для\nвоспроизведения музыки в Discord"
+    },
+    {
+      "name": "project-quodkix-server",
+      "repository": null,
+      "link": "https://discord.gg/NngYgxTj2X",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/favicons/favicon.svg"
+      },
+      "title": "quodkix (β)",
+      "description": "Discord-сервер для веселья,\n экспериментов и всего такого"
+    },
+    {
+      "name": "project-diquoks-assets",
+      "repository": null,
+      "link": "https://github.com/diquoks/diquoks-assets",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/favicons/favicon.svg"
+      },
+      "title": "diquoks Assets",
+      "description": "Фирменный стиль diquoks и\nдругие используемые файлы"
+    },
+    {
+      "name": "project-tap-bot",
+      "repository": "archived-repository",
+      "link": "https://github.com/diquoks/TapBot",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/favicons/favicon.svg"
+      },
+      "title": "TapBot",
+      "description": "Кликер в Telegram-боте,\nиспользующий только сообщения"
+    },
+    {
+      "name": "project-schedule-bot",
+      "repository": "archived-repository",
+      "link": "https://github.com/diquoks/ElkollegeScheduleBot",
+      "image": {
+        "type": "image/png",
+        "data": "assets/images/projects/schedule-bot/EKLogo.png"
+      },
+      "title": "ElkollegeScheduleBot",
+      "description": "Telegram-бот для отображения\nрасписания на учебный день"
+    }
+  ],
+  "forks": [
+    {
+      "name": "project-osu-lazer",
+      "repository": null,
+      "link": "https://github.com/diquoks/osu",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/projects/osu-lazer/LazerCookie.svg"
+      },
+      "title": "osu!(lazer)",
+      "description": "Ритм всего в *клике* от тебя!"
+    },
+    {
+      "name": "project-osu-wiki",
+      "repository": null,
+      "link": "https://github.com/diquoks/osu-wiki",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/projects/osu-wiki/WikiLogo.svg"
+      },
+      "title": "osu! wiki",
+      "description": "Перевод и обновление статей"
+    }
+  ],
+  "footer": [
+    {
+      "link": "https://www.icloud.com/notes/0c5flUnwNT7OljCh13DCbZRdw",
+      "text": "Статус разработки"
+    },
+    {
+      "link": "https://github.com/diquoks/diquoks-web",
+      "text": "Исходный код"
+    },
+    {
+      "link": "https://pages.github.com",
+      "text": "Сделано на GitHub Pages"
+    }
+  ]
 }
