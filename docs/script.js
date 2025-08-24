@@ -26,36 +26,46 @@ window.addEventListener("DOMContentLoaded", async function () {
 
     headerContentVersion.text = data["version"];
 
-    ["projects", "forks"].forEach((category) => {
+    [".section-projects", ".section-forks"].forEach((category) => {
         data[category].forEach((project) => {
-            let projectsItems, projectsItemsUnit, projectsItemsUnitTitle, projectsItemsUnitTitleImage, projectsItemsUnitTitleText, projectsItemsUnitDescriptionText;
-            projectsItems = document.getElementById(category);
+            let projects, projectsItem, projectsItemTop, projectsItemTopTitle, projectsItemTopTitleImage, projectsItemTopTitleText, projectsItemTopSkillicon, projectsItemDescriptionText;
+            projects = document.querySelector(category);
 
-            projectsItemsUnit = document.createElement("a");
-            projectsItemsUnit.className = ["projects-items-unit", project["name"], project["repository"]].join(" ").trimEnd();
-            projectsItemsUnit.href = project["link"];
-            projectsItemsUnit.target = "_blank";
-            projectsItems.appendChild(projectsItemsUnit);
+            projectsItem = document.createElement("a");
+            projectsItem.className = ["projects-item", project["name"], project["type"]].join(" ").trimEnd();
+            projectsItem.href = project["link"];
+            projectsItem.target = "_blank";
+            projects.appendChild(projectsItem);
 
-            projectsItemsUnitTitle = document.createElement("div");
-            projectsItemsUnitTitle.className = ["projects-items-unit-title", project["name"]].join(" ");
-            projectsItemsUnit.appendChild(projectsItemsUnitTitle);
+            projectsItemTop = document.createElement("div");
+            projectsItemTop.className = ["projects-item-top", project["name"]].join(" ");
+            projectsItem.appendChild(projectsItemTop);
 
-            projectsItemsUnitTitleImage = document.createElement("object");
-            projectsItemsUnitTitleImage.className = ["projects-items-unit-title-image", project["name"]].join(" ");
-            projectsItemsUnitTitleImage.type = project["image"]["type"];
-            projectsItemsUnitTitleImage.data = project["image"]["data"];
-            projectsItemsUnitTitle.appendChild(projectsItemsUnitTitleImage);
+            projectsItemTopTitle = document.createElement("div");
+            projectsItemTopTitle.className = ["projects-item-top-title", project["name"]].join(" ");
+            projectsItemTop.appendChild(projectsItemTopTitle);
 
-            projectsItemsUnitTitleText = document.createElement("h3");
-            projectsItemsUnitTitleText.className = ["projects-items-unit-title-text", project["name"]].join(" ");
-            projectsItemsUnitTitleText.textContent = project["title"];
-            projectsItemsUnitTitle.appendChild(projectsItemsUnitTitleText);
+            projectsItemTopTitleImage = document.createElement("object");
+            projectsItemTopTitleImage.className = ["projects-item-top-title-image", project["name"]].join(" ");
+            projectsItemTopTitleImage.type = project["image"]["type"];
+            projectsItemTopTitleImage.data = project["image"]["data"];
+            projectsItemTopTitle.appendChild(projectsItemTopTitleImage);
 
-            projectsItemsUnitDescriptionText = document.createElement("p");
-            projectsItemsUnitDescriptionText.className = ["projects-items-unit-description", project["name"]].join(" ");
-            projectsItemsUnitDescriptionText.textContent = project["description"];
-            projectsItemsUnit.appendChild(projectsItemsUnitDescriptionText);
+            projectsItemTopTitleText = document.createElement("h3");
+            projectsItemTopTitleText.className = ["projects-item-top-title-text", project["name"]].join(" ");
+            projectsItemTopTitleText.textContent = project["title"];
+            projectsItemTopTitle.appendChild(projectsItemTopTitleText);
+
+            projectsItemTopSkillicon = document.createElement("object");
+            projectsItemTopSkillicon.className = ["projects-item-top-skillicon", project["name"]].join(" ");
+            projectsItemTopSkillicon.type = "image/svg+xml";
+            projectsItemTopSkillicon.data = `https://skillicons.dev/icons?i=${project["skillicon"]}`;
+            projectsItemTop.appendChild(projectsItemTopSkillicon);
+
+            projectsItemDescriptionText = document.createElement("p");
+            projectsItemDescriptionText.className = ["projects-item-description", project["name"]].join(" ");
+            projectsItemDescriptionText.textContent = project["description"];
+            projectsItem.appendChild(projectsItemDescriptionText);
         });
     });
 
