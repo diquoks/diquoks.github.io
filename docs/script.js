@@ -35,6 +35,7 @@ window.addEventListener("DOMContentLoaded", async function () {
             projectsItem.className = ["projects-item", project["name"], project["type"]].join(" ").trimEnd();
             projectsItem.href = project["link"];
             projectsItem.target = "_blank";
+            projectsItem.style.backgroundImage = "url(" + project["background"] + ")";
             projects.appendChild(projectsItem);
 
             projectsItemTop = document.createElement("div");
@@ -59,7 +60,7 @@ window.addEventListener("DOMContentLoaded", async function () {
             projectsItemTopSkillicon = document.createElement("object");
             projectsItemTopSkillicon.className = ["projects-item-top-skillicon", project["name"]].join(" ");
             projectsItemTopSkillicon.type = "image/svg+xml";
-            projectsItemTopSkillicon.data = `https://skillicons.dev/icons?i=${project["skillicon"]}`;
+            projectsItemTopSkillicon.data = `assets/images/skillicons/${project["skillicon"]}.svg`;
             projectsItemTop.appendChild(projectsItemTopSkillicon);
 
             projectsItemDescriptionText = document.createElement("p");

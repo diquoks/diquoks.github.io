@@ -1,5 +1,5 @@
 {
-  "version": "v0.9.1",
+  "version": "v0.9.2",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -23,8 +23,9 @@
         "type": "image/svg+xml",
         "data": "assets/images/projects/osu-lazer/LazerCookie.svg"
       },
-      "type": null,
-      "skillicon": "py"
+      "background": "assets/images/projects/osu-lazer/LazerBackground.svg",
+      "skillicon": "python",
+      "type": null
     },
     {
       "name": "project-diquoks-web",
@@ -35,8 +36,9 @@
         "type": "image/webp",
         "data": "assets/images/projects/diquoks-web/peepoChat.webp"
       },
-      "type": null,
-      "skillicon": "html"
+      "background": "assets/images/projects/diquoks-web/LegacyBackground.png",
+      "skillicon": "html",
+      "type": null
     },
     {
       "name": "project-nasa-apod",
@@ -47,8 +49,9 @@
         "type": "image/svg+xml",
         "data": "assets/images/projects/nasa-apod/NASALogo.svg"
       },
-      "type": "private-repository",
-      "skillicon": "flutter"
+      "background": "assets/images/projects/nasa-apod/APODBackground.jpg",
+      "skillicon": "flutter",
+      "type": "private-project"
     },
     {
       "name": "project-music-bot",
@@ -59,8 +62,9 @@
         "type": "image/svg+xml",
         "data": "assets/images/projects/music-bot/DiscordLogo.svg"
       },
-      "type": "private-repository",
-      "skillicon": "py"
+      "background": "assets/images/projects/music-bot/DiscordBackground.png",
+      "skillicon": "python",
+      "type": "private-project"
     },
     {
       "name": "project-quodkix-server",
@@ -71,8 +75,9 @@
         "type": "image/svg+xml",
         "data": "assets/favicons/favicon.svg"
       },
-      "type": "beta-project",
-      "skillicon": "discord"
+      "background": "assets/images/projects/quodkix-server/BackgroundDusk.png",
+      "skillicon": "discord",
+      "type": "beta-project"
     },
     {
       "name": "project-diquoks-assets",
@@ -83,8 +88,9 @@
         "type": "image/svg+xml",
         "data": "assets/favicons/favicon.svg"
       },
-      "type": null,
-      "skillicon": "svg"
+      "background": "assets/images/projects/diquoks-assets/BackgroundDark.png",
+      "skillicon": "svg",
+      "type": null
     },
     {
       "name": "project-tap-bot",
@@ -95,8 +101,9 @@
         "type": "image/svg+xml",
         "data": "assets/favicons/favicon.svg"
       },
-      "type": "archived-repository",
-      "skillicon": "py"
+      "background": "assets/images/projects/tap-bot/BackgroundLight.png",
+      "skillicon": "python",
+      "type": "archived-project"
     },
     {
       "name": "project-schedule-bot",
@@ -107,8 +114,9 @@
         "type": "image/png",
         "data": "assets/images/projects/schedule-bot/EKLogo.png"
       },
-      "type": "archived-repository",
-      "skillicon": "py"
+      "background": "assets/images/projects/schedule-bot/EKBackground.jpg",
+      "skillicon": "python",
+      "type": "archived-project"
     }
   ],
   ".section-forks": [
@@ -121,8 +129,9 @@
         "type": "image/svg+xml",
         "data": "assets/images/projects/osu-lazer/LazerCookie.svg"
       },
-      "type": null,
-      "skillicon": "cs"
+      "background": "assets/images/projects/osu-lazer/LazerBackground.svg",
+      "skillicon": "csharp",
+      "type": null
     },
     {
       "name": "project-osu-wiki",
@@ -133,8 +142,9 @@
         "type": "image/svg+xml",
         "data": "assets/images/projects/osu-wiki/WikiLogo.svg"
       },
-      "type": null,
-      "skillicon": "markdown"
+      "background": "assets/images/projects/osu-wiki/WikiBackground.jpg",
+      "skillicon": "markdown",
+      "type": null
     }
   ],
   "footer": [

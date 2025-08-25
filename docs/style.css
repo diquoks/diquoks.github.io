@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .resizable-link:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 
 .loading {
@@ -189,43 +189,6 @@ header {
     white-space: pre-wrap;
     color: var(--color-white);
     margin: 20px;
-}
-
-.projects-item.project-osu-parser,
-.projects-item.project-osu-lazer {
-    background-image: url("assets/images/projects/osu-lazer/LazerBackground.svg");
-}
-
-.projects-item.project-diquoks-web {
-    background-image: url("assets/images/projects/diquoks-web/LegacyBackground.png");
-}
-
-.projects-item.project-nasa-apod {
-    background-image: url("assets/images/projects/nasa-apod/APODBackground.jpg");
-}
-
-.projects-item.project-music-bot {
-    background-image: url("assets/images/projects/music-bot/DiscordBackground.png");
-}
-
-.projects-item.project-quodkix-server {
-    background-image: url("assets/images/projects/quodkix-server/BackgroundDusk.png");
-}
-
-.projects-item.project-diquoks-assets {
-    background-image: url("assets/images/projects/diquoks-assets/BackgroundDark.png");
-}
-
-.projects-item.project-tap-bot {
-    background-image: url("assets/images/projects/tap-bot/BackgroundLight.png");
-}
-
-.projects-item.project-schedule-bot {
-    background-image: url("assets/images/projects/schedule-bot/EKBackground.jpg");
-}
-
-.projects-item.project-osu-wiki {
-    background-image: url("assets/images/projects/osu-wiki/WikiBackground.jpg");
 }
 
 .projects-item-top-title-text.project-schedule-bot,
