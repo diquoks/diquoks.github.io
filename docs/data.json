@@ -1,5 +1,5 @@
 {
-  "version": "v0.9.3",
+  "version": "v0.9.4",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -91,6 +91,19 @@
       "background": "assets/images/projects/diquoks-assets/BackgroundDark.png",
       "skillicon": "svg",
       "type": null
+    },
+    {
+      "name": "sample-vpn-bot",
+      "title": "SampleVPNBot",
+      "description": "Ты думал тут что-то будет?",
+      "link": "https://github.com/diquoks/SampleVPNBot",
+      "image": {
+        "type": "image/svg+xml",
+        "data": ""
+      },
+      "background": "assets/images/projects/sample-vpn-bot/placeholder.svg",
+      "skillicon": "python",
+      "type": "private-project"
     },
     {
       "name": "project-tap-bot",
