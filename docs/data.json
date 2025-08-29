@@ -1,5 +1,5 @@
 {
-  "version": "v0.9.4",
+  "version": "v0.9.5",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -64,7 +64,7 @@
       },
       "background": "assets/images/projects/music-bot/DiscordBackground.png",
       "skillicon": "python",
-      "type": "private-project"
+      "type": "archived-project"
     },
     {
       "name": "project-quodkix-server",
