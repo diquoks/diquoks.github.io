@@ -1,5 +1,5 @@
 {
-  "version": "v0.9.5",
+  "version": "v0.9.6",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -101,9 +101,22 @@
         "type": "image/svg+xml",
         "data": ""
       },
-      "background": "assets/images/projects/sample-vpn-bot/placeholder.svg",
+      "background": "assets/images/projects/placeholder/placeholder.svg",
       "skillicon": "python",
       "type": "private-project"
+    },
+    {
+      "name": "week-parity-bot",
+      "title": "WeekParityBot",
+      "description": "Telegram-бот для добавления\nрасширенного функционала расписаниям",
+      "link": "https://github.com/diquoks/WeekParityBot",
+      "image": {
+        "type": "image/svg+xml",
+        "data": ""
+      },
+      "background": "assets/images/projects/placeholder/placeholder.svg",
+      "skillicon": "python",
+      "type": null
     },
     {
       "name": "project-tap-bot",
