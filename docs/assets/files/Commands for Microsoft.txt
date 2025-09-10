@@ -1,0 +1,20 @@
+﻿Активация Windows и Microsoft Office:
+
+1. Открыть PowerShell от имени администратора
+
+2. irm https://get.activated.win | iex
+
+
+Установка Microsoft Office:
+
+1. Скачать файл: https://www.microsoft.com/en-us/download/details.aspx?id=49117
+
+2. Запустить и распаковать в любую папку
+
+3. Открыть командную строку от имени администратора
+
+4. reg add "HKCU\Software\Microsoft\Office\16.0\Common\ExperimentConfigs\Ecs" /v "CountryCode" /t REG_SZ /d "std::wstring|US" /f
+
+5. cd <путь до папки в которую распакованы файлы>
+
+6. setup.exe /configure configuration-Office365-x64.xml

@@ -193,19 +193,19 @@ header {
 
 .projects-item-top-title-text.project-schedule-bot,
 .projects-item-description.project-schedule-bot,
-.projects-item-top-title-text.project-osu-wiki {
+.projects-item-top-title-text.fork-osu-wiki {
     color: var(--color-black);
 }
 
 .projects-item-top-title-image.project-osu-parser,
 .projects-item-top-title-image.project-diquoks-web,
-.projects-item-top-title-image.project-osu-lazer {
+.projects-item-top-title-image.fork-osu-lazer {
     width: 9%;
     padding: 0.5%;
 }
 
 .projects-item-top-title-image.project-music-bot,
-.projects-item-top-title-image.project-osu-wiki {
+.projects-item-top-title-image.fork-osu-wiki {
     width: 8%;
     padding: 1%;
 }

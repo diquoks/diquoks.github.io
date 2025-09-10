@@ -1,5 +1,5 @@
 {
-  "version": "v0.9.6",
+  "version": "v0.9.7",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -51,7 +51,7 @@
       },
       "background": "assets/images/projects/nasa-apod/APODBackground.jpg",
       "skillicon": "flutter",
-      "type": "private-project"
+      "type": null
     },
     {
       "name": "project-music-bot",
@@ -93,10 +93,23 @@
       "type": null
     },
     {
-      "name": "sample-vpn-bot",
-      "title": "SampleVPNBot",
+      "name": "project-weather-info",
+      "title": "WeatherInfo",
+      "description": "Домашняя метеостанция\nна базе Arduino Uno",
+      "link": "https://github.com/diquoks/WeatherInfo",
+      "image": {
+        "type": "image/svg+xml",
+        "data": ""
+      },
+      "background": "assets/images/projects/placeholder/placeholder.svg",
+      "skillicon": "arduino",
+      "type": null
+    },
+    {
+      "name": "project-vastnetvpn-bot",
+      "title": "VastNetVPNBot",
       "description": "Ты думал тут что-то будет?",
-      "link": "https://github.com/diquoks/SampleVPNBot",
+      "link": "https://github.com/diquoks/VastNetVPNBot",
       "image": {
         "type": "image/svg+xml",
         "data": ""
@@ -106,7 +119,7 @@
       "type": "private-project"
     },
     {
-      "name": "week-parity-bot",
+      "name": "project-week-parity-bot",
       "title": "WeekParityBot",
       "description": "Telegram-бот для добавления\nрасширенного функционала расписаниям",
       "link": "https://github.com/diquoks/WeekParityBot",
@@ -147,7 +160,7 @@
   ],
   ".section-forks": [
     {
-      "name": "project-osu-lazer",
+      "name": "fork-osu-lazer",
       "title": "osu!(lazer)",
       "description": "Ритм всего в *клике* от тебя!",
       "link": "https://github.com/diquoks/osu",
@@ -160,7 +173,7 @@
       "type": null
     },
     {
-      "name": "project-osu-wiki",
+      "name": "fork-osu-wiki",
       "title": "osu! wiki",
       "description": "Перевод и обновление статей",
       "link": "https://github.com/diquoks/osu-wiki",
