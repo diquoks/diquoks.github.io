@@ -1,5 +1,5 @@
 {
-  "version": "v0.9.7",
+  "version": "v0.9.8",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -21,9 +21,9 @@
       "link": "https://github.com/diquoks/osu-parser",
       "image": {
         "type": "image/svg+xml",
-        "data": "assets/images/projects/osu-lazer/LazerCookie.svg"
+        "data": "assets/images/projects/osu/CookieLazer.svg"
       },
-      "background": "assets/images/projects/osu-lazer/LazerBackground.svg",
+      "background": "assets/images/projects/osu/BackgroundLazer.svg",
       "skillicon": "python",
       "type": null
     },
@@ -34,9 +34,9 @@
       "link": "https://github.com/diquoks/diquoks-web",
       "image": {
         "type": "image/webp",
-        "data": "assets/images/projects/diquoks-web/peepoChat.webp"
+        "data": "assets/images/projects/diquoks/LogoPeepoChat.webp"
       },
-      "background": "assets/images/projects/diquoks-web/LegacyBackground.png",
+      "background": "assets/images/projects/diquoks/BackgroundLegacy.png",
       "skillicon": "html",
       "type": null
     },
@@ -47,49 +47,23 @@
       "link": "https://github.com/diquoks/NASA-APOD",
       "image": {
         "type": "image/svg+xml",
-        "data": "assets/images/projects/nasa-apod/NASALogo.svg"
+        "data": "assets/images/projects/nasa-apod/LogoNASA.svg"
       },
-      "background": "assets/images/projects/nasa-apod/APODBackground.jpg",
+      "background": "assets/images/projects/nasa-apod/BackgroundAPOD.jpg",
       "skillicon": "flutter",
       "type": null
     },
     {
-      "name": "project-music-bot",
-      "title": "DiscordMusicBot",
-      "description": "Музыкальный бот от diquoks для\nвоспроизведения музыки в Discord",
-      "link": "https://github.com/diquoks/DiscordMusicBot",
+      "name": "project-week-parity-bot",
+      "title": "WeekParityBot",
+      "description": "Telegram-бот для добавления\nрасширенного функционала расписаниям",
+      "link": "https://github.com/diquoks/WeekParityBot",
       "image": {
         "type": "image/svg+xml",
-        "data": "assets/images/projects/music-bot/DiscordLogo.svg"
+        "data": ""
       },
-      "background": "assets/images/projects/music-bot/DiscordBackground.png",
+      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
       "skillicon": "python",
-      "type": "archived-project"
-    },
-    {
-      "name": "project-quodkix-server",
-      "title": "quodkix (β)",
-      "description": "Discord-сервер для веселья,\n экспериментов и всего такого",
-      "link": "https://discord.gg/NngYgxTj2X",
-      "image": {
-        "type": "image/svg+xml",
-        "data": "assets/favicons/favicon.svg"
-      },
-      "background": "assets/images/projects/quodkix-server/BackgroundDusk.png",
-      "skillicon": "discord",
-      "type": "beta-project"
-    },
-    {
-      "name": "project-diquoks-assets",
-      "title": "diquoks Assets",
-      "description": "Фирменный стиль diquoks и\nдругие используемые файлы",
-      "link": "https://github.com/diquoks/diquoks-assets",
-      "image": {
-        "type": "image/svg+xml",
-        "data": "assets/favicons/favicon.svg"
-      },
-      "background": "assets/images/projects/diquoks-assets/BackgroundDark.png",
-      "skillicon": "svg",
       "type": null
     },
     {
@@ -101,7 +75,7 @@
         "type": "image/svg+xml",
         "data": ""
       },
-      "background": "assets/images/projects/placeholder/placeholder.svg",
+      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
       "skillicon": "arduino",
       "type": null
     },
@@ -114,22 +88,63 @@
         "type": "image/svg+xml",
         "data": ""
       },
-      "background": "assets/images/projects/placeholder/placeholder.svg",
+      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
       "skillicon": "python",
       "type": "private-project"
     },
     {
-      "name": "project-week-parity-bot",
-      "title": "WeekParityBot",
-      "description": "Telegram-бот для добавления\nрасширенного функционала расписаниям",
-      "link": "https://github.com/diquoks/WeekParityBot",
+      "name": "project-pyquoks",
+      "title": "pyquoks",
+      "description": "Пакет PyPI для часто используемых\nмодулей в проектах diquoks",
+      "link": "https://github.com/diquoks/pyquoks",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/projects/diquoks/LogoUtya.svg"
+      },
+      "background": "assets/images/projects/diquoks/BackgroundDusk.png",
+      "skillicon": "python",
+      "type": "private-project"
+    },
+    {
+      "name": "project-quodkix",
+      "title": "quodkix (β)",
+      "description": "Discord-сервер для веселья,\n экспериментов и всего такого",
+      "link": "https://discord.gg/NngYgxTj2X",
       "image": {
         "type": "image/svg+xml",
         "data": ""
       },
-      "background": "assets/images/projects/placeholder/placeholder.svg",
-      "skillicon": "python",
+      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
+      "skillicon": "discord",
+      "type": "beta-project"
+    },
+    {
+      "name": "project-diquoks-assets",
+      "title": "diquoks Assets",
+      "description": "Фирменный стиль diquoks и\nдругие используемые файлы",
+      "link": "https://github.com/diquoks/diquoks-assets",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/projects/diquoks/LogoUtya.svg"
+      },
+      "background": "assets/images/projects/diquoks/BackgroundDark.png",
+      "skillicon": "svg",
       "type": null
+    }
+  ],
+  ".section-archives": [
+    {
+      "name": "project-music-bot",
+      "title": "DiscordMusicBot",
+      "description": "Музыкальный бот от diquoks для\nвоспроизведения музыки в Discord",
+      "link": "https://github.com/diquoks/DiscordMusicBot",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/projects/music-bot/LogoDiscord.svg"
+      },
+      "background": "assets/images/projects/music-bot/BackgroundDiscord.png",
+      "skillicon": "python",
+      "type": "archived-project"
     },
     {
       "name": "project-tap-bot",
@@ -138,9 +153,9 @@
       "link": "https://github.com/diquoks/TapBot",
       "image": {
         "type": "image/svg+xml",
-        "data": "assets/favicons/favicon.svg"
+        "data": "assets/images/projects/diquoks/LogoUtya.svg"
       },
-      "background": "assets/images/projects/tap-bot/BackgroundLight.png",
+      "background": "assets/images/projects/diquoks/BackgroundLight.png",
       "skillicon": "python",
       "type": "archived-project"
     },
@@ -151,9 +166,9 @@
       "link": "https://github.com/diquoks/ElkollegeScheduleBot",
       "image": {
         "type": "image/png",
-        "data": "assets/images/projects/schedule-bot/EKLogo.png"
+        "data": "assets/images/projects/schedule-bot/LogoEK.png"
       },
-      "background": "assets/images/projects/schedule-bot/EKBackground.jpg",
+      "background": "assets/images/projects/schedule-bot/BackgroundEK.jpg",
       "skillicon": "python",
       "type": "archived-project"
     }
@@ -166,9 +181,9 @@
       "link": "https://github.com/diquoks/osu",
       "image": {
         "type": "image/svg+xml",
-        "data": "assets/images/projects/osu-lazer/LazerCookie.svg"
+        "data": "assets/images/projects/osu/CookieLazer.svg"
       },
-      "background": "assets/images/projects/osu-lazer/LazerBackground.svg",
+      "background": "assets/images/projects/osu/BackgroundLazer.svg",
       "skillicon": "csharp",
       "type": null
     },
@@ -179,9 +194,9 @@
       "link": "https://github.com/diquoks/osu-wiki",
       "image": {
         "type": "image/svg+xml",
-        "data": "assets/images/projects/osu-wiki/WikiLogo.svg"
+        "data": "assets/images/projects/osu-wiki/LogoWiki.svg"
       },
-      "background": "assets/images/projects/osu-wiki/WikiBackground.jpg",
+      "background": "assets/images/projects/osu-wiki/BackgroundWiki.jpg",
       "skillicon": "markdown",
       "type": null
     }

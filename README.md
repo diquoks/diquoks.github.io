@@ -1,15 +1,34 @@
 ﻿# diquoks Web
 
-Скоро превратится в сайт-визитку, но до этого ещё далеко...
+#### Скоро превратится в сайт-визитку, но до этого ещё далеко...
 
-### Контакты
+---
+
+## Оглавление
+
+- [Контакты](#контакты)
+    - [Связь с разработчиком](#связь-с-разработчиком)
+    - [Прочие ссылки](#прочие-ссылки)
+- [Особые благодарности](#особые-благодарности)
+
+---
+
+## Контакты
 
 #### Связь с разработчиком
 
-[Telegram для связи](https://t.me/diquoks)\
-[Почта для связи](mailto:diquoks@yandex.ru)
+- [Telegram для связи](https://t.me/diquoks)
+- [Почта для связи](mailto:diquoks@yandex.ru)
 
 #### Прочие ссылки
 
-[Статус разработки diquoks Web](https://www.icloud.com/notes/0c5flUnwNT7OljCh13DCbZRdw)\
-[Telegram-канал с новостями](https://t.me/diquoks_channel)
+* [Сборник полезных команд при настройке Windows](docs/assets/files/MicrosoftCommands.md)
+
+- [Статус разработки diquoks Web](https://www.icloud.com/notes/0c5flUnwNT7OljCh13DCbZRdw)
+- [Telegram-канал с новостями](https://t.me/diquoks_channel)
+
+## Особые благодарности
+
+Сайты и репозитории, чьи ресурсы были использованы на diquoks Web, спасибо вам <3
+
+- Иконки языков программирования взяты с сайта [Skill Icons](https://skillicons.dev)

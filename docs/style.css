@@ -110,7 +110,7 @@ header {
     margin: 24px 36px;
 }
 
-.section-projects, .section-forks {
+.section-projects, .section-forks, .section-archives {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -119,7 +119,7 @@ header {
     margin: 24px;
 }
 
-.section-projects > *, .section-forks > * {
+.section-projects > *, .section-forks > *, .section-archives > * {
     aspect-ratio: 11/6;
     width: 30%;
     min-width: 350px;

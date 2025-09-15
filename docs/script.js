@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", async function () {
 
     headerContentVersion.text = data["version"];
 
-    [".section-projects", ".section-forks"].forEach((category) => {
+    [".section-projects", ".section-archives", ".section-forks"].forEach((category) => {
         data[category].forEach((project) => {
             let projects, projectsItem, projectsItemTop, projectsItemTopTitle, projectsItemTopTitleImage, projectsItemTopTitleText, projectsItemTopSkillicon, projectsItemDescriptionText;
             projects = document.querySelector(category);
@@ -69,6 +69,12 @@ window.addEventListener("DOMContentLoaded", async function () {
             projectsItem.appendChild(projectsItemDescriptionText);
         });
     });
+
+    for (const [id, section] of Object.entries({"projects": ".section-projects", "forks": ".section-forks", "archives": ".section-archives"})) {
+        let sectionHeader
+        sectionHeader = document.getElementById(id)
+        sectionHeader.textContent += ` (${data[section].length})`
+    }
 
     for (let type in data["confirm"]["class"]) {
         document.querySelectorAll(type).forEach(repository => repository.onclick = function () {
