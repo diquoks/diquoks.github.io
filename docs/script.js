@@ -24,73 +24,93 @@ window.addEventListener("DOMContentLoaded", async function () {
     })();
     loading.appendChild(loadingImage);
 
-    headerContentVersion.text = data["version"];
+    headerContentVersion.text = data.version;
 
-    [".section-projects", ".section-archives", ".section-forks"].forEach((category) => {
-        data[category].forEach((project) => {
+    data[".section-contacts"].forEach(contact => {
+        let contacts, contactsItem, contactsItemImage;
+        contacts = document.querySelector(".section-contacts");
+
+        contactsItem = document.createElement("a");
+        contactsItem.className = ["contacts-item", contact.name].join(" ").trimEnd();
+        contactsItem.title = contact.title;
+        contactsItem.href = contact.link;
+        contactsItem.target = "_blank";
+        contacts.appendChild(contactsItem);
+
+        contactsItemImage = document.createElement("object");
+        contactsItemImage.className = ["contacts-item-image", contact.name].join(" ").trimEnd();
+        contactsItemImage.type = contact.image.type;
+        contactsItemImage.data = contact.image.data;
+        contactsItem.appendChild(contactsItemImage);
+    });
+
+    [".section-projects", ".section-archives", ".section-forks"].forEach(category => {
+        data[category].forEach(project => {
             let projects, projectsItem, projectsItemTop, projectsItemTopTitle, projectsItemTopTitleImage, projectsItemTopTitleText, projectsItemTopSkillicon, projectsItemDescriptionText;
             projects = document.querySelector(category);
 
             projectsItem = document.createElement("a");
-            projectsItem.className = ["projects-item", project["name"], project["type"]].join(" ").trimEnd();
-            projectsItem.href = project["link"];
+            projectsItem.className = ["projects-item", project.name, project.type].join(" ").trimEnd();
+            projectsItem.href = project.link;
             projectsItem.target = "_blank";
-            projectsItem.style.backgroundImage = "url(" + project["background"] + ")";
+            projectsItem.style.backgroundImage = "url(" + project.background + ")";
             projects.appendChild(projectsItem);
 
             projectsItemTop = document.createElement("div");
-            projectsItemTop.className = ["projects-item-top", project["name"]].join(" ");
+            projectsItemTop.className = ["projects-item-top", project.name].join(" ");
             projectsItem.appendChild(projectsItemTop);
 
             projectsItemTopTitle = document.createElement("div");
-            projectsItemTopTitle.className = ["projects-item-top-title", project["name"]].join(" ");
+            projectsItemTopTitle.className = ["projects-item-top-title", project.name].join(" ");
             projectsItemTop.appendChild(projectsItemTopTitle);
 
             projectsItemTopTitleImage = document.createElement("object");
-            projectsItemTopTitleImage.className = ["projects-item-top-title-image", project["name"]].join(" ");
-            projectsItemTopTitleImage.type = project["image"]["type"];
-            projectsItemTopTitleImage.data = project["image"]["data"];
+            projectsItemTopTitleImage.className = ["projects-item-top-title-image", project.name].join(" ");
+            projectsItemTopTitleImage.type = project.image.type;
+            projectsItemTopTitleImage.data = project.image.data;
             projectsItemTopTitle.appendChild(projectsItemTopTitleImage);
 
             projectsItemTopTitleText = document.createElement("h3");
-            projectsItemTopTitleText.className = ["projects-item-top-title-text", project["name"]].join(" ");
-            projectsItemTopTitleText.textContent = project["title"];
+            projectsItemTopTitleText.className = ["projects-item-top-title-text", project.name].join(" ");
+            projectsItemTopTitleText.textContent = project.title;
             projectsItemTopTitle.appendChild(projectsItemTopTitleText);
 
             projectsItemTopSkillicon = document.createElement("object");
-            projectsItemTopSkillicon.className = ["projects-item-top-skillicon", project["name"]].join(" ");
+            projectsItemTopSkillicon.className = ["projects-item-top-skillicon", project.name].join(" ");
             projectsItemTopSkillicon.type = "image/svg+xml";
-            projectsItemTopSkillicon.data = `assets/images/skillicons/${project["skillicon"]}.svg`;
+            projectsItemTopSkillicon.data = `assets/images/skillicons/${project.skillicon}.svg`;
             projectsItemTop.appendChild(projectsItemTopSkillicon);
 
             projectsItemDescriptionText = document.createElement("p");
-            projectsItemDescriptionText.className = ["projects-item-description", project["name"]].join(" ");
-            projectsItemDescriptionText.textContent = project["description"];
+            projectsItemDescriptionText.className = ["projects-item-description", project.name].join(" ");
+            projectsItemDescriptionText.textContent = project.description;
             projectsItem.appendChild(projectsItemDescriptionText);
         });
     });
 
-    for (const [id, section] of Object.entries({"projects": ".section-projects", "forks": ".section-forks", "archives": ".section-archives"})) {
+    for (let [id, section] of Object.entries({"projects": ".section-projects", "forks": ".section-forks", "archives": ".section-archives"})) {
         let sectionHeader
         sectionHeader = document.getElementById(id)
         sectionHeader.textContent += ` (${data[section].length})`
     }
 
-    for (let type in data["confirm"]["class"]) {
-        document.querySelectorAll(type).forEach(repository => repository.onclick = function () {
-            return confirm(data["confirm"]["class"][type]);
+    for (let [selector, text] of Object.entries(data.confirm.class)) {
+        document.querySelectorAll(selector).forEach(project => {
+            return project.onclick = function () {
+                return confirm(text);
+            };
         });
     }
 
-    data["footer"].forEach((link) => {
+    data["footer"].forEach(link => {
         let footer, footerLink;
         footer = document.querySelector("footer");
 
         footerLink = document.createElement("a");
         footerLink.className = "footer-link resizable-link";
-        footerLink.href = link["link"];
+        footerLink.href = link.link;
         footerLink.target = "_blank";
-        footerLink.text = link["text"];
+        footerLink.text = link.title;
         footer.appendChild(footerLink);
     });
 });
@@ -101,17 +121,18 @@ window.addEventListener("load", async function () {
     header = document.querySelector("header");
     headerPadding = document.querySelector(".header-padding");
 
-    loading.style.cssText = "pointer-events: none; opacity: 0;";
+    loading.style.pointerEvents = "none";
+    loading.style.opacity = "0";
 
-    headerPadding.style.cssText = `margin-top: ${header.clientHeight}px;`;
+    headerPadding.style.marginTop = `${header.clientHeight}px`;
 
     setTimeout(function () {
         try {
             (function (res) {
                 (res !== undefined) ? alert(res) : null;
-            })(data["alert"]["from"][new URLSearchParams(document.location.search).get("from")]);
+            })(data.alert.from[new URLSearchParams(document.location.search).get("from")]);
         } catch (e) {
             console.warn(e);
         }
-    }, 700);
+    }, 800);
 });

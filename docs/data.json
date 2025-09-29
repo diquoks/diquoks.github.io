@@ -1,5 +1,5 @@
 {
-  "version": "v0.9.8",
+  "version": "v1.0",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -13,6 +13,35 @@
       ".beta-project": "Этот проект находится в бета-версии и может работать нестабильно.\nВсё равно перейти по ссылке?"
     }
   },
+  ".section-contacts": [
+    {
+      "name": "contact-github",
+      "title": "GitHub",
+      "link": "https://github.com/diquoks",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/contacts/github.svg"
+      }
+    },
+    {
+      "name": "contact-telegram",
+      "title": "Telegram",
+      "link": "https://t.me/diquoks",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/contacts/telegram.svg"
+      }
+    },
+    {
+      "name": "contact-steam",
+      "title": "Steam",
+      "link": "https://steamcommunity.com/id/diquoks",
+      "image": {
+        "type": "image/svg+xml",
+        "data": "assets/images/contacts/steam.svg"
+      }
+    }
+  ],
   ".section-projects": [
     {
       "name": "project-osu-parser",
@@ -103,7 +132,7 @@
       },
       "background": "assets/images/projects/diquoks/BackgroundDusk.png",
       "skillicon": "python",
-      "type": "private-project"
+      "type": null
     },
     {
       "name": "project-quodkix",
@@ -203,15 +232,15 @@
   ],
   "footer": [
     {
-      "text": "Статус разработки",
+      "title": "Статус разработки",
       "link": "https://www.icloud.com/notes/0c5flUnwNT7OljCh13DCbZRdw"
     },
     {
-      "text": "Исходный код",
+      "title": "Исходный код",
       "link": "https://github.com/diquoks/diquoks-web"
     },
     {
-      "text": "Сделано на GitHub Pages",
+      "title": "Сделано на GitHub Pages",
       "link": "https://pages.github.com"
     }
   ]

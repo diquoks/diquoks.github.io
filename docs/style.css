@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .resizable-link:hover {
-    transform: scale(1.025);
+    transform: scale(1.05);
 }
 
 .loading {
@@ -110,7 +110,7 @@ header {
     margin: 24px 36px;
 }
 
-.section-projects, .section-forks, .section-archives {
+.section-contacts, .section-projects, .section-forks, .section-archives {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -119,26 +119,41 @@ header {
     margin: 24px;
 }
 
-.section-projects > *, .section-forks > *, .section-archives > * {
-    aspect-ratio: 11/6;
-    width: 30%;
-    min-width: 350px;
-    max-width: 800px;
-    text-decoration: none;
+.contacts-item {
+    display: flex;
+    aspect-ratio: 1;
+    width: 5%;
+    min-width: 64px;
+    max-width: 128px;
+    transition: 0.2s;
+}
+
+.contacts-item:hover {
+    transform: scale(1.07);
+}
+
+.contacts-item-image {
+    display: flex;
+    aspect-ratio: 1/1;
+    width: 100%;
 }
 
 .projects-item {
     display: flex;
     aspect-ratio: 11/6;
+    width: 30%;
+    min-width: 350px;
+    max-width: 800px;
     flex-direction: column;
     border-radius: 16px;
     background-position: center;
     background-size: cover;
+    text-decoration: none;
     transition: 0.2s;
 }
 
 .projects-item:hover {
-    transform: scale(1.025);
+    transform: scale(1.02);
 }
 
 .projects-item-top {
