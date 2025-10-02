@@ -1,5 +1,5 @@
 {
-  "version": "v1.0",
+  "version": "v1.0.0.1",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -60,7 +60,7 @@
       "name": "project-diquoks-web",
       "title": "diquoks Web",
       "description": "Скоро превратится в сайт-визитку,\nно до этого ещё далеко...",
-      "link": "https://github.com/diquoks/diquoks-web",
+      "link": "https://github.com/diquoks/diquoks.github.io",
       "image": {
         "type": "image/webp",
         "data": "assets/images/projects/diquoks/LogoPeepoChat.webp"
@@ -237,7 +237,7 @@
     },
     {
       "title": "Исходный код",
-      "link": "https://github.com/diquoks/diquoks-web"
+      "link": "https://github.com/diquoks/diquoks.github.io"
     },
     {
       "title": "Сделано на GitHub Pages",
