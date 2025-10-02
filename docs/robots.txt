@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: https://diquoks.ru/sitemap.xml
+Sitemap: https://diquoks.github.io/sitemap.xml
 
 Allow: /
 Disallow: /*?*
