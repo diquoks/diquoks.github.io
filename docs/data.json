@@ -1,5 +1,5 @@
 {
-  "version": "v1.0.0.1",
+  "version": "v1.0.1",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -70,28 +70,15 @@
       "type": null
     },
     {
-      "name": "project-nasa-apod",
-      "title": "NASA APOD",
-      "description": "Приложение для получения\nAstronomic Picture of the Day",
-      "link": "https://github.com/diquoks/NASA-APOD",
+      "name": "project-pyquoks",
+      "title": "pyquoks",
+      "description": "Пакет PyPI для часто используемых\nмодулей в проектах diquoks",
+      "link": "https://github.com/diquoks/pyquoks",
       "image": {
         "type": "image/svg+xml",
-        "data": "assets/images/projects/nasa-apod/LogoNASA.svg"
+        "data": "assets/images/projects/diquoks/LogoUtya.svg"
       },
-      "background": "assets/images/projects/nasa-apod/BackgroundAPOD.jpg",
-      "skillicon": "flutter",
-      "type": null
-    },
-    {
-      "name": "project-week-parity-bot",
-      "title": "WeekParityBot",
-      "description": "Telegram-бот для добавления\nрасширенного функционала расписаниям",
-      "link": "https://github.com/diquoks/WeekParityBot",
-      "image": {
-        "type": "image/svg+xml",
-        "data": ""
-      },
-      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
+      "background": "assets/images/projects/diquoks/BackgroundDusk.png",
       "skillicon": "python",
       "type": null
     },
@@ -109,10 +96,23 @@
       "type": null
     },
     {
-      "name": "project-vastnetvpn-bot",
-      "title": "VastNetVPNBot",
+      "name": "project-week-parity-bot",
+      "title": "WeekParityBot",
+      "description": "Telegram-бот для добавления\nрасширенного функционала расписаниям",
+      "link": "https://github.com/diquoks/WeekParityBot",
+      "image": {
+        "type": "image/svg+xml",
+        "data": ""
+      },
+      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
+      "skillicon": "python",
+      "type": null
+    },
+    {
+      "name": "project-samplevpn-bot",
+      "title": "SampleVPNBot",
       "description": "Ты думал тут что-то будет?",
-      "link": "https://github.com/diquoks/VastNetVPNBot",
+      "link": "https://github.com/diquoks/SampleVPNBot",
       "image": {
         "type": "image/svg+xml",
         "data": ""
@@ -120,19 +120,6 @@
       "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
       "skillicon": "python",
       "type": "private-project"
-    },
-    {
-      "name": "project-pyquoks",
-      "title": "pyquoks",
-      "description": "Пакет PyPI для часто используемых\nмодулей в проектах diquoks",
-      "link": "https://github.com/diquoks/pyquoks",
-      "image": {
-        "type": "image/svg+xml",
-        "data": "assets/images/projects/diquoks/LogoUtya.svg"
-      },
-      "background": "assets/images/projects/diquoks/BackgroundDusk.png",
-      "skillicon": "python",
-      "type": null
     },
     {
       "name": "project-quodkix",
@@ -173,20 +160,7 @@
       },
       "background": "assets/images/projects/music-bot/BackgroundDiscord.png",
       "skillicon": "python",
-      "type": "archived-project"
-    },
-    {
-      "name": "project-tap-bot",
-      "title": "TapBot",
-      "description": "Кликер в Telegram-боте,\nиспользующий только сообщения",
-      "link": "https://github.com/diquoks/TapBot",
-      "image": {
-        "type": "image/svg+xml",
-        "data": "assets/images/projects/diquoks/LogoUtya.svg"
-      },
-      "background": "assets/images/projects/diquoks/BackgroundLight.png",
-      "skillicon": "python",
-      "type": "archived-project"
+      "type": "private-project"
     },
     {
       "name": "project-schedule-bot",
@@ -199,7 +173,7 @@
       },
       "background": "assets/images/projects/schedule-bot/BackgroundEK.jpg",
       "skillicon": "python",
-      "type": "archived-project"
+      "type": "private-project"
     }
   ],
   ".section-forks": [

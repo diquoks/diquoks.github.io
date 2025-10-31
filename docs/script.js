@@ -46,7 +46,8 @@ window.addEventListener("DOMContentLoaded", async function () {
 
     [".section-projects", ".section-archives", ".section-forks"].forEach(category => {
         data[category].forEach(project => {
-            let projects, projectsItem, projectsItemTop, projectsItemTopTitle, projectsItemTopTitleImage, projectsItemTopTitleText, projectsItemTopSkillicon, projectsItemDescriptionText;
+            let projects, projectsItem, projectsItemTop, projectsItemTopTitle, projectsItemTopTitleImage,
+                projectsItemTopTitleText, projectsItemTopSkillicon, projectsItemDescriptionText;
             projects = document.querySelector(category);
 
             projectsItem = document.createElement("a");
@@ -88,7 +89,11 @@ window.addEventListener("DOMContentLoaded", async function () {
         });
     });
 
-    for (let [id, section] of Object.entries({"projects": ".section-projects", "forks": ".section-forks", "archives": ".section-archives"})) {
+    for (let [id, section] of Object.entries({
+        "projects": ".section-projects",
+        "forks": ".section-forks",
+        "archives": ".section-archives"
+    })) {
         let sectionHeader
         sectionHeader = document.getElementById(id)
         sectionHeader.textContent += ` (${data[section].length})`
