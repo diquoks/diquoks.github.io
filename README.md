@@ -22,7 +22,7 @@
 
 #### Прочие ссылки
 
-* [Сборник полезных команд при настройке Windows](docs/assets/files/MicrosoftCommands.md)
+* [Сборник полезных команд при настройке Windows](https://gist.github.com/diquoks/9f3fdfd839d014823bf7f370cc2e32ba)
 
 - [Статус разработки diquoks Web](https://www.icloud.com/notes/0c5flUnwNT7OljCh13DCbZRdw)
 - [Telegram-канал с новостями](https://t.me/diquoks_channel)
