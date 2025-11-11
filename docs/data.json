@@ -1,5 +1,5 @@
 {
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -53,7 +53,7 @@
         "data": "assets/images/projects/osu/CookieLazer.svg"
       },
       "background": "assets/images/projects/osu/BackgroundLazer.svg",
-      "skillicon": "python",
+      "skill_icon": "python",
       "type": null
     },
     {
@@ -66,7 +66,7 @@
         "data": "assets/images/projects/diquoks/LogoPeepoChat.webp"
       },
       "background": "assets/images/projects/diquoks/BackgroundLegacy.png",
-      "skillicon": "html",
+      "skill_icon": "html",
       "type": null
     },
     {
@@ -79,7 +79,7 @@
         "data": "assets/images/projects/diquoks/LogoUtya.svg"
       },
       "background": "assets/images/projects/diquoks/BackgroundDusk.png",
-      "skillicon": "python",
+      "skill_icon": "python",
       "type": null
     },
     {
@@ -89,10 +89,10 @@
       "link": "https://github.com/diquoks/WeatherInfo",
       "image": {
         "type": "image/svg+xml",
-        "data": ""
+        "data": null
       },
       "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
-      "skillicon": "arduino",
+      "skill_icon": "arduino",
       "type": null
     },
     {
@@ -102,37 +102,11 @@
       "link": "https://github.com/diquoks/WeekParityBot",
       "image": {
         "type": "image/svg+xml",
-        "data": ""
+        "data": null
       },
       "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
-      "skillicon": "python",
+      "skill_icon": "python",
       "type": null
-    },
-    {
-      "name": "project-samplevpn-bot",
-      "title": "SampleVPNBot",
-      "description": "Ты думал тут что-то будет?",
-      "link": "https://github.com/diquoks/SampleVPNBot",
-      "image": {
-        "type": "image/svg+xml",
-        "data": ""
-      },
-      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
-      "skillicon": "python",
-      "type": "private-project"
-    },
-    {
-      "name": "project-quodkix",
-      "title": "quodkix (β)",
-      "description": "Discord-сервер для веселья,\n экспериментов и всего такого",
-      "link": "https://discord.gg/NngYgxTj2X",
-      "image": {
-        "type": "image/svg+xml",
-        "data": ""
-      },
-      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
-      "skillicon": "discord",
-      "type": "beta-project"
     },
     {
       "name": "project-diquoks-assets",
@@ -144,11 +118,37 @@
         "data": "assets/images/projects/diquoks/LogoUtya.svg"
       },
       "background": "assets/images/projects/diquoks/BackgroundDark.png",
-      "skillicon": "svg",
+      "skill_icon": "svg",
       "type": null
+    },
+    {
+      "name": "project-quodkix",
+      "title": "quodkix (β)",
+      "description": "Discord-сервер для веселья,\n экспериментов и всего такого",
+      "link": "https://discord.gg/NngYgxTj2X",
+      "image": {
+        "type": "image/png",
+        "data": "assets/images/projects/quodkix/LogoPlaceholder.png"
+      },
+      "background": "assets/images/projects/quodkix/BackgroundPlaceholder.svg",
+      "skill_icon": "discord",
+      "type": "beta-project"
     }
   ],
   ".section-archives": [
+    {
+      "name": "project-sample-vpn-bot",
+      "title": "SampleVPNBot",
+      "description": "Заготовка Telegram-бота для\nпродажи VPN-конфигураций",
+      "link": "https://github.com/diquoks/SampleVPNBot",
+      "image": {
+        "type": "image/svg+xml",
+        "data": null
+      },
+      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
+      "skill_icon": "python",
+      "type": "archived-project"
+    },
     {
       "name": "project-music-bot",
       "title": "DiscordMusicBot",
@@ -159,7 +159,7 @@
         "data": "assets/images/projects/music-bot/LogoDiscord.svg"
       },
       "background": "assets/images/projects/music-bot/BackgroundDiscord.png",
-      "skillicon": "python",
+      "skill_icon": "python",
       "type": "private-project"
     },
     {
@@ -172,7 +172,7 @@
         "data": "assets/images/projects/schedule-bot/LogoEK.png"
       },
       "background": "assets/images/projects/schedule-bot/BackgroundEK.jpg",
-      "skillicon": "python",
+      "skill_icon": "python",
       "type": "private-project"
     }
   ],
@@ -187,7 +187,7 @@
         "data": "assets/images/projects/osu/CookieLazer.svg"
       },
       "background": "assets/images/projects/osu/BackgroundLazer.svg",
-      "skillicon": "csharp",
+      "skill_icon": "csharp",
       "type": null
     },
     {
@@ -200,7 +200,7 @@
         "data": "assets/images/projects/osu-wiki/LogoWiki.svg"
       },
       "background": "assets/images/projects/osu-wiki/BackgroundWiki.jpg",
-      "skillicon": "markdown",
+      "skill_icon": "markdown",
       "type": null
     }
   ],

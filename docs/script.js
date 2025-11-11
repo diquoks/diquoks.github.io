@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", async function () {
     [".section-projects", ".section-archives", ".section-forks"].forEach(category => {
         data[category].forEach(project => {
             let projects, projectsItem, projectsItemTop, projectsItemTopTitle, projectsItemTopTitleImage,
-                projectsItemTopTitleText, projectsItemTopSkillicon, projectsItemDescriptionText;
+                projectsItemTopTitleText, projectsItemTopSkillIcon, projectsItemDescriptionText;
             projects = document.querySelector(category);
 
             projectsItem = document.createElement("a");
@@ -76,11 +76,11 @@ window.addEventListener("DOMContentLoaded", async function () {
             projectsItemTopTitleText.textContent = project.title;
             projectsItemTopTitle.appendChild(projectsItemTopTitleText);
 
-            projectsItemTopSkillicon = document.createElement("object");
-            projectsItemTopSkillicon.className = ["projects-item-top-skillicon", project.name].join(" ");
-            projectsItemTopSkillicon.type = "image/svg+xml";
-            projectsItemTopSkillicon.data = `assets/images/skillicons/${project.skillicon}.svg`;
-            projectsItemTop.appendChild(projectsItemTopSkillicon);
+            projectsItemTopSkillIcon = document.createElement("object");
+            projectsItemTopSkillIcon.className = ["projects-item-top-skill-icon", project.name].join(" ");
+            projectsItemTopSkillIcon.type = "image/svg+xml";
+            projectsItemTopSkillIcon.data = `assets/images/skill_icons/${project.skill_icon}.svg`;
+            projectsItemTop.appendChild(projectsItemTopSkillIcon);
 
             projectsItemDescriptionText = document.createElement("p");
             projectsItemDescriptionText.className = ["projects-item-description", project.name].join(" ");
