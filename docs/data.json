@@ -1,5 +1,5 @@
 {
-  "version": "v1.0.2",
+  "version": "v1.0.3",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -83,19 +83,6 @@
       "type": null
     },
     {
-      "name": "project-weather-info",
-      "title": "WeatherInfo",
-      "description": "Домашняя метеостанция\nна базе Arduino Uno",
-      "link": "https://github.com/diquoks/WeatherInfo",
-      "image": {
-        "type": "image/svg+xml",
-        "data": null
-      },
-      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
-      "skill_icon": "arduino",
-      "type": null
-    },
-    {
       "name": "project-week-parity-bot",
       "title": "WeekParityBot",
       "description": "Telegram-бот для добавления\nрасширенного функционала расписаниям",
@@ -137,6 +124,19 @@
   ],
   ".section-archives": [
     {
+      "name": "project-weather-info",
+      "title": "WeatherInfo",
+      "description": "Домашняя метеостанция\nна базе Arduino Uno",
+      "link": "https://github.com/diquoks/WeatherInfo",
+      "image": {
+        "type": "image/svg+xml",
+        "data": null
+      },
+      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
+      "skill_icon": "arduino",
+      "type": "archived-project"
+    },
+    {
       "name": "project-sample-vpn-bot",
       "title": "SampleVPNBot",
       "description": "Заготовка Telegram-бота для\nпродажи VPN-конфигураций",
@@ -160,20 +160,7 @@
       },
       "background": "assets/images/projects/music-bot/BackgroundDiscord.png",
       "skill_icon": "python",
-      "type": "private-project"
-    },
-    {
-      "name": "project-schedule-bot",
-      "title": "ElkollegeScheduleBot",
-      "description": "Telegram-бот для отображения\nрасписания на учебный день",
-      "link": "https://github.com/diquoks/ElkollegeScheduleBot",
-      "image": {
-        "type": "image/png",
-        "data": "assets/images/projects/schedule-bot/LogoEK.png"
-      },
-      "background": "assets/images/projects/schedule-bot/BackgroundEK.jpg",
-      "skill_icon": "python",
-      "type": "private-project"
+      "type": "archived-project"
     }
   ],
   ".section-forks": [
