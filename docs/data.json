@@ -98,7 +98,7 @@
     {
       "name": "project-diquoks-assets",
       "title": "diquoks Assets",
-      "description": "Фирменный стиль diquoks и\nдругие используемые файлы",
+      "description": "Ресурсы для проектов diquoks",
       "link": "https://github.com/diquoks/diquoks-assets",
       "image": {
         "type": "image/svg+xml",
@@ -134,19 +134,6 @@
       },
       "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
       "skill_icon": "arduino",
-      "type": "archived-project"
-    },
-    {
-      "name": "project-sample-vpn-bot",
-      "title": "SampleVPNBot",
-      "description": "Заготовка Telegram-бота для\nпродажи VPN-конфигураций",
-      "link": "https://github.com/diquoks/SampleVPNBot",
-      "image": {
-        "type": "image/svg+xml",
-        "data": null
-      },
-      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
-      "skill_icon": "python",
       "type": "archived-project"
     },
     {
