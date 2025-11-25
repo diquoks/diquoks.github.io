@@ -1,5 +1,5 @@
 {
-  "version": "v1.0.3",
+  "version": "v1.1.0",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -7,11 +7,9 @@
     }
   },
   "confirm": {
-    "class": {
-      ".private-project": "Этот проект является приватным и может быть недоступен.\nВсё равно перейти по ссылке?",
-      ".archived-project": "Этот проект архивирован и работа над ним приостановлена.\nВсё равно перейти по ссылке?",
-      ".beta-project": "Этот проект находится в бета-версии и может работать нестабильно.\nВсё равно перейти по ссылке?"
-    }
+    ".private-project": "Этот проект является приватным и может быть недоступен.\nВсё равно перейти по ссылке?",
+    ".archived-project": "Этот проект архивирован и работа над ним приостановлена.\nВсё равно перейти по ссылке?",
+    ".beta-project": "Этот проект находится в бета-версии и может работать нестабильно.\nВсё равно перейти по ссылке?"
   },
   ".section-contacts": [
     {
@@ -98,7 +96,7 @@
     {
       "name": "project-diquoks-assets",
       "title": "diquoks Assets",
-      "description": "Фирменный стиль diquoks и\nдругие используемые файлы",
+      "description": "Ресурсы для проектов diquoks",
       "link": "https://github.com/diquoks/diquoks-assets",
       "image": {
         "type": "image/svg+xml",
@@ -134,19 +132,6 @@
       },
       "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
       "skill_icon": "arduino",
-      "type": "archived-project"
-    },
-    {
-      "name": "project-sample-vpn-bot",
-      "title": "SampleVPNBot",
-      "description": "Заготовка Telegram-бота для\nпродажи VPN-конфигураций",
-      "link": "https://github.com/diquoks/SampleVPNBot",
-      "image": {
-        "type": "image/svg+xml",
-        "data": null
-      },
-      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
-      "skill_icon": "python",
       "type": "archived-project"
     },
     {
