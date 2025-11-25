@@ -1,5 +1,5 @@
 {
-  "version": "v1.1.0",
+  "version": "v1.1.1",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -64,7 +64,7 @@
         "data": "assets/images/projects/diquoks/LogoPeepoChat.webp"
       },
       "background": "assets/images/projects/diquoks/BackgroundLegacy.png",
-      "skill_icon": "html",
+      "skill_icon": "javascript",
       "type": null
     },
     {
