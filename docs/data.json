@@ -1,5 +1,5 @@
 {
-  "version": "v1.1.1",
+  "version": "v1.1.2",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -81,19 +81,6 @@
       "type": null
     },
     {
-      "name": "project-week-parity-bot",
-      "title": "WeekParityBot",
-      "description": "Telegram-бот для добавления\nрасширенного функционала расписаниям",
-      "link": "https://github.com/diquoks/WeekParityBot",
-      "image": {
-        "type": "image/svg+xml",
-        "data": null
-      },
-      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
-      "skill_icon": "python",
-      "type": null
-    },
-    {
       "name": "project-diquoks-assets",
       "title": "diquoks Assets",
       "description": "Ресурсы для проектов diquoks",
@@ -145,7 +132,7 @@
       },
       "background": "assets/images/projects/music-bot/BackgroundDiscord.png",
       "skill_icon": "python",
-      "type": "archived-project"
+      "type": "private-project"
     }
   ],
   ".section-forks": [
