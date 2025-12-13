@@ -1,5 +1,5 @@
 {
-  "version": "v1.1.1",
+  "version": "v1.1.2",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -81,16 +81,16 @@
       "type": null
     },
     {
-      "name": "project-week-parity-bot",
-      "title": "WeekParityBot",
-      "description": "Telegram-бот для добавления\nрасширенного функционала расписаниям",
-      "link": "https://github.com/diquoks/WeekParityBot",
+      "name": "project-elkollege-schedule",
+      "title": "ElkollegeSchedule",
+      "description": "Парсинг и отображение расписания",
+      "link": "https://github.com/elkollege",
       "image": {
-        "type": "image/svg+xml",
-        "data": null
+        "type": "image/png",
+        "data": "assets/images/projects/elkollege-schedule/LogoEK.png"
       },
-      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
-      "skill_icon": "python",
+      "background": "assets/images/projects/elkollege-schedule/BackgroundEK.jpg",
+      "skill_icon": "github",
       "type": null
     },
     {
@@ -145,12 +145,12 @@
       },
       "background": "assets/images/projects/music-bot/BackgroundDiscord.png",
       "skill_icon": "python",
-      "type": "archived-project"
+      "type": "private-project"
     }
   ],
   ".section-forks": [
     {
-      "name": "fork-osu-lazer",
+      "name": "project-osu-lazer",
       "title": "osu!(lazer)",
       "description": "Ритм всего в *клике* от тебя!",
       "link": "https://github.com/diquoks/osu",
@@ -163,7 +163,7 @@
       "type": null
     },
     {
-      "name": "fork-osu-wiki",
+      "name": "project-osu-wiki",
       "title": "osu! wiki",
       "description": "Перевод и обновление статей",
       "link": "https://github.com/diquoks/osu-wiki",

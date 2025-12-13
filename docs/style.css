@@ -206,21 +206,21 @@ header {
     margin: 20px;
 }
 
-.projects-item-top-title-text.project-schedule-bot,
-.projects-item-description.project-schedule-bot,
-.projects-item-top-title-text.fork-osu-wiki {
+.projects-item-top-title-text.project-elkollege-schedule,
+.projects-item-description.project-elkollege-schedule,
+.projects-item-top-title-text.project-osu-wiki {
     color: var(--color-black);
 }
 
 .projects-item-top-title-image.project-osu-parser,
 .projects-item-top-title-image.project-diquoks-web,
-.projects-item-top-title-image.fork-osu-lazer {
+.projects-item-top-title-image.project-osu-lazer {
     width: 9%;
     padding: 0.5%;
 }
 
 .projects-item-top-title-image.project-music-bot,
-.projects-item-top-title-image.fork-osu-wiki {
+.projects-item-top-title-image.project-osu-wiki {
     width: 8%;
     padding: 1%;
 }
