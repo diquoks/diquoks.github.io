@@ -1,5 +1,5 @@
 {
-  "version": "v1.1.2",
+  "version": "v1.1.3",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -7,11 +7,31 @@
     }
   },
   "confirm": {
-    ".private-project": "Этот проект является приватным и может быть недоступен.\nВсё равно перейти по ссылке?",
-    ".archived-project": "Этот проект архивирован и работа над ним приостановлена.\nВсё равно перейти по ссылке?",
-    ".beta-project": "Этот проект находится в бета-версии и может работать нестабильно.\nВсё равно перейти по ссылке?"
+    "private-project": "Этот проект является приватным и может быть недоступен.\nВсё равно перейти по ссылке?",
+    "archived-project": "Этот проект архивирован и работа над ним приостановлена.\nВсё равно перейти по ссылке?",
+    "beta-project": "Этот проект находится в бета-версии и может работать нестабильно.\nВсё равно перейти по ссылке?"
   },
-  ".section-contacts": [
+  "sections": [
+    {
+      "id": "contacts",
+      "name": "section-contacts",
+      "title": "\uD83D\uDD17 Контакты",
+      "type": "contacts"
+    },
+    {
+      "id": "projects",
+      "name": "section-projects",
+      "title": "⚒\uFE0F Проекты",
+      "type": "projects"
+    },
+    {
+      "id": "forks",
+      "name": "section-forks",
+      "title": "✂\uFE0F Форки",
+      "type": "projects"
+    }
+  ],
+  "section-contacts": [
     {
       "name": "contact-github",
       "title": "GitHub",
@@ -40,7 +60,7 @@
       }
     }
   ],
-  ".section-projects": [
+  "section-projects": [
     {
       "name": "project-osu-parser",
       "title": "osu!parser",
@@ -118,9 +138,7 @@
       "background": "assets/images/projects/quodkix/BackgroundPlaceholder.svg",
       "skill_icon": "discord",
       "type": "beta-project"
-    }
-  ],
-  ".section-archives": [
+    },
     {
       "name": "project-weather-info",
       "title": "WeatherInfo",
@@ -148,7 +166,7 @@
       "type": "private-project"
     }
   ],
-  ".section-forks": [
+  "section-forks": [
     {
       "name": "project-osu-lazer",
       "title": "osu!(lazer)",

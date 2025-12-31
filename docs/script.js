@@ -1,5 +1,16 @@
 let data;
 
+// region Models
+
+class Section {
+    constructor(data) {
+        this.id = data["id"];
+        this.name = data["name"];
+        this.title = data["title"];
+        this.type = data["type"];
+    }
+}
+
 class Image {
     constructor(data) {
         this.type = data["type"];
@@ -36,8 +47,12 @@ class Link {
     }
 }
 
+// endregion
+
 window.addEventListener("DOMContentLoaded", async function () {
     data = await (await fetch("data.json")).json();
+
+    // region loading
 
     let loading = document.querySelector(".loading");
 
@@ -54,87 +69,105 @@ window.addEventListener("DOMContentLoaded", async function () {
     })();
     loading.appendChild(loadingImage);
 
+    // endregion
+
+    // region header
+
     let headerContentVersion = document.querySelector(".header-content-version");
     headerContentVersion.text = data.version;
 
-    [".section-contacts"].forEach(category => {
-        data[category].forEach(contact_data => {
-            let section = document.querySelector(category);
-            let contact = new Contact(contact_data);
+    // endregion
 
-            let contactsItem = document.createElement("a");
-            contactsItem.className = ["contacts-item", contact.name].join(" ").trimEnd();
-            contactsItem.title = contact.title;
-            contactsItem.href = contact.link;
-            contactsItem.target = "_blank";
-            section.appendChild(contactsItem);
+    // region sections
 
-            let contactsItemImage = document.createElement("object");
-            contactsItemImage.className = ["contacts-item-image", contact.name].join(" ").trimEnd();
-            contactsItemImage.type = contact.image.type;
-            contactsItemImage.data = contact.image.data;
-            contactsItem.appendChild(contactsItemImage);
-        });
+    data["sections"].reverse().forEach(section_data => {
+        let headerPadding = document.querySelector(".header-padding");
+        let section = new Section(section_data);
+
+        let sectionHeader = document.createElement("h2")
+        sectionHeader.className = "section-header";
+        sectionHeader.id = section.id;
+        sectionHeader.textContent = section.title;
+        headerPadding.insertAdjacentElement("afterend", sectionHeader);
+
+        let sectionDiv = document.createElement("div");
+        sectionDiv.className = section.name;
+        sectionHeader.insertAdjacentElement("afterend", sectionDiv);
+
+        switch (section.type) {
+            case "contacts":
+                data[section.name].forEach(contact_data => {
+                    let contact = new Contact(contact_data);
+
+                    let contactsItem = document.createElement("a");
+                    contactsItem.className = ["contacts-item", contact.name].join(" ").trimEnd();
+                    contactsItem.title = contact.title;
+                    contactsItem.href = contact.link;
+                    contactsItem.target = "_blank";
+                    sectionDiv.appendChild(contactsItem);
+
+                    let contactsItemImage = document.createElement("object");
+                    contactsItemImage.className = ["contacts-item-image", contact.name].join(" ").trimEnd();
+                    contactsItemImage.type = contact.image.type;
+                    contactsItemImage.data = contact.image.data;
+                    contactsItem.appendChild(contactsItemImage);
+                });
+                break;
+            case "projects":
+                sectionHeader.textContent += ` (${data[section.name].length})`;
+
+                data[section.name].forEach(project_data => {
+                    let project = new Project(project_data);
+
+                    let projectsItem = document.createElement("a");
+                    projectsItem.className = ["projects-item", project.name, project.type].join(" ").trimEnd();
+                    projectsItem.href = project.link;
+                    projectsItem.target = "_blank";
+                    projectsItem.style.backgroundImage = "url(" + project.background + ")";
+                    if (project.type) {
+                        projectsItem.onclick = function () {
+                            return confirm(data["confirm"][project.type]);
+                        };
+                    }
+                    sectionDiv.appendChild(projectsItem);
+
+                    let projectsItemTop = document.createElement("div");
+                    projectsItemTop.className = ["projects-item-top", project.name].join(" ");
+                    projectsItem.appendChild(projectsItemTop);
+
+                    let projectsItemTopTitle = document.createElement("div");
+                    projectsItemTopTitle.className = ["projects-item-top-title", project.name].join(" ");
+                    projectsItemTop.appendChild(projectsItemTopTitle);
+
+                    let projectsItemTopTitleImage = document.createElement("object");
+                    projectsItemTopTitleImage.className = ["projects-item-top-title-image", project.name].join(" ");
+                    projectsItemTopTitleImage.type = project.image.type;
+                    projectsItemTopTitleImage.data = project.image.data;
+                    projectsItemTopTitle.appendChild(projectsItemTopTitleImage);
+
+                    let projectsItemTopTitleText = document.createElement("h3");
+                    projectsItemTopTitleText.className = ["projects-item-top-title-text", project.name].join(" ");
+                    projectsItemTopTitleText.textContent = project.title;
+                    projectsItemTopTitle.appendChild(projectsItemTopTitleText);
+
+                    let projectsItemTopSkillIcon = document.createElement("object");
+                    projectsItemTopSkillIcon.className = ["projects-item-top-skill-icon", project.name].join(" ");
+                    projectsItemTopSkillIcon.type = "image/svg+xml";
+                    projectsItemTopSkillIcon.data = `assets/images/skill_icons/${project.skill_icon}.svg`;
+                    projectsItemTop.appendChild(projectsItemTopSkillIcon);
+
+                    let projectsItemDescriptionText = document.createElement("p");
+                    projectsItemDescriptionText.className = ["projects-item-description", project.name].join(" ");
+                    projectsItemDescriptionText.textContent = project.description;
+                    projectsItem.appendChild(projectsItemDescriptionText);
+                });
+                break;
+        }
     });
 
-    [".section-projects", ".section-archives", ".section-forks"].forEach(category => {
-        data[category].forEach(project_data => {
-            let section = document.querySelector(category);
-            let project = new Project(project_data);
+    // endregion
 
-            let projectsItem = document.createElement("a");
-            projectsItem.className = ["projects-item", project.name, project.type].join(" ").trimEnd();
-            projectsItem.href = project.link;
-            projectsItem.target = "_blank";
-            projectsItem.style.backgroundImage = "url(" + project.background + ")";
-            section.appendChild(projectsItem);
-
-            let projectsItemTop = document.createElement("div");
-            projectsItemTop.className = ["projects-item-top", project.name].join(" ");
-            projectsItem.appendChild(projectsItemTop);
-
-            let projectsItemTopTitle = document.createElement("div");
-            projectsItemTopTitle.className = ["projects-item-top-title", project.name].join(" ");
-            projectsItemTop.appendChild(projectsItemTopTitle);
-
-            let projectsItemTopTitleImage = document.createElement("object");
-            projectsItemTopTitleImage.className = ["projects-item-top-title-image", project.name].join(" ");
-            projectsItemTopTitleImage.type = project.image.type;
-            projectsItemTopTitleImage.data = project.image.data;
-            projectsItemTopTitle.appendChild(projectsItemTopTitleImage);
-
-            let projectsItemTopTitleText = document.createElement("h3");
-            projectsItemTopTitleText.className = ["projects-item-top-title-text", project.name].join(" ");
-            projectsItemTopTitleText.textContent = project.title;
-            projectsItemTopTitle.appendChild(projectsItemTopTitleText);
-
-            let projectsItemTopSkillIcon = document.createElement("object");
-            projectsItemTopSkillIcon.className = ["projects-item-top-skill-icon", project.name].join(" ");
-            projectsItemTopSkillIcon.type = "image/svg+xml";
-            projectsItemTopSkillIcon.data = `assets/images/skill_icons/${project.skill_icon}.svg`;
-            projectsItemTop.appendChild(projectsItemTopSkillIcon);
-
-            let projectsItemDescriptionText = document.createElement("p");
-            projectsItemDescriptionText.className = ["projects-item-description", project.name].join(" ");
-            projectsItemDescriptionText.textContent = project.description;
-            projectsItem.appendChild(projectsItemDescriptionText);
-        });
-    });
-
-    for (let [id, section] of Object.entries({
-        "projects": ".section-projects", "forks": ".section-forks", "archives": ".section-archives",
-    })) {
-        let sectionHeader = document.getElementById(id)
-        sectionHeader.textContent += ` (${data[section].length})`
-    }
-
-    for (let [selector, text] of Object.entries(data.confirm)) {
-        document.querySelectorAll(selector).forEach(project => {
-            return project.onclick = function () {
-                return confirm(text);
-            };
-        });
-    }
+    // region footer
 
     data["footer"].forEach(link_data => {
         let footer = document.querySelector("footer");
@@ -147,16 +180,30 @@ window.addEventListener("DOMContentLoaded", async function () {
         footerLink.text = link.title;
         footer.appendChild(footerLink);
     });
+
+    // endregion footer
+
 });
 
 window.addEventListener("load", async function () {
+
+    // region loading
+
     let loading = document.querySelector(".loading");
     loading.style.pointerEvents = "none";
     loading.style.opacity = "0";
 
+    // endregion
+
+    // region header
+
     let header = document.querySelector("header");
     let headerPadding = document.querySelector(".header-padding");
     headerPadding.style.marginTop = `${header.clientHeight}px`;
+
+    // endregion
+
+    // region URLSearchParams
 
     for (let key of Object.keys(data["alert"])) {
         setTimeout(function () {
@@ -169,4 +216,7 @@ window.addEventListener("load", async function () {
             }
         }, 800);
     }
+
+    // endregion
+
 });
