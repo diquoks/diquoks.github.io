@@ -1,5 +1,5 @@
 {
-  "version": "v1.1.3",
+  "version": "v1.2",
   "alert": {
     "from": {
       "osu-parser-success": "Вы успешно авторизованы!\nМожете закрыть браузер и вернуться к osu!parser.",
@@ -145,10 +145,10 @@
       "description": "Домашняя метеостанция\nна базе Arduino Uno",
       "link": "https://github.com/diquoks/WeatherInfo",
       "image": {
-        "type": "image/svg+xml",
-        "data": null
+        "type": "image/png",
+        "data": "assets/images/projects/weather-info/LogoWeatherInfo.png"
       },
-      "background": "assets/images/projects/placeholder/BackgroundPlaceholder.svg",
+      "background": "assets/images/projects/weather-info/BackgroundWeatherInfo.svg",
       "skill_icon": "arduino",
       "type": "archived-project"
     },
