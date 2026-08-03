@@ -1,0 +1,50 @@
+name: Deploy static content to Pages
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: Install dependencies
+        run: |
+          dart pub get
+
+      - name: Build Jaspr
+        run: |
+          dart pub global activate jaspr_cli
+          dart pub global run jaspr_cli:jaspr build --sitemap-domain diquoks.github.io --verbose
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: build/jaspr
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

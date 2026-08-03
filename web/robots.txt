@@ -1,0 +1,7 @@
+User-agent: *
+Sitemap: https://diquoks.github.io/sitemap.xml
+
+Allow: /
+Disallow: /*?*
+
+Disallow: /assets/

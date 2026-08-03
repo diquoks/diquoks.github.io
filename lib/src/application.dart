@@ -1,0 +1,51 @@
+import "package:diquoks_web/diquoks_web.dart";
+import "package:jaspr/dom.dart";
+import "package:jaspr/jaspr.dart";
+import "package:jaspr_router/jaspr_router.dart";
+
+class Application extends StatelessComponent {
+  const Application({super.key});
+
+  @override
+  Component build(BuildContext context) {
+    return body(<Component>[
+      CustomHeader(),
+      Router(
+        routes: <RouteBase>[
+          Route(
+            path: "/",
+            builder: (_, _) => HomePage(),
+            settings: RouteSettings(changeFreq: .daily, priority: 1.0),
+          ),
+          Route(
+            path: "/404.html",
+            builder: (_, _) => NotFoundPage(),
+            settings: RouteSettings(changeFreq: .never, priority: 0.0),
+          ),
+        ],
+        errorBuilder: (_, RouteState state) => NotFoundPage(state: state),
+      ),
+      CustomFooter(),
+    ]);
+  }
+
+  @css
+  static List<StyleRule> get styles => <StyleRule>[
+    css("*").styles(padding: .zero, margin: .zero, border: .none),
+    css("body").styles(
+      display: .flex,
+      minHeight: 100.vh,
+      flexDirection: .column,
+      backgroundColor: Colors.black,
+    ),
+    css("main").styles(
+      display: .flex,
+      padding: .all(32.px),
+      flexDirection: .column,
+      alignItems: .center,
+      gap: .all(32.px),
+      flex: .grow(1),
+      backgroundColor: CustomColors.background,
+    ),
+  ];
+}

@@ -1,0 +1,23 @@
+import "package:diquoks_web/diquoks_web.dart";
+import "package:jaspr/dom.dart";
+
+class BackgroundImage extends Image {
+  const BackgroundImage({
+    required super.src,
+    required this.contrast,
+    this.isRepeat = false,
+  });
+
+  final ImageContrast contrast;
+  final bool isRepeat;
+}
+
+enum ImageContrast {
+  light,
+  dark;
+
+  Color get color => switch (this) {
+    .light => Colors.black,
+    .dark => Colors.white,
+  };
+}
