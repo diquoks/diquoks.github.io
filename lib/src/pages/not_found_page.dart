@@ -20,7 +20,7 @@ class NotFoundPage extends StatelessComponent {
       else
         CustomError(
           image: Image(src: "/assets/images/peepo-detective.webp"),
-          title: "Страница не найдена! (404)",
+          title: "Страница не найдена!",
           description: "Возможно она найдётся, если искать повнимательней...",
         ),
     ]);
