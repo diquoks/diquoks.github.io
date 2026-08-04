@@ -61,8 +61,8 @@ class CustomData {
       skillIcon: .python,
     ),
     Project(
-      title: "ElkollegeSchedule",
-      description: "Парсинг и отображение расписания",
+      title: "Elkollege",
+      description: "Инструменты, упрощающие\nповседневную жизнь колледжа",
       link: "https://github.com/elkollege",
       image: Image(src: "/assets/images/projects/elkollege/LogoEK.webp"),
       backgroundImage: BackgroundImage(
@@ -70,7 +70,7 @@ class CustomData {
         contrast: .light,
         isRepeat: true,
       ),
-      skillIcon: .flutter,
+      skillIcon: null,
     ),
     Project(
       title: "diquoks Assets",
