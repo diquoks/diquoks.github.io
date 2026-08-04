@@ -15,5 +15,5 @@ class Project {
   final String link;
   final Image image;
   final BackgroundImage backgroundImage;
-  final SkillIcon skillIcon;
+  final SkillIcon? skillIcon;
 }

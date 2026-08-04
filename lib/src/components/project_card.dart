@@ -22,7 +22,8 @@ class ProjectCard extends StatelessComponent {
       <Component>[
         div(<Component>[
           CustomLogo.project(project: _project),
-          SkillIconDisplay(skillIcon: _project.skillIcon),
+          if (_project.skillIcon != null)
+            SkillIconDisplay(skillIcon: _project.skillIcon!),
         ]),
         p(
           classes: "description",
