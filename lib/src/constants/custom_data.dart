@@ -75,7 +75,7 @@ class CustomData {
     Project(
       title: "diquoks Assets",
       description: "Ресурсы для проектов diquoks",
-      link: "https://github.com/diquoks/diquoks",
+      link: "https://github.com/diquoks/diquoks-assets",
       image: Image(src: "/assets/favicons/logo.svg"),
       backgroundImage: BackgroundImage(
         src: "/assets/images/projects/diquoks/BackgroundLight.png",
