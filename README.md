@@ -1,8 +1,5 @@
 # diquoks Web
 
-![GitHub Release](https://img.shields.io/github/release/diquoks/diquoks.github.io)
-![GitHub deployments](https://img.shields.io/github/deployments/diquoks/diquoks.github.io/github-pages)
-
 #### Скоро превратится в сайт-визитку, но до этого ещё далеко...
 
 ---
