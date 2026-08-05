@@ -29,9 +29,9 @@ class CustomData {
       title: "osu!",
       description: "rhythm is just a *click* away!",
       link: "https://github.com/diquoks/osu",
-      image: Image(src: "/assets/images/projects/osu/CookieLazer.svg"),
+      image: Image(src: "assets/images/projects/osu/CookieLazer.svg"),
       backgroundImage: BackgroundImage(
-        src: "/assets/images/projects/osu/BackgroundLazer.svg",
+        src: "assets/images/projects/osu/BackgroundLazer.svg",
         contrast: .dark,
       ),
       skillIcon: .csharp,
@@ -41,9 +41,9 @@ class CustomData {
       description:
           "Скоро превратится в сайт-визитку,\nно до этого ещё далеко...",
       link: repository,
-      image: Image(src: "/assets/images/projects/diquoks/LogoPeepoChat.webp"),
+      image: Image(src: "assets/images/projects/diquoks/LogoPeepoChat.webp"),
       backgroundImage: BackgroundImage(
-        src: "/assets/images/projects/diquoks/BackgroundLegacy.png",
+        src: "assets/images/projects/diquoks/BackgroundLegacy.png",
         contrast: .dark,
       ),
       skillIcon: .dart,
@@ -53,9 +53,9 @@ class CustomData {
       description:
           "Пакет PyPI для часто используемых\nмодулей в проектах diquoks",
       link: "https://github.com/diquoks/pyquoks",
-      image: Image(src: "/assets/favicons/logo.svg"),
+      image: Image(src: "assets/favicons/logo.svg"),
       backgroundImage: BackgroundImage(
-        src: "/assets/images/projects/diquoks/BackgroundDark.png",
+        src: "assets/images/projects/diquoks/BackgroundDark.png",
         contrast: .dark,
       ),
       skillIcon: .python,
@@ -64,9 +64,9 @@ class CustomData {
       title: "Elkollege",
       description: "Инструменты, упрощающие\nповседневную жизнь колледжа",
       link: "https://github.com/elkollege",
-      image: Image(src: "/assets/images/projects/elkollege/LogoEK.webp"),
+      image: Image(src: "assets/images/projects/elkollege/LogoEK.webp"),
       backgroundImage: BackgroundImage(
-        src: "/assets/images/projects/elkollege/BackgroundEK.webp",
+        src: "assets/images/projects/elkollege/BackgroundEK.webp",
         contrast: .light,
         isRepeat: true,
       ),
@@ -76,9 +76,9 @@ class CustomData {
       title: "diquoks Assets",
       description: "Ресурсы для проектов diquoks",
       link: "https://github.com/diquoks/diquoks-assets",
-      image: Image(src: "/assets/favicons/logo.svg"),
+      image: Image(src: "assets/favicons/logo.svg"),
       backgroundImage: BackgroundImage(
-        src: "/assets/images/projects/diquoks/BackgroundLight.png",
+        src: "assets/images/projects/diquoks/BackgroundLight.png",
         contrast: .dark,
       ),
       skillIcon: .svg,
