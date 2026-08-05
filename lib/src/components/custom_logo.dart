@@ -13,7 +13,7 @@ class CustomLogo extends StatelessComponent {
 
   CustomLogo.website()
     : this(
-        image: Image(src: "/assets/favicons/logo.svg"),
+        image: Image(src: "assets/favicons/logo.svg"),
         link: "/",
         title: CustomData.title,
       );

@@ -55,7 +55,7 @@ class CustomHeader extends StatelessComponent {
       ]),
       css(".under-construction-tape").styles(
         height: 8.px,
-        backgroundImage: .url("/assets/images/under-construction-tape.svg"),
+        backgroundImage: .url("assets/images/under-construction-tape.svg"),
         backgroundPosition: .center,
         backgroundRepeat: .repeatX,
       ),

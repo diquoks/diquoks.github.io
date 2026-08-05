@@ -16,5 +16,5 @@ enum SkillIcon {
     .svg => "SVG",
   };
 
-  Image get image => Image(src: "/assets/images/skill-icons/$name.svg");
+  Image get image => Image(src: "assets/images/skill-icons/$name.svg");
 }

@@ -25,20 +25,20 @@ void main() {
       },
       head: <Component>[
         link(rel: "canonical", href: CustomData.homepage),
-        link(rel: "manifest", href: "/manifest.json"),
+        link(rel: "manifest", href: "manifest.json"),
         link(
           rel: "icon",
-          href: "/assets/favicons/favicon.ico",
+          href: "assets/favicons/favicon.ico",
           attributes: <String, String>{"sizes": "any"},
         ),
         link(
           rel: "icon",
-          href: "/assets/favicons/logo.svg",
+          href: "assets/favicons/logo.svg",
           attributes: <String, String>{"type": "image/svg+xml"},
         ),
         link(
           rel: "apple-touch-icon",
-          href: "/assets/favicons/apple-touch.png",
+          href: "assets/favicons/apple-touch.png",
           attributes: <String, String>{"sizes": "180x180"},
         ),
       ],
