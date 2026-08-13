@@ -1,4 +1,4 @@
-# diquoks Web
+# ![favicon](https://raw.githubusercontent.com/diquoks/diquoks.github.io/master/web/assets/favicons/favicon.ico) diquoks Web
 
 #### Скоро превратится в сайт-визитку, но до этого ещё далеко...
 
