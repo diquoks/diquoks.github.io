@@ -48,41 +48,6 @@ class CustomData {
       ),
       skillIcon: .dart,
     ),
-    Project(
-      title: "pyquoks",
-      description:
-          "Пакет PyPI для часто используемых\nмодулей в проектах diquoks",
-      link: "https://github.com/diquoks/pyquoks",
-      image: Image(src: "assets/favicons/logo.svg"),
-      backgroundImage: BackgroundImage(
-        src: "assets/images/projects/diquoks/BackgroundDark.png",
-        contrast: .dark,
-      ),
-      skillIcon: .python,
-    ),
-    Project(
-      title: "Elkollege",
-      description: "Инструменты, упрощающие\nповседневную жизнь колледжа",
-      link: "https://github.com/elkollege",
-      image: Image(src: "assets/images/projects/elkollege/LogoEK.webp"),
-      backgroundImage: BackgroundImage(
-        src: "assets/images/projects/elkollege/BackgroundEK.webp",
-        contrast: .light,
-        isRepeat: true,
-      ),
-      skillIcon: null,
-    ),
-    Project(
-      title: "diquoks Assets",
-      description: "Ресурсы для проектов diquoks",
-      link: "https://github.com/diquoks/diquoks-assets",
-      image: Image(src: "assets/favicons/logo.svg"),
-      backgroundImage: BackgroundImage(
-        src: "assets/images/projects/diquoks/BackgroundLight.png",
-        contrast: .dark,
-      ),
-      skillIcon: .svg,
-    ),
   ];
 
   static List<Link> get footerLinks => <Link>[
