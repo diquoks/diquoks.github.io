@@ -1,15 +1,6 @@
-# ![favicon](https://raw.githubusercontent.com/diquoks/diquoks.github.io/master/web/assets/favicons/favicon.ico) diquoks Web
+# diquoks Web
 
 #### Скоро превратится в сайт-визитку, но до этого ещё далеко...
-
----
-
-## Контакты
-
-#### Связь с разработчиком
-
-- [Telegram для связи](https://t.me/diquoks)
-- [Почта для связи](mailto:den232titovets@yandex.ru)
 
 ---
 

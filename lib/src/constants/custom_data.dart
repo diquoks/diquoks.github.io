@@ -43,45 +43,10 @@ class CustomData {
       link: repository,
       image: Image(src: "assets/images/projects/diquoks/LogoPeepoChat.webp"),
       backgroundImage: BackgroundImage(
-        src: "assets/images/projects/diquoks/BackgroundLegacy.png",
+        src: "assets/images/projects/diquoks/BackgroundLegacy.webp",
         contrast: .dark,
       ),
       skillIcon: .dart,
-    ),
-    Project(
-      title: "pyquoks",
-      description:
-          "Пакет PyPI для часто используемых\nмодулей в проектах diquoks",
-      link: "https://github.com/diquoks/pyquoks",
-      image: Image(src: "assets/favicons/logo.svg"),
-      backgroundImage: BackgroundImage(
-        src: "assets/images/projects/diquoks/BackgroundDark.png",
-        contrast: .dark,
-      ),
-      skillIcon: .python,
-    ),
-    Project(
-      title: "Elkollege",
-      description: "Инструменты, упрощающие\nповседневную жизнь колледжа",
-      link: "https://github.com/elkollege",
-      image: Image(src: "assets/images/projects/elkollege/LogoEK.webp"),
-      backgroundImage: BackgroundImage(
-        src: "assets/images/projects/elkollege/BackgroundEK.webp",
-        contrast: .light,
-        isRepeat: true,
-      ),
-      skillIcon: null,
-    ),
-    Project(
-      title: "diquoks Assets",
-      description: "Ресурсы для проектов diquoks",
-      link: "https://github.com/diquoks/diquoks-assets",
-      image: Image(src: "assets/favicons/logo.svg"),
-      backgroundImage: BackgroundImage(
-        src: "assets/images/projects/diquoks/BackgroundLight.png",
-        contrast: .dark,
-      ),
-      skillIcon: .svg,
     ),
   ];
 

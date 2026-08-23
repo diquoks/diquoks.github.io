@@ -38,7 +38,7 @@ void main() {
         ),
         link(
           rel: "apple-touch-icon",
-          href: "assets/favicons/apple-touch.png",
+          href: "assets/favicons/apple-touch-icon.png",
           attributes: <String, String>{"sizes": "180x180"},
         ),
       ],
