@@ -4,8 +4,7 @@ enum SkillIcon {
   csharp,
   dart,
   flutter,
-  python,
-  svg;
+  python;
 
   @override
   String toString() => switch (this) {
@@ -13,7 +12,6 @@ enum SkillIcon {
     .dart => "Dart",
     .flutter => "Flutter",
     .python => "Python",
-    .svg => "SVG",
   };
 
   Image get image => Image(src: "assets/images/skill-icons/$name.svg");

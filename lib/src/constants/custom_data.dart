@@ -43,7 +43,7 @@ class CustomData {
       link: repository,
       image: Image(src: "assets/images/projects/diquoks/LogoPeepoChat.webp"),
       backgroundImage: BackgroundImage(
-        src: "assets/images/projects/diquoks/BackgroundLegacy.png",
+        src: "assets/images/projects/diquoks/BackgroundLegacy.webp",
         contrast: .dark,
       ),
       skillIcon: .dart,
