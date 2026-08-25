@@ -12,16 +12,8 @@ class Application extends StatelessComponent {
       CustomHeader(),
       Router(
         routes: <RouteBase>[
-          Route(
-            path: "/",
-            builder: (_, _) => HomePage(),
-            settings: RouteSettings(changeFreq: .daily, priority: 1.0),
-          ),
-          Route(
-            path: "/404.html",
-            builder: (_, _) => NotFoundPage(),
-            settings: RouteSettings(changeFreq: .never, priority: 0.0),
-          ),
+          Route(path: "/", builder: (_, _) => HomePage()),
+          Route(path: "/404.html", builder: (_, _) => NotFoundPage()),
         ],
         errorBuilder: (_, RouteState state) => NotFoundPage(state: state),
       ),
