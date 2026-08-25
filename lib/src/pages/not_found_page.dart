@@ -4,18 +4,18 @@ import "package:jaspr/jaspr.dart";
 import "package:jaspr_router/jaspr_router.dart";
 
 class NotFoundPage extends StatelessComponent {
-  const NotFoundPage({super.key, this._state});
+  const NotFoundPage({super.key, required this._state});
 
-  final RouteState? _state;
+  final RouteState _state;
 
   @override
   Component build(BuildContext context) {
     return main_(classes: "not-found-page", <Component>[
-      if (_state?.error != null)
+      if (_state.error != null)
         CustomError(
           image: Image(src: "assets/images/omegalul-i-guess.webp"),
           title: "Возникла ошибка!",
-          description: _state!.error.toString(),
+          description: _state.error.toString(),
         )
       else
         CustomError(

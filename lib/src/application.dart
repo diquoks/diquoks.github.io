@@ -13,7 +13,10 @@ class Application extends StatelessComponent {
       Router(
         routes: <RouteBase>[
           Route(path: "/", builder: (_, _) => HomePage()),
-          Route(path: "/404.html", builder: (_, _) => NotFoundPage()),
+          Route(
+            path: "/404.html",
+            builder: (_, RouteState state) => NotFoundPage(state: state),
+          ),
         ],
         errorBuilder: (_, RouteState state) => NotFoundPage(state: state),
       ),
