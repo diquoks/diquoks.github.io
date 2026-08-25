@@ -18,13 +18,6 @@ class CustomLogo extends StatelessComponent {
         title: CustomData.title,
       );
 
-  CustomLogo.project({required Project project})
-    : this(
-        image: project.image,
-        title: project.title,
-        titleStyles: Styles(color: project.backgroundImage.contrast.color),
-      );
-
   final Image _image;
   final String _link;
   final String _title;

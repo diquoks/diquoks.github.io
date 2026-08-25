@@ -12,10 +12,10 @@ class NotFoundPage extends StatelessComponent {
   Component build(BuildContext context) {
     return main_(classes: "not-found-page", <Component>[
       if (_state?.error != null)
-        CustomError.exception(
+        CustomError(
           image: Image(src: "assets/images/omegalul-i-guess.webp"),
           title: "Возникла ошибка!",
-          exception: _state!.error!,
+          description: _state!.error.toString(),
         )
       else
         CustomError(
