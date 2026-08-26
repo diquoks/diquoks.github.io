@@ -24,12 +24,24 @@ class CustomData {
       description:
           "Скоро превратится в сайт-визитку,\nно до этого ещё далеко...",
       link: repositoryUrl,
-      image: Image(src: "assets/images/projects/diquoks/LogoPeepoChat.webp"),
+      image: Image(src: "assets/favicons/logo.svg"),
       backgroundImage: BackgroundImage(
-        src: "assets/images/projects/diquoks/BackgroundLegacy.webp",
+        src: "assets/images/projects/diquoks/BackgroundDark.webp",
         contrast: .dark,
       ),
       skillIcon: .dart,
+    ),
+    Project(
+      title: "ElkollegeScheduleApp",
+      description: "Приложение для просмотра\nактуального расписания ЭК",
+      link: "https://github.com/diquoks/ElkollegeScheduleApp",
+      image: Image(src: "assets/images/projects/elkollege/LogoEK.webp"),
+      backgroundImage: BackgroundImage(
+        src: "assets/images/projects/elkollege/BackgroundEK.webp",
+        contrast: .light,
+        isRepeat: true,
+      ),
+      skillIcon: .flutter,
     ),
   ];
 
