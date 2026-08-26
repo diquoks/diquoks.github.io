@@ -1,9 +1,12 @@
 import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
+import "package:pub_semver/pub_semver.dart";
 
 class CustomHeader extends StatelessComponent {
-  const CustomHeader({super.key});
+  const CustomHeader({super.key, required this._version});
+
+  final Version _version;
 
   @override
   Component build(BuildContext context) {
@@ -11,13 +14,13 @@ class CustomHeader extends StatelessComponent {
       div(classes: "content", <Component>[
         CustomLogo.website(),
         a(
-          href: "${CustomData.repository}/releases",
+          href: "${CustomData.repositoryUrl}/releases",
           target: .blank,
           attributes: <String, String>{"title": "Версия сайта"},
-          <Component>[.text(CustomData.version)],
+          <Component>[.text(_version.canonicalizedVersion)],
         ),
       ]),
-      if (CustomData.isUnderConstruction)
+      if (_version.isPreRelease)
         div(classes: "under-construction-tape", .empty()),
     ]);
   }

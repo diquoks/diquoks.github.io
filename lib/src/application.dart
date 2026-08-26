@@ -2,14 +2,17 @@ import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 import "package:jaspr_router/jaspr_router.dart";
+import "package:pub_semver/pub_semver.dart";
 
 class Application extends StatelessComponent {
-  const Application({super.key});
+  const Application({super.key, required this._version});
+
+  final Version _version;
 
   @override
   Component build(BuildContext context) {
     return body(<Component>[
-      CustomHeader(),
+      CustomHeader(version: _version),
       Router(
         routes: <RouteBase>[
           Route(path: "/", builder: (_, _) => HomePage()),
