@@ -10,12 +10,6 @@ class CustomError extends StatelessComponent {
     required this._description,
   });
 
-  CustomError.exception({
-    required this._image,
-    required this._title,
-    required Exception exception,
-  }) : _description = exception.toString();
-
   final Image _image;
   final String _title;
   final String _description;

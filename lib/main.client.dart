@@ -4,5 +4,5 @@ import "package:jaspr/client.dart";
 void main() {
   Jaspr.initializeApp(options: defaultClientOptions);
 
-  runApp(ClientApp());
+  runApp(const ClientApp());
 }

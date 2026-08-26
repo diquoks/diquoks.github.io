@@ -2,30 +2,28 @@ import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 import "package:jaspr_router/jaspr_router.dart";
+import "package:pub_semver/pub_semver.dart";
 
 class Application extends StatelessComponent {
-  const Application({super.key});
+  const Application({super.key, required this._version});
+
+  final Version _version;
 
   @override
   Component build(BuildContext context) {
     return body(<Component>[
-      CustomHeader(),
+      CustomHeader(version: _version),
       Router(
         routes: <RouteBase>[
-          Route(
-            path: "/",
-            builder: (_, _) => HomePage(),
-            settings: RouteSettings(changeFreq: .daily, priority: 1.0),
-          ),
+          Route(path: "/", builder: (_, _) => const HomePage()),
           Route(
             path: "/404.html",
-            builder: (_, _) => NotFoundPage(),
-            settings: RouteSettings(changeFreq: .never, priority: 0.0),
+            builder: (_, RouteState state) => NotFoundPage(state: state),
           ),
         ],
         errorBuilder: (_, RouteState state) => NotFoundPage(state: state),
       ),
-      CustomFooter(),
+      const CustomFooter(),
     ]);
   }
 
@@ -44,7 +42,7 @@ class Application extends StatelessComponent {
       flexDirection: .column,
       alignItems: .center,
       gap: .all(32.px),
-      flex: .grow(1),
+      flex: const .grow(1),
       backgroundColor: CustomColors.background,
     ),
   ];

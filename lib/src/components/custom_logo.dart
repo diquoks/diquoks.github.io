@@ -11,18 +11,11 @@ class CustomLogo extends StatelessComponent {
     this._titleStyles,
   });
 
-  CustomLogo.website()
+  const CustomLogo.website()
     : this(
-        image: Image(src: "assets/favicons/logo.svg"),
+        image: const Image(src: "assets/favicons/logo.svg"),
         link: "/",
         title: CustomData.title,
-      );
-
-  CustomLogo.project({required Project project})
-    : this(
-        image: project.image,
-        title: project.title,
-        titleStyles: Styles(color: project.backgroundImage.contrast.color),
       );
 
   final Image _image;

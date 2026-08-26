@@ -16,12 +16,16 @@ class ProjectCard extends StatelessComponent {
       styles: .combine(<Styles>[
         Styles(backgroundImage: .url(_project.backgroundImage.src)),
         _project.backgroundImage.isRepeat
-            ? Styles(backgroundRepeat: .repeat)
-            : Styles(backgroundSize: .cover),
+            ? const Styles(backgroundRepeat: .repeat)
+            : const Styles(backgroundSize: .cover),
       ]),
       <Component>[
         div(<Component>[
-          CustomLogo.project(project: _project),
+          CustomLogo(
+            image: _project.image,
+            title: _project.title,
+            titleStyles: Styles(color: _project.backgroundImage.contrast.color),
+          ),
           if (_project.skillIcon != null)
             SkillIconDisplay(skillIcon: _project.skillIcon!),
         ]),
@@ -40,7 +44,7 @@ class ProjectCard extends StatelessComponent {
       css("&").styles(
         display: .flex,
         width: 300.px,
-        aspectRatio: AspectRatio(11, 6),
+        aspectRatio: const AspectRatio(11, 6),
         padding: .all(16.px),
         radius: .circular(16.px),
         transition: Transition("all", duration: 250.ms),
@@ -49,7 +53,7 @@ class ProjectCard extends StatelessComponent {
         textDecoration: .none,
         backgroundPosition: .center,
       ),
-      css("&:hover").styles(transform: .scale(1.05)),
+      css("&:hover").styles(transform: const .scale(1.05)),
       css("> div").styles(
         display: .flex,
         flexDirection: .row,

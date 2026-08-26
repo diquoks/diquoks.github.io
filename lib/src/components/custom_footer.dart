@@ -8,12 +8,12 @@ class CustomFooter extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return footer(<Component>[
-      CustomLogo.website(),
+      const CustomLogo.website(),
       for (final Link footerLink in CustomData.footerLinks)
         a(href: footerLink.link, target: .blank, classes: "link", <Component>[
           .text(footerLink.title),
         ]),
-      a(
+      const a(
         href: "https://jaspr.site",
         target: .blank,
         classes: "jaspr-badge",

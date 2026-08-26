@@ -14,9 +14,13 @@ linter:
     always_specify_types: true
     always_use_package_imports: true
     discarded_futures: true
+    prefer_const_constructors: true
+    prefer_const_declarations: true
     prefer_double_quotes: true
     sort_constructors_first: true
+    sort_unnamed_constructors_first: true
     unawaited_futures: true
+    use_named_constants: true
 
 plugins:
   jaspr_lints:
