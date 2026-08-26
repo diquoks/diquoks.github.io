@@ -12,7 +12,7 @@ class CustomHeader extends StatelessComponent {
   Component build(BuildContext context) {
     return header(<Component>[
       div(classes: "content", <Component>[
-        CustomLogo.website(),
+        const CustomLogo.website(),
         a(
           href: "${CustomData.repositoryUrl}/releases",
           target: .blank,
@@ -30,8 +30,8 @@ class CustomHeader extends StatelessComponent {
     css("header", <StyleRule>[
       css("&").styles(
         display: .flex,
-        position: .sticky(top: .zero),
-        zIndex: ZIndex(9999),
+        position: const .sticky(top: .zero),
+        zIndex: const ZIndex(9999),
         width: 100.percent,
         flexDirection: .column,
       ),
@@ -58,7 +58,9 @@ class CustomHeader extends StatelessComponent {
       ]),
       css(".under-construction-tape").styles(
         height: 8.px,
-        backgroundImage: .url("assets/images/under-construction-tape.svg"),
+        backgroundImage: const .url(
+          "assets/images/under-construction-tape.svg",
+        ),
         backgroundPosition: .center,
         backgroundRepeat: .repeatX,
       ),

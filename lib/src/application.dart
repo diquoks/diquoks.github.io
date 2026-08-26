@@ -15,7 +15,7 @@ class Application extends StatelessComponent {
       CustomHeader(version: _version),
       Router(
         routes: <RouteBase>[
-          Route(path: "/", builder: (_, _) => HomePage()),
+          Route(path: "/", builder: (_, _) => const HomePage()),
           Route(
             path: "/404.html",
             builder: (_, RouteState state) => NotFoundPage(state: state),
@@ -23,7 +23,7 @@ class Application extends StatelessComponent {
         ],
         errorBuilder: (_, RouteState state) => NotFoundPage(state: state),
       ),
-      CustomFooter(),
+      const CustomFooter(),
     ]);
   }
 
@@ -42,7 +42,7 @@ class Application extends StatelessComponent {
       flexDirection: .column,
       alignItems: .center,
       gap: .all(32.px),
-      flex: .grow(1),
+      flex: const .grow(1),
       backgroundColor: CustomColors.background,
     ),
   ];
