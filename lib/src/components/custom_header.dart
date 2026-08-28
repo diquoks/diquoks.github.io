@@ -20,7 +20,7 @@ class CustomHeader extends StatelessComponent {
           <Component>[.text(_version.canonicalizedVersion)],
         ),
       ]),
-      if (_version.isPreRelease)
+      if (!CustomData.isRelease || _version.isPreRelease)
         div(classes: "under-construction-tape", .empty()),
     ]);
   }
