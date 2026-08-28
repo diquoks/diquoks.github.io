@@ -4,8 +4,13 @@ class CustomData {
   const CustomData._();
 
   static const String title = "diquoks Web";
+  static const String author = "Denis Titovets";
   static const String repositoryUrl =
       "https://github.com/diquoks/diquoks.github.io";
+
+  static const String googleVerification =
+      "nwA1nG4U_7BR0tGVMR5dKq-UrTCAYrgy6HMtbqK10iw";
+  static const String yandexVerification = "8a46ea2d61d9b998";
 
   static const List<Project> projects = <Project>[
     Project(

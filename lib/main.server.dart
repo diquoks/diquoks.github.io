@@ -22,15 +22,13 @@ void main() {
       meta: <String, String>{
         "title": CustomData.title,
         "description": pubspec.description!,
-        "author": "Denis Titovets",
-        "keywords":
-            "${CustomData.title}, ${pubspec.name}, diquoks, github, pages",
+        "author": CustomData.author,
+        "keywords": <String>[CustomData.title, pubspec.name].join(", "),
         "mobile-web-app-capable": "yes",
         "apple-mobile-web-app-status-bar-style": "black-translucent",
         "apple-mobile-web-app-title": CustomData.title,
-        "google-site-verification":
-            "nwA1nG4U_7BR0tGVMR5dKq-UrTCAYrgy6HMtbqK10iw",
-        "yandex-verification": "8a46ea2d61d9b998",
+        "google-site-verification": CustomData.googleVerification,
+        "yandex-verification": CustomData.yandexVerification,
       },
       head: <Component>[
         link(rel: "canonical", href: pubspec.homepage!),
