@@ -25,7 +25,6 @@ void main() {
         "author": "Denis Titovets",
         "keywords":
             "${CustomData.title}, ${pubspec.name}, diquoks, github, pages",
-        "robots": "nosnippet",
         "mobile-web-app-capable": "yes",
         "apple-mobile-web-app-status-bar-style": "black-translucent",
         "apple-mobile-web-app-title": CustomData.title,
