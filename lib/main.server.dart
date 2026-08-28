@@ -29,6 +29,9 @@ void main() {
         "mobile-web-app-capable": "yes",
         "apple-mobile-web-app-status-bar-style": "black-translucent",
         "apple-mobile-web-app-title": CustomData.title,
+        "google-site-verification":
+            "nwA1nG4U_7BR0tGVMR5dKq-UrTCAYrgy6HMtbqK10iw",
+        "yandex-verification": "8a46ea2d61d9b998",
       },
       head: <Component>[
         link(rel: "canonical", href: pubspec.homepage!),
