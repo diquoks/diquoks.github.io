@@ -17,6 +17,8 @@ linter:
     prefer_const_constructors: true
     prefer_const_declarations: true
     prefer_double_quotes: true
+    prefer_final_in_for_each: true
+    prefer_final_locals: true
     sort_constructors_first: true
     sort_unnamed_constructors_first: true
     unawaited_futures: true
@@ -24,8 +26,9 @@ linter:
 
 plugins:
   jaspr_lints:
-    version: ^0.7.1
+    version: ^0.7.2
     diagnostics:
       prefer_html_components: true
+      prefer_styles_getter: true
       sort_children_last: true
       styles_ordering: true
