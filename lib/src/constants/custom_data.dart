@@ -39,7 +39,7 @@ class CustomData {
       skillIcon: .dart,
     ),
     Project(
-      title: "ElkollegeScheduleApp",
+      title: "ElkollegeSchedule",
       description: "Приложение для просмотра\nактуального расписания ЭК",
       link: "https://github.com/diquoks/ElkollegeScheduleApp",
       image: Image(src: "assets/images/projects/elkollege/LogoEK.webp"),
