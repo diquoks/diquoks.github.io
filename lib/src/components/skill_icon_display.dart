@@ -18,6 +18,8 @@ class SkillIconDisplay extends StatelessComponent {
 
   @css
   static List<StyleRule> get styles => <StyleRule>[
-    css(".skill-icon-display").styles(width: 32.px, height: 32.px),
+    css(
+      ".skill-icon-display",
+    ).styles(display: .block, width: 32.px, height: 32.px),
   ];
 }

@@ -8,11 +8,11 @@ class BackgroundImage extends Image {
     this.isRepeat = false,
   });
 
-  final ImageContrast contrast;
+  final BackgroundImageContrast contrast;
   final bool isRepeat;
 }
 
-enum ImageContrast {
+enum BackgroundImageContrast {
   light,
   dark;
 

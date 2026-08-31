@@ -30,7 +30,6 @@ class ProjectCard extends StatelessComponent {
             SkillIconDisplay(skillIcon: _project.skillIcon!),
         ]),
         p(
-          classes: "description",
           styles: Styles(color: _project.backgroundImage.contrast.color),
           <Component>[.text(_project.description)],
         ),
@@ -43,9 +42,12 @@ class ProjectCard extends StatelessComponent {
     css(".project-card", <StyleRule>[
       css("&").styles(
         display: .flex,
-        width: 300.px,
-        aspectRatio: const AspectRatio(11, 6),
+        width: 100.percent,
+        minWidth: 300.px,
+        maxWidth: 350.px,
+        aspectRatio: const AspectRatio(5, 3),
         padding: .all(16.px),
+        boxSizing: .borderBox,
         radius: .circular(16.px),
         transition: Transition("all", duration: 250.ms),
         flexDirection: .column,
@@ -54,13 +56,13 @@ class ProjectCard extends StatelessComponent {
         backgroundPosition: .center,
       ),
       css("&:hover").styles(transform: const .scale(1.05)),
-      css("> div").styles(
+      css("& > div").styles(
         display: .flex,
         flexDirection: .row,
         justifyContent: .spaceBetween,
         alignItems: .center,
       ),
-      css("> .description").styles(
+      css("& > p").styles(
         textAlign: .center,
         fontFamily: CustomFonts.getFontFamilies(openSans: true),
         fontSize: 14.px,

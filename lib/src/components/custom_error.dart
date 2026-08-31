@@ -16,26 +16,30 @@ class CustomError extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "error", <Component>[
-      img(src: _image.src),
-      div(<Component>[
-        h1(<Component>[.text(_title)]),
-        p(<Component>[.text(_description)]),
-      ]),
-    ]);
+    return div(
+      classes: <String>["custom-error", "limited-width"].join(" "),
+      <Component>[
+        img(src: _image.src),
+        div(<Component>[
+          h1(<Component>[.text(_title)]),
+          p(<Component>[.text(_description)]),
+        ]),
+      ],
+    );
   }
 
   @css
   static List<StyleRule> get styles => <StyleRule>[
-    css(".error", <StyleRule>[
+    css(".custom-error", <StyleRule>[
       css("&").styles(
         display: .flex,
         flexDirection: .row,
+        justifyContent: .center,
         alignItems: .center,
         gap: .all(16.px),
       ),
-      css("> img").styles(width: 112.px, height: 112.px),
-      css("> div", <StyleRule>[
+      css("& > img").styles(display: .block, width: 112.px, height: 112.px),
+      css("& > div", <StyleRule>[
         css("&").styles(
           display: .flex,
           flexDirection: .column,
@@ -44,8 +48,8 @@ class CustomError extends StatelessComponent {
           textAlign: .left,
           fontFamily: CustomFonts.getFontFamilies(openSans: true),
         ),
-        css("> h1").styles(fontSize: 24.px),
-        css("> p").styles(fontSize: 14.px),
+        css("& > h1").styles(fontSize: 24.px),
+        css("& > p").styles(fontSize: 14.px),
       ]),
     ]),
   ];

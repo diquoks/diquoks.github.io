@@ -14,24 +14,27 @@ class CustomSection extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return section(<Component>[
-      h1(<Component>[.text("$_title (${_children.length})")]),
-      div(classes: "section-content", _children),
-    ]);
+    return section(
+      classes: <String>["custom-section", "limited-width"].join(" "),
+      <Component>[
+        h1(<Component>[.text(_title)]),
+        div(_children),
+      ],
+    );
   }
 
   @css
   static List<StyleRule> get styles => <StyleRule>[
-    css("section", <StyleRule>[
+    css(".custom-section", <StyleRule>[
       css("&").styles(display: .flex, flexDirection: .column, gap: .all(24.px)),
-      css("> h1").styles(
+      css("& > h1").styles(
         color: Colors.white,
         textAlign: .left,
         fontFamily: CustomFonts.getFontFamilies(openSans: true),
         fontSize: 24.px,
         fontWeight: .w700,
       ),
-      css("> div").styles(
+      css("& > div").styles(
         display: .flex,
         flexDirection: .row,
         flexWrap: .wrap,

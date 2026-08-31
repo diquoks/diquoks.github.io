@@ -45,5 +45,6 @@ class Application extends StatelessComponent {
       flex: const .grow(1),
       backgroundColor: CustomColors.background,
     ),
+    css(".limited-width").styles(width: 100.percent, maxWidth: 1280.px),
   ];
 }

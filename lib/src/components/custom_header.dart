@@ -10,15 +10,17 @@ class CustomHeader extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return header(<Component>[
+    return header(classes: "custom-header", <Component>[
       div(classes: "content", <Component>[
-        const CustomLogo.website(),
-        a(
-          href: "${CustomData.repositoryUrl}/releases",
-          target: .blank,
-          attributes: <String, String>{"title": "Версия сайта"},
-          <Component>[.text(_version.canonicalizedVersion)],
-        ),
+        div(classes: "limited-width", <Component>[
+          const CustomLogo.website(),
+          a(
+            href: "${CustomData.repositoryUrl}/releases",
+            target: .blank,
+            attributes: <String, String>{"title": "Версия сайта"},
+            <Component>[.text(_version.canonicalizedVersion)],
+          ),
+        ]),
       ]),
       if (!CustomData.isRelease || _version.isPreRelease)
         div(classes: "under-construction-tape", .empty()),
@@ -27,7 +29,7 @@ class CustomHeader extends StatelessComponent {
 
   @css
   static List<StyleRule> get styles => <StyleRule>[
-    css("header", <StyleRule>[
+    css(".custom-header", <StyleRule>[
       css("&").styles(
         display: .flex,
         position: const .sticky(top: .zero),
@@ -35,26 +37,31 @@ class CustomHeader extends StatelessComponent {
         width: 100.percent,
         flexDirection: .column,
       ),
-      css("> .content", <StyleRule>[
+      css("& > .content", <StyleRule>[
         css("&").styles(
           display: .flex,
           padding: .symmetric(vertical: 16.px, horizontal: 24.px),
-          flexDirection: .row,
-          justifyContent: .spaceBetween,
-          alignItems: .center,
+          justifyContent: .center,
           backgroundColor: CustomColors.shadow,
           raw: <String, String>{
             "background-blend-mode": "color",
-            "background-image":
-                "linear-gradient(to top left, #73A5FF, #FF4BFF), linear-gradient(to top right, #5F55FF, #EC76FF)",
+            "background-image": CustomColors.headerGradient,
           },
         ),
-        css("> a").styles(
-          color: Colors.white,
-          fontFamily: CustomFonts.getFontFamilies(openSans: true),
-          fontSize: 14.px,
-          fontWeight: .w600,
-        ),
+        css("& > div", <StyleRule>[
+          css("&").styles(
+            display: .flex,
+            flexDirection: .row,
+            justifyContent: .spaceBetween,
+            alignItems: .center,
+          ),
+          css("& > a").styles(
+            color: Colors.white,
+            fontFamily: CustomFonts.getFontFamilies(openSans: true),
+            fontSize: 14.px,
+            fontWeight: .w600,
+          ),
+        ]),
       ]),
       css(".under-construction-tape").styles(
         height: 8.px,
