@@ -12,6 +12,8 @@ class CustomData {
       "nwA1nG4U_7BR0tGVMR5dKq-UrTCAYrgy6HMtbqK10iw";
   static const String yandexVerification = "8a46ea2d61d9b998";
 
+  static const bool isRelease = bool.fromEnvironment("dart.vm.product");
+
   static const List<Project> projects = <Project>[
     Project(
       title: "osu!",
@@ -37,7 +39,7 @@ class CustomData {
       skillIcon: .dart,
     ),
     Project(
-      title: "ElkollegeScheduleApp",
+      title: "ElkollegeSchedule",
       description: "Приложение для просмотра\nактуального расписания ЭК",
       link: "https://github.com/diquoks/ElkollegeScheduleApp",
       image: Image(src: "assets/images/projects/elkollege/LogoEK.webp"),

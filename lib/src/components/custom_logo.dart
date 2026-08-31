@@ -11,12 +11,10 @@ class CustomLogo extends StatelessComponent {
     this._titleStyles,
   });
 
-  const CustomLogo.website()
-    : this(
-        image: const Image(src: "assets/favicons/logo.svg"),
-        link: "/",
-        title: CustomData.title,
-      );
+  const CustomLogo.website({this._titleStyles})
+    : _image = const Image(src: "assets/favicons/logo.svg"),
+      _link = "/",
+      _title = CustomData.title;
 
   final Image _image;
   final String _link;
@@ -27,7 +25,7 @@ class CustomLogo extends StatelessComponent {
   Component build(BuildContext context) {
     final Component logoImage = img(src: _image.src);
 
-    return div(classes: "logo", <Component>[
+    return div(classes: "custom-logo", <Component>[
       _link.isNotEmpty ? a(href: _link, <Component>[logoImage]) : logoImage,
       p(styles: _titleStyles, <Component>[.text(_title)]),
     ]);
@@ -35,19 +33,17 @@ class CustomLogo extends StatelessComponent {
 
   @css
   static List<StyleRule> get styles => <StyleRule>[
-    css(".logo", <StyleRule>[
+    css(".custom-logo", <StyleRule>[
       css("&").styles(
         display: .flex,
         flexDirection: .row,
         alignItems: .center,
         gap: .all(12.px),
       ),
-      css("> img").styles(width: 48.px, height: 48.px),
-      css("> a", <StyleRule>[
-        css("&").styles(width: 48.px, height: 48.px),
-        css("> img").styles(width: 100.percent, height: 100.percent),
-      ]),
-      css("> p").styles(
+      css(
+        "& > img, & > a > img",
+      ).styles(display: .block, width: 48.px, height: 48.px),
+      css("& > p").styles(
         color: Colors.white,
         fontFamily: CustomFonts.getFontFamilies(openSans: true),
         fontSize: 18.px,
