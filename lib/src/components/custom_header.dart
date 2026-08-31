@@ -22,7 +22,7 @@ class CustomHeader extends StatelessComponent {
           ),
         ]),
       ]),
-      if (!CustomData.isRelease || _version.isPreRelease)
+      if (_version.isPreRelease)
         div(classes: "under-construction-tape", .empty()),
     ]);
   }

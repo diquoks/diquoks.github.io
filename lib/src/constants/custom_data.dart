@@ -12,8 +12,6 @@ class CustomData {
       "nwA1nG4U_7BR0tGVMR5dKq-UrTCAYrgy6HMtbqK10iw";
   static const String yandexVerification = "8a46ea2d61d9b998";
 
-  static const bool isRelease = bool.fromEnvironment("dart.vm.product");
-
   static const List<Project> projects = <Project>[
     Project(
       title: "osu!",
