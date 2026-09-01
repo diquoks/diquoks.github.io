@@ -50,6 +50,39 @@ class CustomData {
     ),
   ];
 
+  static const List<OsuCollab> collabs = <OsuCollab>[
+    OsuCollab(
+      title: "Minecraft 1.0 Collab",
+      image: Image(src: "assets/images/collabs/MinecraftCollab.png"),
+      members: <OsuCollabMember>[
+        OsuCollabMember(
+          id: 10335625,
+          username: "LogiDASH",
+          x: 28,
+          y: 55,
+          width: 11,
+          height: 40,
+        ),
+        OsuCollabMember(
+          id: 31543047,
+          username: "lofasolas",
+          x: 38,
+          y: 56,
+          width: 10,
+          height: 36,
+        ),
+        OsuCollabMember(
+          id: 31760756,
+          username: "diquoks",
+          x: 45,
+          y: 56,
+          width: 10,
+          height: 40,
+        ),
+      ],
+    ),
+  ];
+
   static const List<Link> footerLinks = <Link>[
     Link(title: "Исходный код", link: repositoryUrl),
     Link(title: "Сделано diquoks ❤️", link: "https://github.com/diquoks"),

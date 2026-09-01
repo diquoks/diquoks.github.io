@@ -6,10 +6,12 @@ class CustomSection extends StatelessComponent {
   const CustomSection({
     super.key,
     required this._title,
+    required this._direction,
     required this._children,
   });
 
   final String _title;
+  final FlexDirection _direction;
   final List<Component> _children;
 
   @override
@@ -18,7 +20,7 @@ class CustomSection extends StatelessComponent {
       classes: <String>["custom-section", "limited-width"].join(" "),
       <Component>[
         h1(<Component>[.text(_title)]),
-        div(_children),
+        div(styles: Styles(flexDirection: _direction), _children),
       ],
     );
   }
@@ -36,7 +38,6 @@ class CustomSection extends StatelessComponent {
       ),
       css("& > div").styles(
         display: .flex,
-        flexDirection: .row,
         flexWrap: .wrap,
         justifyContent: .center,
         alignItems: .center,

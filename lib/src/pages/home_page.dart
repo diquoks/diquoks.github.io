@@ -10,6 +10,7 @@ class HomePage extends StatelessComponent {
     return main_(classes: "home-page", <Component>[
       CustomSection(
         title: "⚒️ Проекты",
+        direction: .row,
         children: CustomData.projects
             .map((Project project) => ProjectCard(project: project))
             .toList(),

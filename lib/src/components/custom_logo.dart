@@ -40,9 +40,8 @@ class CustomLogo extends StatelessComponent {
         alignItems: .center,
         gap: .all(12.px),
       ),
-      css(
-        "& > img, & > a > img",
-      ).styles(display: .block, width: 48.px, height: 48.px),
+      css("& > img, & > a > img")
+          .styles(display: .block, width: 48.px, height: 48.px),
       css("& > p").styles(
         color: Colors.white,
         fontFamily: CustomFonts.getFontFamilies(openSans: true),
