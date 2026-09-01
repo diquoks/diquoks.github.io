@@ -15,7 +15,7 @@ class ProjectCard extends StatelessComponent {
       classes: "project-card",
       styles: .combine(<Styles>[
         Styles(backgroundImage: .url(_project.backgroundImage.src)),
-        _project.backgroundImage.isRepeat
+        _project.backgroundImage.isRepeating
             ? const Styles(backgroundRepeat: .repeat)
             : const Styles(backgroundSize: .cover),
       ]),
