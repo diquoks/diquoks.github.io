@@ -1,5 +1,5 @@
 class Image {
-  const Image({required this.src});
+  const new({required this.src});
 
   final String src;
 }

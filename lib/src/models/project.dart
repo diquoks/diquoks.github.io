@@ -1,7 +1,7 @@
 import "package:diquoks_web/diquoks_web.dart";
 
 class Project {
-  const Project({
+  const new({
     required this.title,
     required this.description,
     required this.link,

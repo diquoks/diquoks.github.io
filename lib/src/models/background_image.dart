@@ -2,7 +2,7 @@ import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr/dom.dart";
 
 class BackgroundImage extends Image {
-  const BackgroundImage({
+  const new({
     required super.src,
     required this.contrast,
     this.isRepeat = false,

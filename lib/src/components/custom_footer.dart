@@ -3,7 +3,7 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
 class CustomFooter extends StatelessComponent {
-  const CustomFooter({super.key});
+  const new({super.key});
 
   @override
   Component build(BuildContext context) {

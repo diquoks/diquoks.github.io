@@ -1,7 +1,7 @@
 import "package:diquoks_web/diquoks_web.dart";
 
 class CustomData {
-  const CustomData._();
+  const new _();
 
   static const String title = "diquoks Web";
   static const String author = "Denis Titovets";
