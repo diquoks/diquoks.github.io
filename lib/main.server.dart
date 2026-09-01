@@ -17,8 +17,6 @@ void main() {
     Document(
       title: CustomData.title,
       lang: "ru",
-      charset: "UTF-8",
-      viewport: "width=device-width, initial-scale=1.0",
       meta: <String, String>{
         "title": CustomData.title,
         "description": pubspec.description!,

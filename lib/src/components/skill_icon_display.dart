@@ -12,7 +12,7 @@ class SkillIconDisplay extends StatelessComponent {
     return img(
       src: _skillIcon.image.src,
       classes: "skill-icon-display",
-      attributes: <String, String>{"title": _skillIcon.toString()},
+      attributes: <String, String>{"title": _skillIcon.title},
     );
   }
 
