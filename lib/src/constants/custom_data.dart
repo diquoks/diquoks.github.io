@@ -44,7 +44,7 @@ class CustomData {
       backgroundImage: BackgroundImage(
         src: "assets/images/projects/elkollege/BackgroundEK.webp",
         contrast: .light,
-        isRepeat: true,
+        isRepeating: true,
       ),
       skillIcon: .flutter,
     ),

@@ -15,7 +15,7 @@ class NotFoundPage extends StatelessComponent {
         CustomError(
           image: const Image(src: "assets/images/omegalul-i-guess.webp"),
           title: "Возникла ошибка!",
-          description: _state.error.toString(),
+          description: "${_state.error}",
         )
       else
         const CustomError(

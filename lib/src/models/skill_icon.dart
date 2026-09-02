@@ -6,8 +6,7 @@ enum SkillIcon {
   flutter,
   python;
 
-  @override
-  String toString() => switch (this) {
+  String get title => switch (this) {
     .csharp => "C#",
     .dart => "Dart",
     .flutter => "Flutter",
