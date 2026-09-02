@@ -1,7 +1,7 @@
 import "package:diquoks_web/diquoks_web.dart";
 
 class CustomData {
-  const new _();
+  const CustomData._();
 
   static const String title = "diquoks Web";
   static const String author = "Denis Titovets";
@@ -44,7 +44,7 @@ class CustomData {
       backgroundImage: BackgroundImage(
         src: "assets/images/projects/elkollege/BackgroundEK.webp",
         contrast: .light,
-        isRepeating: true,
+        isRepeat: true,
       ),
       skillIcon: .flutter,
     ),

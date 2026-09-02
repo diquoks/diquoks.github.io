@@ -1,3 +1,4 @@
+export "src/application.dart";
 export "src/components/components.dart";
 export "src/constants/constants.dart";
 export "src/models/models.dart";

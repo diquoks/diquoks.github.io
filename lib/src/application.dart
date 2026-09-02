@@ -5,7 +5,7 @@ import "package:jaspr_router/jaspr_router.dart";
 import "package:pub_semver/pub_semver.dart";
 
 class Application extends StatelessComponent {
-  const new({super.key, required this._version});
+  const Application({super.key, required this._version});
 
   final Version _version;
 

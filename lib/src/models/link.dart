@@ -1,1 +1,6 @@
-class const Link({required final String title, required final String link});
+class Link {
+  const Link({required this.title, required this.link});
+
+  final String title;
+  final String link;
+}

@@ -1,3 +1,4 @@
+export "background_image.dart";
 export "image.dart";
 export "link.dart";
 export "project.dart";
