@@ -1,7 +1,7 @@
 import "package:jaspr/dom.dart";
 
 class CustomColors {
-  const CustomColors._();
+  const new _();
 
   static const Color background = Color("#111111");
   static const Color shadow = Color("#0000007F");

@@ -3,11 +3,7 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
 class CustomSection extends StatelessComponent {
-  const CustomSection({
-    super.key,
-    required this._title,
-    required this._children,
-  });
+  const new({super.key, required this._title, required this._children});
 
   final String _title;
   final List<Component> _children;

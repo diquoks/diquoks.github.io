@@ -3,7 +3,7 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
 class SkillIconDisplay extends StatelessComponent {
-  const SkillIconDisplay({super.key, required this._skillIcon});
+  const new({super.key, required this._skillIcon});
 
   final SkillIcon _skillIcon;
 
@@ -12,14 +12,13 @@ class SkillIconDisplay extends StatelessComponent {
     return img(
       src: _skillIcon.image.src,
       classes: "skill-icon-display",
-      attributes: <String, String>{"title": _skillIcon.toString()},
+      attributes: <String, String>{"title": _skillIcon.title},
     );
   }
 
   @css
   static List<StyleRule> get styles => <StyleRule>[
-    css(
-      ".skill-icon-display",
-    ).styles(display: .block, width: 32.px, height: 32.px),
+    css(".skill-icon-display")
+        .styles(display: .block, width: 32.px, height: 32.px),
   ];
 }

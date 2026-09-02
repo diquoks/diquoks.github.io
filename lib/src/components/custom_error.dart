@@ -3,7 +3,7 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
 class CustomError extends StatelessComponent {
-  const CustomError({
+  const new({
     super.key,
     required this._image,
     required this._title,

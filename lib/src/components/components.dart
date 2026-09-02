@@ -1,3 +1,4 @@
+export "application.dart";
 export "custom_error.dart";
 export "custom_footer.dart";
 export "custom_header.dart";

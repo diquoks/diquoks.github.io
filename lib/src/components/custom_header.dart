@@ -4,7 +4,7 @@ import "package:jaspr/jaspr.dart";
 import "package:pub_semver/pub_semver.dart";
 
 class CustomHeader extends StatelessComponent {
-  const CustomHeader({super.key, required this._version});
+  const new({super.key, required this._version});
 
   final Version _version;
 
