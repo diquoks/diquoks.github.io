@@ -1,9 +1,9 @@
 name: diquoks_web
 description: "Скоро превратится в сайт-визитку, но до этого ещё далеко..."
-homepage: "https://diquoks.github.io"
-repository: "https://github.com/diquoks/diquoks.github.io"
+homepage: https://diquoks.github.io
+repository: https://github.com/diquoks/diquoks.github.io
 publish_to: none
-version: 1.0.7+1
+version: 1.0.8
 
 environment:
   sdk: ^3.12.0
