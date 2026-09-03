@@ -1,5 +1,7 @@
 # diquoks Web
 
+[![Continuous Integration](https://github.com/diquoks/diquoks.github.io/actions/workflows/continuous-integration.yml/badge.svg?event=push)](https://github.com/diquoks/diquoks.github.io/actions/workflows/continuous-integration.yml)
+
 #### Скоро превратится в сайт-визитку, но до этого ещё далеко...
 
 ---
