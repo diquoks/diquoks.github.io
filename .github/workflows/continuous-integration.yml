@@ -1,0 +1,71 @@
+name: Continuous Integration
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  format:
+    name: Run dart format
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: Install dependencies
+        run: |
+          dart pub get
+
+      - name: Test with dart format
+        run: |
+          dart format --set-exit-if-changed .
+
+  lint:
+    name: Run dart analyze
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: Install dependencies
+        run: |
+          dart pub get
+
+      - name: Test with dart analyze
+        run: |
+          dart analyze --fatal-infos .
+
+  build:
+    name: Test build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: Install dependencies
+        run: |
+          dart pub get
+
+      - name: Build with Jaspr
+        run: |
+          dart pub global activate jaspr_cli
+          dart pub global run jaspr_cli:jaspr build --sitemap-domain diquoks.github.io --verbose
