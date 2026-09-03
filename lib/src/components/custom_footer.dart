@@ -1,16 +1,19 @@
 import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
+import "package:jaspr_riverpod/jaspr_riverpod.dart";
 
 class CustomFooter extends StatelessComponent {
   const CustomFooter({super.key});
 
   @override
   Component build(BuildContext context) {
+    final WebsiteContent content = context.read(websiteContentProvider);
+
     return footer(classes: "custom-footer", <Component>[
       div(classes: "limited-width", <StatelessComponent>[
-        const CustomLogo.website(),
-        for (final Link footerLink in CustomData.footerLinks)
+        CustomLogo.website(title: content.title),
+        for (final Link footerLink in content.footerLinks)
           a(
             href: footerLink.link,
             target: .blank,

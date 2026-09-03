@@ -11,10 +11,9 @@ class CustomLogo extends StatelessComponent {
     this._titleStyles,
   });
 
-  const CustomLogo.website({super.key, this._titleStyles})
+  const CustomLogo.website({super.key, required this._title, this._titleStyles})
     : _image = const Image(src: "assets/favicons/logo.svg"),
-      _link = "/",
-      _title = CustomData.title;
+      _link = "/";
 
   final Image _image;
   final String _link;
