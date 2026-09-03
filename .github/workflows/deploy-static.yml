@@ -15,6 +15,7 @@ permissions:
 
 jobs:
   deploy:
+    name: Deploy static content to Pages
     runs-on: ubuntu-latest
 
     environment:
@@ -35,7 +36,7 @@ jobs:
         run: |
           dart pub get
 
-      - name: Build Jaspr
+      - name: Build with Jaspr
         run: |
           dart pub global activate jaspr_cli
           dart pub global run jaspr_cli:jaspr build --sitemap-domain diquoks.github.io --verbose
