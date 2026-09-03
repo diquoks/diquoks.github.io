@@ -1,12 +1,21 @@
 import "package:jaspr/dom.dart";
 
-class const Image({required final String src});
+class Image {
+  const Image({required this.src});
 
-class const BackgroundImage({
-  required super.src,
-  required final BackgroundImageContrast contrast,
-  final bool isRepeating = false,
-}) extends Image;
+  final String src;
+}
+
+class BackgroundImage extends Image {
+  const BackgroundImage({
+    required super.src,
+    required this.contrast,
+    this.isRepeating = false,
+  });
+
+  final BackgroundImageContrast contrast;
+  final bool isRepeating;
+}
 
 enum BackgroundImageContrast {
   light,
