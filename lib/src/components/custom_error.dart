@@ -37,10 +37,10 @@ class CustomError extends StatelessComponent {
       ),
       css("& > img").styles(display: .block, width: 112.px, height: 112.px),
       css("& > div", <StyleRule>[
-        css("&").styles(
-          display: .flex,
-          flexDirection: .column,
-          gap: .all(8.px),
+        css(
+          "&",
+        ).styles(display: .flex, flexDirection: .column, gap: .all(8.px)),
+        css("& > h1, & > p").styles(
           color: Colors.white,
           textAlign: .left,
           fontFamily: CustomFonts.getFontFamilies(openSans: true),
