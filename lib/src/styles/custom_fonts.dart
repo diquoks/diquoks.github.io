@@ -1,8 +1,6 @@
 import "package:jaspr/dom.dart";
 
-class CustomFonts {
-  const CustomFonts._();
-
+abstract final class CustomFonts {
   static const String _openSansString = "OpenSans";
   static const FontFamily _openSansFamily = FontFamily(_openSansString);
 
