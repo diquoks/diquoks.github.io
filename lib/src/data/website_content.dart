@@ -1,13 +1,11 @@
-import "dart:io";
-
 import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr_riverpod/jaspr_riverpod.dart";
 import "package:pubspec_parse/pubspec_parse.dart";
 
 final Provider<WebsiteContent> websiteContentProvider =
     Provider<WebsiteContent>(
-      (_) => WebsiteContent(
-        pubspec: Pubspec.parse(File("pubspec.yaml").readAsStringSync()),
+      (_) => throw StateError(
+        "This provider should be overridden on server side!",
       ),
     );
 
