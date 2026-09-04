@@ -29,10 +29,8 @@ class OsuImageMap extends StatelessComponent {
             attributes: <String, String>{"title": member.username},
             .empty(),
           ),
-        div(<Component>[
-          p(<Component>[.text(_collab.title)]),
-          CustomCopyButton(title: "BBCode", data: _collab.bbcode(content)),
-        ]),
+        p(<Component>[.text(_collab.title)]),
+        CustomCopyButton(title: "BBCode", data: _collab.bbcode(content)),
       ]),
     ]);
   }
@@ -46,7 +44,7 @@ class OsuImageMap extends StatelessComponent {
           position: const .relative(),
           maxWidth: .maxContent,
           maxHeight: .maxContent,
-          radius: .circular(24.px),
+          radius: .circular(16.px),
           overflow: .clip,
         ),
         css("& > img").styles(
@@ -54,21 +52,16 @@ class OsuImageMap extends StatelessComponent {
           maxWidth: 100.percent,
           maxHeight: 100.percent,
         ),
-        css("& > div", <StyleRule>[
-          css("&").styles(
-            display: .flex,
-            position: .absolute(top: 24.px, right: 24.px, left: 24.px),
-            flexDirection: .row,
-            justifyContent: .spaceBetween,
-            alignItems: .center,
-          ),
-          css("& > p").styles(
-            color: Colors.white,
-            fontFamily: CustomFonts.getFontFamilies(openSans: true),
-            fontSize: 18.px,
-            fontWeight: .w600,
-          ),
-        ]),
+        css("& > p").styles(
+          position: .absolute(top: 16.px, left: 16.px),
+          color: Colors.white,
+          fontFamily: CustomFonts.getFontFamilies(openSans: true),
+          fontSize: 18.px,
+          fontWeight: .w600,
+        ),
+        css("& > .custom-copy-button").styles(
+          position: .absolute(bottom: 16.px, right: 16.px),
+        ),
       ]),
     ]),
   ];
