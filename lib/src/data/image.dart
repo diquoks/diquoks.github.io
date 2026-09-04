@@ -1,6 +1,7 @@
+import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr/dom.dart";
 
-class Image {
+class Image extends Model {
   const Image({required this.src});
 
   final String src;

@@ -15,6 +15,7 @@ linter:
     always_use_package_imports: true
     discarded_futures: true
     prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
     prefer_const_declarations: true
     prefer_double_quotes: true
     prefer_final_in_for_each: true

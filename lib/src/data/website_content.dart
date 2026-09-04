@@ -11,7 +11,7 @@ final Provider<WebsiteContent> websiteContentProvider =
       ),
     );
 
-class WebsiteContent {
+class WebsiteContent extends Model {
   const WebsiteContent({required this._pubspec});
 
   final Pubspec _pubspec;

@@ -1,6 +1,6 @@
 import "package:diquoks_web/diquoks_web.dart";
 
-class Project {
+class Project extends Model {
   const Project({
     required this.title,
     required this.description,
