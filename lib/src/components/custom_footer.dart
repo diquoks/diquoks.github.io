@@ -49,7 +49,7 @@ class CustomFooter extends StatelessComponent {
           flexWrap: .wrap,
           justifyContent: .center,
           alignItems: .center,
-          gap: Gap(row: 16.px, column: 48.px),
+          gap: .new(row: 16.px, column: 48.px),
         ),
         css("& > .footer-link").styles(
           color: Colors.white,

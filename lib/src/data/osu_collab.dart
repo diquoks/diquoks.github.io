@@ -1,6 +1,6 @@
 import "package:diquoks_web/diquoks_web.dart";
 
-class OsuCollab {
+class OsuCollab extends Model {
   const OsuCollab({
     required this.title,
     required this.image,
@@ -27,7 +27,7 @@ $_membersMapping
 [centre][b]$_membersBbcode[/b][/centre]""";
 }
 
-class OsuCollabMember {
+class OsuCollabMember extends Model {
   const OsuCollabMember({
     required this.id,
     required this.username,
