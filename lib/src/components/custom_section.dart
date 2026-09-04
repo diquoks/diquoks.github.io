@@ -2,21 +2,26 @@ import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
-class CustomSection extends StatelessComponent {
+class CustomSection<T> extends StatelessComponent {
   const CustomSection({
     super.key,
-    required this._title,
-    required this._children,
+    required this._content,
+    required this._direction,
+    required this._builder,
   });
 
-  final String _title;
-  final List<Component> _children;
+  final SectionContent<T> _content;
+  final FlexDirection _direction;
+  final Component Function(T) _builder;
 
   @override
   Component build(BuildContext context) {
     return section(classes: "custom-section limited-width", <Component>[
-      h1(<Component>[.text(_title)]),
-      div(_children),
+      h1(<Component>[.text(_content.title)]),
+      div(
+        styles: Styles(flexDirection: _direction),
+        _content.items.map(_builder).toList(),
+      ),
     ]);
   }
 
@@ -33,7 +38,6 @@ class CustomSection extends StatelessComponent {
       ),
       css("& > div").styles(
         display: .flex,
-        flexDirection: .row,
         flexWrap: .wrap,
         justifyContent: .center,
         alignItems: .center,
