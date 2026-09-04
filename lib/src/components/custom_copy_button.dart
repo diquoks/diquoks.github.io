@@ -1,3 +1,4 @@
+import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 import "package:universal_web/js_interop.dart";
@@ -13,8 +14,10 @@ class CustomCopyButton extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return button(
+      type: .button,
       onClick: () => _copyData(data),
       classes: "custom-copy-button",
+      attributes: <String, String>{"title": "Скопировать"},
       <Component>[.text("$title 📝")],
     );
   }
@@ -28,5 +31,14 @@ class CustomCopyButton extends StatelessComponent {
   }
 
   @css
-  static List<StyleRule> get styles => .empty(); // TODO
+  static List<StyleRule> get styles => <StyleRule>[
+    css(".custom-copy-button").styles(
+      cursor: .pointer,
+      color: Colors.white,
+      fontFamily: CustomFonts.getFontFamilies(openSans: true),
+      fontSize: 14.px,
+      textDecoration: const .new(line: .underline),
+      backgroundColor: Colors.transparent,
+    ),
+  ];
 }

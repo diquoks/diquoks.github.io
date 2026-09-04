@@ -13,11 +13,7 @@ class OsuImageMap extends StatelessComponent {
     final WebsiteContent content = context.read(websiteContentProvider);
 
     return div(classes: "osu-image-map", <Component>[
-      div(classes: "title", <Component>[
-        p(<Component>[.text(_collab.title)]),
-        CustomCopyButton(title: "BBCode", data: _collab.bbcode(content)),
-      ]),
-      div(classes: "content", <Component>[
+      div(<Component>[
         img(src: _collab.image.src),
         for (final OsuCollabMember member in _collab.members)
           a(
@@ -33,6 +29,10 @@ class OsuImageMap extends StatelessComponent {
             attributes: <String, String>{"title": member.username},
             .empty(),
           ),
+        div(<Component>[
+          p(<Component>[.text(_collab.title)]),
+          CustomCopyButton(title: "BBCode", data: _collab.bbcode(content)),
+        ]),
       ]),
     ]);
   }
@@ -41,31 +41,34 @@ class OsuImageMap extends StatelessComponent {
   static List<StyleRule> get styles => <StyleRule>[
     css(".osu-image-map", <StyleRule>[
       css("&").styles(display: .flex, flexDirection: .column, gap: .all(16.px)),
-      css("& > .title", <StyleRule>[
-        css("&").styles(
-          display: .flex,
-          flexDirection: .row,
-          justifyContent: .spaceBetween,
-          alignItems: .center,
-        ),
-        css("& > p").styles(
-          color: Colors.white,
-          fontFamily: CustomFonts.getFontFamilies(openSans: true),
-          fontSize: 18.px,
-          fontWeight: .w600,
-        ),
-      ]),
-      css("& > .content", <StyleRule>[
+      css("& > div", <StyleRule>[
         css("&").styles(
           position: const .relative(),
           maxWidth: .maxContent,
           maxHeight: .maxContent,
+          radius: .circular(24.px),
+          overflow: .clip,
         ),
         css("& > img").styles(
           display: .block,
           maxWidth: 100.percent,
           maxHeight: 100.percent,
         ),
+        css("& > div", <StyleRule>[
+          css("&").styles(
+            display: .flex,
+            position: .absolute(top: 24.px, right: 24.px, left: 24.px),
+            flexDirection: .row,
+            justifyContent: .spaceBetween,
+            alignItems: .center,
+          ),
+          css("& > p").styles(
+            color: Colors.white,
+            fontFamily: CustomFonts.getFontFamilies(openSans: true),
+            fontSize: 18.px,
+            fontWeight: .w600,
+          ),
+        ]),
       ]),
     ]),
   ];
