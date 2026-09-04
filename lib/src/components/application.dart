@@ -13,6 +13,7 @@ class Application extends StatelessComponent {
       Router(
         routes: <RouteBase>[
           Route(path: "/", builder: (_, _) => const HomePage()),
+          Route(path: "/osu-stuff", builder: (_, _) => const OsuStuffPage()),
           Route(
             path: "/404.html",
             builder: (_, RouteState state) => NotFoundPage(state: state),

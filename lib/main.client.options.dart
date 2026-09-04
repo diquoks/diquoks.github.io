@@ -6,6 +6,9 @@
 
 import 'package:jaspr/client.dart';
 
+import 'package:diquoks_web/src/components/custom_copy_button.dart'
+    deferred as _custom_copy_button;
+
 /// Default [ClientOptions] for use with your Jaspr project.
 ///
 /// Use this to initialize Jaspr **before** calling [runApp].
@@ -22,4 +25,14 @@ import 'package:jaspr/client.dart';
 ///   runApp(...);
 /// }
 /// ```
-ClientOptions get defaultClientOptions => ClientOptions();
+ClientOptions get defaultClientOptions => ClientOptions(
+  clients: {
+    'custom_copy_button': ClientLoader(
+      (p) => _custom_copy_button.CustomCopyButton(
+        title: p['title'] as String,
+        data: p['data'] as String,
+      ),
+      loader: _custom_copy_button.loadLibrary,
+    ),
+  },
+);
