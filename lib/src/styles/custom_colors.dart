@@ -11,10 +11,8 @@ class CustomColors {
   static const Color _headerBottomLeft = Color("#7052FF");
   static const Color _headerBottomRight = Color("#569CFF");
 
-  static String get headerGradient => <String>[
-    "linear-gradient(to top left, ${_headerBottomRight.value}, ${_headerTopLeft.value})",
-    "linear-gradient(to top right, ${_headerBottomLeft.value}, ${_headerTopRight.value})",
-  ].join(", ");
+  static String get headerGradient =>
+      "linear-gradient(to top left, ${_headerBottomRight.value}, ${_headerTopLeft.value}), linear-gradient(to top right, ${_headerBottomLeft.value}, ${_headerTopRight.value})";
 
   static String get footerGradient =>
       "linear-gradient(to top, ${shadow.value}, ${background.value})";

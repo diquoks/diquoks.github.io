@@ -16,16 +16,13 @@ class CustomError extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(
-      classes: <String>["custom-error", "limited-width"].join(" "),
-      <Component>[
-        img(src: _image.src),
-        div(<Component>[
-          h1(<Component>[.text(_title)]),
-          p(<Component>[.text(_description)]),
-        ]),
-      ],
-    );
+    return div(classes: "custom-error limited-width", <Component>[
+      img(src: _image.src),
+      div(<Component>[
+        h1(<Component>[.text(_title)]),
+        p(<Component>[.text(_description)]),
+      ]),
+    ]);
   }
 
   @css
