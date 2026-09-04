@@ -14,13 +14,10 @@ class CustomSection extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return section(
-      classes: <String>["custom-section", "limited-width"].join(" "),
-      <Component>[
-        h1(<Component>[.text(_title)]),
-        div(_children),
-      ],
-    );
+    return section(classes: "custom-section limited-width", <Component>[
+      h1(<Component>[.text(_title)]),
+      div(_children),
+    ]);
   }
 
   @css

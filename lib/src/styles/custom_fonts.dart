@@ -15,12 +15,12 @@ class CustomFonts {
     css.fontFace(
       family: _openSansString,
       style: .normal,
-      url: "assets/fonts/open_sans/OpenSans.ttf",
+      url: "assets/fonts/open-sans/OpenSans.ttf",
     ),
     css.fontFace(
       family: _openSansString,
       style: .italic,
-      url: "assets/fonts/open_sans/OpenSans-Italic.ttf",
+      url: "assets/fonts/open-sans/OpenSans-Italic.ttf",
     ),
   ];
 }
