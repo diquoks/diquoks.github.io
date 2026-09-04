@@ -33,7 +33,7 @@ class CustomHeader extends StatelessComponent {
       css("&").styles(
         display: .flex,
         position: const .sticky(top: .zero),
-        zIndex: const ZIndex(9999),
+        zIndex: const .new(9999),
         width: 100.percent,
         flexDirection: .column,
       ),
