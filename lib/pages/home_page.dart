@@ -6,6 +6,8 @@ import "package:jaspr_riverpod/jaspr_riverpod.dart";
 class HomePage extends StatelessComponent {
   const HomePage({super.key});
 
+  static String get path => "/";
+
   @override
   Component build(BuildContext context) {
     final WebsiteContent content = context.read(websiteContentProvider);

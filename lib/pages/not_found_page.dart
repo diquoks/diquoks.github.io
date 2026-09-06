@@ -8,6 +8,8 @@ class NotFoundPage extends StatelessComponent {
 
   final RouteState _state;
 
+  static String get path => "/404.html";
+
   @override
   Component build(BuildContext context) {
     return main_(classes: "not-found-page", <Component>[
