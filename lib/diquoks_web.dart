@@ -1,4 +1,4 @@
-export "src/components/components.dart";
-export "src/data/data.dart";
-export "src/pages/pages.dart";
-export "src/styles/styles.dart";
+export "components/components.dart";
+export "data/data.dart";
+export "pages/pages.dart";
+export "styles/styles.dart";

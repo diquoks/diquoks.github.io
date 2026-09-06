@@ -6,7 +6,7 @@
 
 import 'package:jaspr/client.dart';
 
-import 'package:diquoks_web/src/components/custom_copy_button.dart'
+import 'package:diquoks_web/components/custom_copy_button.dart'
     deferred as _custom_copy_button;
 
 /// Default [ClientOptions] for use with your Jaspr project.

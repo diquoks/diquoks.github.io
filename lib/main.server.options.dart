@@ -5,7 +5,7 @@
 // Generated with jaspr_builder
 
 import 'package:jaspr/server.dart';
-import 'package:diquoks_web/src/components/custom_copy_button.dart'
+import 'package:diquoks_web/components/custom_copy_button.dart'
     as _custom_copy_button;
 
 /// Default [ServerOptions] for use with your Jaspr project.
