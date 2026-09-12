@@ -6,6 +6,8 @@ import "package:jaspr_riverpod/jaspr_riverpod.dart";
 class OsuStuffPage extends StatelessComponent {
   const OsuStuffPage({super.key});
 
+  static String get path => "/osu-stuff";
+
   @override
   Component build(BuildContext context) {
     final WebsiteContent content = context.read(websiteContentProvider);

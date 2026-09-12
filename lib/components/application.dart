@@ -12,10 +12,13 @@ class Application extends StatelessComponent {
       const CustomHeader(),
       Router(
         routes: <RouteBase>[
-          Route(path: "/", builder: (_, _) => const HomePage()),
-          Route(path: "/osu-stuff", builder: (_, _) => const OsuStuffPage()),
+          Route(path: HomePage.path, builder: (_, _) => const HomePage()),
           Route(
-            path: "/404.html",
+            path: OsuStuffPage.path,
+            builder: (_, _) => const OsuStuffPage(),
+          ),
+          Route(
+            path: NotFoundPage.path,
             builder: (_, RouteState state) => NotFoundPage(state: state),
           ),
         ],

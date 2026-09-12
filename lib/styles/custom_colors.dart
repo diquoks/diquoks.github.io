@@ -1,13 +1,13 @@
 import "package:jaspr/dom.dart";
 
 abstract final class CustomColors {
-  static const Color background = Color("#111111");
-  static const Color shadow = Color("#0000007F");
+  static const Color background = .new("#111111");
+  static const Color shadow = .new("#0000007F");
 
-  static const Color _headerTopLeft = Color("#FF00FF");
-  static const Color _headerTopRight = Color("#FF65FF");
-  static const Color _headerBottomLeft = Color("#7052FF");
-  static const Color _headerBottomRight = Color("#569CFF");
+  static const Color _headerTopLeft = .new("#FF00FF");
+  static const Color _headerTopRight = .new("#FF65FF");
+  static const Color _headerBottomLeft = .new("#7052FF");
+  static const Color _headerBottomRight = .new("#569CFF");
 
   static String get headerGradient =>
       "linear-gradient(to top left, ${_headerBottomRight.value}, ${_headerTopLeft.value}), "

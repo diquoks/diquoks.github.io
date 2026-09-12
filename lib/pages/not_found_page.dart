@@ -8,18 +8,20 @@ class NotFoundPage extends StatelessComponent {
 
   final RouteState _state;
 
+  static String get path => "/404.html";
+
   @override
   Component build(BuildContext context) {
     return main_(classes: "not-found-page", <Component>[
       if (_state.error != null)
         CustomError(
-          image: const Image(src: "assets/images/omegalul-i-guess.webp"),
+          image: const .new(src: "assets/images/omegalul-i-guess.webp"),
           title: "Возникла ошибка!",
           description: "${_state.error}",
         )
       else
         const CustomError(
-          image: Image(src: "assets/images/peepo-detective.webp"),
+          image: .new(src: "assets/images/peepo-detective.webp"),
           title: "Страница не найдена!",
           description: "Возможно она найдётся, если искать повнимательней...",
         ),

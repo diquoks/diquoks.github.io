@@ -12,7 +12,7 @@ class CustomLogo extends StatelessComponent {
   });
 
   const CustomLogo.website({super.key, required this._title, this._titleStyles})
-    : _image = const Image(src: "assets/favicons/logo.svg"),
+    : _image = const .new(src: "assets/favicons/logo.svg"),
       _link = "/";
 
   final Image _image;

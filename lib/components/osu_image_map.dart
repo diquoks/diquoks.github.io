@@ -18,7 +18,7 @@ class OsuImageMap extends StatelessComponent {
         for (final OsuCollabMember member in _collab.members)
           a(
             href: member.link,
-            styles: Styles(
+            styles: .new(
               position: .absolute(
                 left: member.x.percent,
                 top: member.y.percent,
