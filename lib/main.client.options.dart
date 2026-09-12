@@ -29,8 +29,8 @@ ClientOptions get defaultClientOptions => ClientOptions(
   clients: {
     'custom_copy_button': ClientLoader(
       (p) => _custom_copy_button.CustomCopyButton(
-        title: p['title'] as String,
-        data: p['data'] as String,
+        title: p.get<String>('title'),
+        data: p.get<String>('data'),
       ),
       loader: _custom_copy_button.loadLibrary,
     ),

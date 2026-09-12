@@ -6,7 +6,7 @@ import "package:universal_web/web.dart" as web;
 
 @client
 class CustomCopyButton extends StatelessComponent {
-  const CustomCopyButton({super.key, required this.title, required this.data});
+  const new({super.key, required this.title, required this.data});
 
   final String title;
   final String data;
