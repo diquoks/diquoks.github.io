@@ -43,7 +43,7 @@ void main() {
               const link(rel: "manifest", href: "manifest.json"),
               const link(
                 rel: "icon",
-                href: "assets/favicons/favicon.ico",
+                href: "favicon.ico",
                 attributes: <String, String>{"sizes": "any"},
               ),
               const link(
