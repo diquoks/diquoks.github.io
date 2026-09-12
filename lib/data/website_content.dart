@@ -2,12 +2,9 @@ import "package:diquoks_web/diquoks_web.dart";
 import "package:jaspr_riverpod/jaspr_riverpod.dart";
 import "package:pubspec_parse/pubspec_parse.dart";
 
-final Provider<WebsiteContent> websiteContentProvider =
-    Provider<WebsiteContent>(
-      (_) => throw StateError(
-        "This provider should be overridden on server side!",
-      ),
-    );
+final Provider<WebsiteContent> websiteContentProvider = .new(
+  (_) => throw StateError("This provider should be overridden on server side!"),
+);
 
 class WebsiteContent extends Model {
   const WebsiteContent({required this._pubspec});
@@ -35,38 +32,38 @@ class WebsiteContent extends Model {
 
   String get yandexVerification => "8a46ea2d61d9b998";
 
-  SectionContent<Project> get projects => SectionContent<Project>(
+  SectionContent<Project> get projects => .new(
     title: "⚒️ Проекты",
     items: <Project>[
-      const Project(
+      const .new(
         title: "osu!",
         description: "rhythm is just a *click* away!",
         link: "https://github.com/diquoks/osu",
-        image: Image(src: "assets/images/projects/osu/CookieLazer.svg"),
-        backgroundImage: BackgroundImage(
+        image: .new(src: "assets/images/projects/osu/CookieLazer.svg"),
+        backgroundImage: .new(
           src: "assets/images/projects/osu/BackgroundLazer.svg",
           contrast: .dark,
         ),
         skillIcon: .csharp,
       ),
-      Project(
+      .new(
         title: title,
         description:
             "Скоро превратится в сайт-визитку,\nно до этого ещё далеко...",
         link: repository,
-        image: const Image(src: "assets/favicons/logo.svg"),
-        backgroundImage: const BackgroundImage(
+        image: const .new(src: "assets/favicons/logo.svg"),
+        backgroundImage: const .new(
           src: "assets/images/projects/diquoks/BackgroundDark.webp",
           contrast: .dark,
         ),
         skillIcon: .dart,
       ),
-      const Project(
+      const .new(
         title: "ElkollegeSchedule",
         description: "Приложение для просмотра\nактуального расписания ЭК",
         link: "https://github.com/diquoks/ElkollegeScheduleApp",
-        image: Image(src: "assets/images/projects/elkollege/LogoEK.webp"),
-        backgroundImage: BackgroundImage(
+        image: .new(src: "assets/images/projects/elkollege/LogoEK.webp"),
+        backgroundImage: .new(
           src: "assets/images/projects/elkollege/BackgroundEK.webp",
           contrast: .light,
           isRepeating: true,
@@ -76,14 +73,14 @@ class WebsiteContent extends Model {
     ],
   );
 
-  SectionContent<OsuCollab> get collabs => const SectionContent<OsuCollab>(
+  SectionContent<OsuCollab> get collabs => const .new(
     title: "🖼️ Коллабы",
     items: <OsuCollab>[
-      OsuCollab(
+      .new(
         title: "Minecraft 1.0 Collab",
-        image: Image(src: "assets/images/collabs/MinecraftCollab.png"),
+        image: .new(src: "assets/images/collabs/MinecraftCollab.png"),
         members: <OsuCollabMember>[
-          OsuCollabMember(
+          .new(
             id: 10335625,
             username: "LogiDASH",
             x: 28,
@@ -91,7 +88,7 @@ class WebsiteContent extends Model {
             width: 11,
             height: 40,
           ),
-          OsuCollabMember(
+          .new(
             id: 31543047,
             username: "lofasolas",
             x: 38,
@@ -99,7 +96,7 @@ class WebsiteContent extends Model {
             width: 10,
             height: 36,
           ),
-          OsuCollabMember(
+          .new(
             id: 31760756,
             username: "diquoks",
             x: 45,
@@ -113,9 +110,9 @@ class WebsiteContent extends Model {
   );
 
   List<Link> get footerLinks => <Link>[
-    Link(title: "Исходный код", link: repository),
-    const Link(title: "Сделано diquoks ❤️", link: "https://github.com/diquoks"),
-    const Link(
+    .new(title: "Исходный код", link: repository),
+    const .new(title: "Сделано diquoks ❤️", link: "https://github.com/diquoks"),
+    const .new(
       title: "Работает на GitHub Pages",
       link: "https://pages.github.com",
     ),

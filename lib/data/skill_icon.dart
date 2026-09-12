@@ -13,5 +13,5 @@ enum SkillIcon {
     .python => "Python",
   };
 
-  Image get image => Image(src: "assets/images/skill-icons/$name.svg");
+  Image get image => .new(src: "assets/images/skill-icons/$name.svg");
 }

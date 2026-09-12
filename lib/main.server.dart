@@ -6,7 +6,6 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/server.dart";
 import "package:jaspr_riverpod/jaspr_riverpod.dart";
 import "package:jaspr_riverpod/misc.dart";
-import "package:pubspec_parse/pubspec_parse.dart";
 
 void main() {
   Jaspr.initializeApp(options: defaultServerOptions);
@@ -15,9 +14,7 @@ void main() {
     ProviderScope(
       overrides: <Override>[
         websiteContentProvider.overrideWithValue(
-          WebsiteContent(
-            pubspec: Pubspec.parse(File("pubspec.yaml").readAsStringSync()),
-          ),
+          .new(pubspec: .parse(File("pubspec.yaml").readAsStringSync())),
         ),
       ],
       child: Builder(

@@ -14,23 +14,23 @@ class ProjectCard extends StatelessComponent {
       target: .blank,
       classes: "project-card",
       styles: .combine(<Styles>[
-        Styles(backgroundImage: .url(_project.backgroundImage.src)),
+        .new(backgroundImage: .url(_project.backgroundImage.src)),
         _project.backgroundImage.isRepeating
-            ? const Styles(backgroundRepeat: .repeat)
-            : const Styles(backgroundSize: .cover),
+            ? const .new(backgroundRepeat: .repeat)
+            : const .new(backgroundSize: .cover),
       ]),
       <Component>[
         div(<Component>[
           CustomLogo(
             image: _project.image,
             title: _project.title,
-            titleStyles: Styles(color: _project.backgroundImage.contrast.color),
+            titleStyles: .new(color: _project.backgroundImage.contrast.color),
           ),
           if (_project.skillIcon != null)
             SkillIconDisplay(skillIcon: _project.skillIcon!),
         ]),
         p(
-          styles: Styles(color: _project.backgroundImage.contrast.color),
+          styles: .new(color: _project.backgroundImage.contrast.color),
           <Component>[.text(_project.description)],
         ),
       ],

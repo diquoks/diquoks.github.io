@@ -19,7 +19,7 @@ class CustomSection<T> extends StatelessComponent {
     return section(classes: "custom-section limited-width", <Component>[
       h1(<Component>[.text(_content.title)]),
       div(
-        styles: Styles(flexDirection: _direction),
+        styles: .new(flexDirection: _direction),
         _content.items.map(_builder).toList(),
       ),
     ]);
