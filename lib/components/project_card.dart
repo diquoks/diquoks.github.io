@@ -3,7 +3,7 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
 class ProjectCard extends StatelessComponent {
-  const ProjectCard({super.key, required this._project});
+  const new({super.key, required this._project});
 
   final Project _project;
 

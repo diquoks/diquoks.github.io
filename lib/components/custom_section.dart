@@ -3,7 +3,7 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
 class CustomSection<T> extends StatelessComponent {
-  const CustomSection({
+  const new({
     super.key,
     required this._content,
     required this._direction,

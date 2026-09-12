@@ -4,7 +4,7 @@ import "package:jaspr/jaspr.dart";
 import "package:jaspr_riverpod/jaspr_riverpod.dart";
 
 class OsuImageMap extends StatelessComponent {
-  const OsuImageMap({super.key, required this._collab});
+  const new({super.key, required this._collab});
 
   final OsuCollab _collab;
 
