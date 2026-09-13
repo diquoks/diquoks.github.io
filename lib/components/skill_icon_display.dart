@@ -10,7 +10,7 @@ class SkillIconDisplay extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return img(
-      src: _skillIcon.image.src,
+      src: _skillIcon.toImage().src,
       classes: "skill-icon-display",
       attributes: <String, String>{"title": _skillIcon.title},
     );
