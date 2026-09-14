@@ -6,10 +6,10 @@ class const OsuCollab({
   required final List<OsuCollabMember> members,
 }) extends Model {
   String get _membersMapping =>
-      members.map(((OsuCollabMember member) => member._mapping)).join("\n");
+      members.map((OsuCollabMember member) => member._mapping).join("\n");
 
   String get _membersBbcode =>
-      members.map(((OsuCollabMember member) => member._bbcode)).join(" | ");
+      members.map((OsuCollabMember member) => member._bbcode).join(" | ");
 
   String bbcode(WebsiteContent content) =>
       """

@@ -25,7 +25,10 @@ class CustomLogo extends StatelessComponent {
     final Component logoImage = img(src: _image.src);
 
     return div(classes: "custom-logo", <Component>[
-      _link.isNotEmpty ? a(href: _link, <Component>[logoImage]) : logoImage,
+      if (_link.isNotEmpty)
+        a(href: _link, <Component>[logoImage])
+      else
+        logoImage,
       p(styles: _titleStyles, <Component>[.text(_title)]),
     ]);
   }
