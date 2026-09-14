@@ -3,7 +3,7 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
 class CustomLogo extends StatelessComponent {
-  const CustomLogo({
+  const new({
     super.key,
     required this._image,
     this._link = "",
@@ -11,7 +11,7 @@ class CustomLogo extends StatelessComponent {
     this._titleStyles,
   });
 
-  const CustomLogo.website({super.key, required this._title, this._titleStyles})
+  const new website({super.key, required this._title, this._titleStyles})
     : _image = const .new(src: "assets/favicons/logo.svg"),
       _link = "/";
 
@@ -25,7 +25,10 @@ class CustomLogo extends StatelessComponent {
     final Component logoImage = img(src: _image.src);
 
     return div(classes: "custom-logo", <Component>[
-      _link.isNotEmpty ? a(href: _link, <Component>[logoImage]) : logoImage,
+      if (_link.isNotEmpty)
+        a(href: _link, <Component>[logoImage])
+      else
+        logoImage,
       p(styles: _titleStyles, <Component>[.text(_title)]),
     ]);
   }
@@ -39,9 +42,8 @@ class CustomLogo extends StatelessComponent {
         alignItems: .center,
         gap: .all(12.px),
       ),
-      css(
-        "& > img, & > a > img",
-      ).styles(display: .block, width: 48.px, height: 48.px),
+      css("& > img, & > a > img")
+          .styles(display: .block, width: 48.px, height: 48.px),
       css("& > p").styles(
         color: Colors.white,
         fontFamily: CustomFonts.getFontFamilies(openSans: true),

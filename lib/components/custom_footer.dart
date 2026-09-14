@@ -4,7 +4,7 @@ import "package:jaspr/jaspr.dart";
 import "package:jaspr_riverpod/jaspr_riverpod.dart";
 
 class CustomFooter extends StatelessComponent {
-  const CustomFooter({super.key});
+  const new({super.key});
 
   @override
   Component build(BuildContext context) {

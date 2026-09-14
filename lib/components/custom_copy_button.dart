@@ -6,7 +6,7 @@ import "package:universal_web/web.dart" as web;
 
 @client
 class CustomCopyButton extends StatelessComponent {
-  const CustomCopyButton({super.key, required this.title, required this.data});
+  const new({super.key, required this.title, required this.data});
 
   final String title;
   final String data;
@@ -17,7 +17,7 @@ class CustomCopyButton extends StatelessComponent {
       type: .button,
       onClick: () => _copyData(data),
       classes: "custom-copy-button",
-      attributes: <String, String>{"title": "Скопировать"},
+      attributes: const <String, String>{"title": "Скопировать"},
       <Component>[.text("$title 📝")],
     );
   }
@@ -25,7 +25,7 @@ class CustomCopyButton extends StatelessComponent {
   Future<void> _copyData(String data) async {
     try {
       await web.window.navigator.clipboard.writeText(data).toDart;
-    } catch (error) {
+    } on Exception catch (error) {
       web.console.warn("Copy feature is not available:\n$error".toJS);
     }
   }

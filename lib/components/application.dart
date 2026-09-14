@@ -4,7 +4,7 @@ import "package:jaspr/jaspr.dart";
 import "package:jaspr_router/jaspr_router.dart";
 
 class Application extends StatelessComponent {
-  const Application({super.key});
+  const new({super.key});
 
   @override
   Component build(BuildContext context) {
