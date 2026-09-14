@@ -17,13 +17,13 @@ class CustomHeader extends StatelessComponent {
           a(
             href: "${content.repository}/releases",
             target: .blank,
-            attributes: <String, String>{"title": "Версия сайта"},
+            attributes: const <String, String>{"title": "Версия сайта"},
             <Component>[.text(content.version)],
           ),
         ]),
       ]),
       if (content.isPreRelease)
-        div(classes: "under-construction-tape", .empty()),
+        const div(classes: "under-construction-tape", <Component>[]),
     ]);
   }
 
