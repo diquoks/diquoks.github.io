@@ -3,7 +3,7 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
 class ProjectCard extends StatelessComponent {
-  const ProjectCard({super.key, required this._project});
+  const new({super.key, required this._project});
 
   final Project _project;
 
@@ -15,22 +15,25 @@ class ProjectCard extends StatelessComponent {
       classes: "project-card",
       styles: .combine(<Styles>[
         .new(backgroundImage: .url(_project.backgroundImage.src)),
-        _project.backgroundImage.isRepeating
-            ? const .new(backgroundRepeat: .repeat)
-            : const .new(backgroundSize: .cover),
+        if (_project.backgroundImage.isRepeating)
+          const .new(backgroundRepeat: .repeat)
+        else
+          const .new(backgroundSize: .cover),
       ]),
       <Component>[
         div(<Component>[
           CustomLogo(
             image: _project.image,
             title: _project.title,
-            titleStyles: .new(color: _project.backgroundImage.contrast.color),
+            titleStyles: .new(
+              color: _project.backgroundImage.contrast.toColor(),
+            ),
           ),
           if (_project.skillIcon != null)
             SkillIconDisplay(skillIcon: _project.skillIcon!),
         ]),
         p(
-          styles: .new(color: _project.backgroundImage.contrast.color),
+          styles: .new(color: _project.backgroundImage.contrast.toColor()),
           <Component>[.text(_project.description)],
         ),
       ],

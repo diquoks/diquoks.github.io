@@ -4,7 +4,7 @@ import "package:jaspr/jaspr.dart";
 import "package:jaspr_riverpod/jaspr_riverpod.dart";
 
 class OsuImageMap extends StatelessComponent {
-  const OsuImageMap({super.key, required this._collab});
+  const new({super.key, required this._collab});
 
   final OsuCollab _collab;
 
@@ -27,7 +27,7 @@ class OsuImageMap extends StatelessComponent {
               height: member.height.percent,
             ),
             attributes: <String, String>{"title": member.username},
-            .empty(),
+            const <Component>[],
           ),
         p(<Component>[.text(_collab.title)]),
         CustomCopyButton(title: "BBCode", data: _collab.bbcode(content)),
