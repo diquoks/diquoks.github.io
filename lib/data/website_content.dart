@@ -60,8 +60,8 @@ class WebsiteContent extends Model {
       ),
       const .new(
         title: "ElkollegeSchedule",
-        description: "Приложение для просмотра\nактуального расписания ЭК",
-        link: "https://github.com/diquoks/ElkollegeScheduleApp",
+        description: "Утилиты для взаимодействия\nс расписанием ЭК",
+        link: "https://github.com/diquoks/ElkollegeSchedule",
         image: .new(src: "assets/images/projects/elkollege/LogoEK.webp"),
         backgroundImage: .new(
           src: "assets/images/projects/elkollege/BackgroundEK.webp",
