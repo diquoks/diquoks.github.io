@@ -7,4 +7,4 @@ export "custom_logo.dart";
 export "custom_section.dart";
 export "osu_image_map.dart";
 export "project_card.dart";
-export "skill_icon_display.dart";
+export "skills_icons_display.dart";

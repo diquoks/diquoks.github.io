@@ -1,17 +1,17 @@
 import "package:diquoks_web/diquoks_web.dart";
 
-enum SkillIcon {
+enum SkillsIcon {
   csharp,
   dart,
   flutter,
-  python;
+  jaspr;
 
   String get title => switch (this) {
     .csharp => "C#",
     .dart => "Dart",
     .flutter => "Flutter",
-    .python => "Python",
+    .jaspr => "Jaspr",
   };
 
-  Image get image => .new(src: "assets/images/skill-icons/$name.svg");
+  Image get image => .new(src: "assets/images/skills-icons/$name.svg");
 }

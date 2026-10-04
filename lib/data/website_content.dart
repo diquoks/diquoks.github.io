@@ -44,7 +44,7 @@ class WebsiteContent extends Model {
           src: "assets/images/projects/osu/BackgroundLazer.svg",
           contrast: .dark,
         ),
-        skillIcon: .csharp,
+        skillsIcons: <SkillsIcon>[.csharp],
       ),
       .new(
         title: title,
@@ -56,7 +56,7 @@ class WebsiteContent extends Model {
           src: "assets/images/projects/diquoks/BackgroundDark.webp",
           contrast: .dark,
         ),
-        skillIcon: .dart,
+        skillsIcons: <SkillsIcon>[.dart, .jaspr],
       ),
       const .new(
         title: "ElkollegeSchedule",
@@ -68,7 +68,19 @@ class WebsiteContent extends Model {
           contrast: .light,
           isRepeating: true,
         ),
-        skillIcon: .flutter,
+        skillsIcons: <SkillsIcon>[.dart, .flutter],
+      ),
+      const .new(
+        title: "ElkollegeGuidanceBot",
+        description: "Telegram-бот для прохождения\nпрофориентации в ЭК",
+        link: "https://github.com/diquoks/ElkollegeGuidanceBot",
+        image: .new(src: "assets/images/projects/elkollege/LogoEK.webp"),
+        backgroundImage: .new(
+          src: "assets/images/projects/elkollege/BackgroundEK.webp",
+          contrast: .light,
+          isRepeating: true,
+        ),
+        skillsIcons: <SkillsIcon>[.csharp],
       ),
     ],
   );

@@ -8,7 +8,7 @@
 
 ## Особые благодарности
 
-- Иконки фреймворков и языков программирования взяты с [tandpfun/skill-icons](https://github.com/tandpfun/skill-icons).
+- Иконки фреймворков и языков программирования взяты с [syvixor/skills-icons](https://github.com/syvixor/skills-icons).
 - Оформление связанных с [osu!](https://osu.ppy.sh) элементов взято с открытых ресурсов [ppy/osu-web](https://github.com/ppy/osu-web) в Figma.
 
 Все лицензии продублированы в папках с использованными ресурсами.
