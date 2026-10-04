@@ -7,7 +7,7 @@ class Project extends Model {
     required this.link,
     required this.image,
     required this.backgroundImage,
-    required this.skillIcon,
+    required this.skillsIcons,
   });
 
   final String title;
@@ -15,5 +15,5 @@ class Project extends Model {
   final String link;
   final Image image;
   final BackgroundImage backgroundImage;
-  final SkillIcon? skillIcon;
+  final List<SkillsIcon> skillsIcons;
 }
