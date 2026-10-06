@@ -33,11 +33,10 @@ jobs:
         uses: dart-lang/setup-dart@v1
 
       - name: Install dependencies
-        run: |
-          dart pub get
+        run: dart pub get
 
       - name: Build with Jaspr
-        run: |
+        run: |-
           dart pub global activate jaspr_cli
           dart pub global run jaspr_cli:jaspr build --sitemap-domain diquoks.github.io --verbose
 

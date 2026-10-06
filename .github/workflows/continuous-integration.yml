@@ -24,12 +24,10 @@ jobs:
         uses: dart-lang/setup-dart@v1
 
       - name: Install dependencies
-        run: |
-          dart pub get
+        run: dart pub get
 
       - name: Test with dart format
-        run: |
-          dart format --set-exit-if-changed .
+        run: dart format --set-exit-if-changed .
 
   lint:
     name: Run dart analyze
@@ -43,12 +41,10 @@ jobs:
         uses: dart-lang/setup-dart@v1
 
       - name: Install dependencies
-        run: |
-          dart pub get
+        run: dart pub get
 
       - name: Test with dart analyze
-        run: |
-          dart analyze --fatal-infos .
+        run: dart analyze --fatal-infos .
 
   build:
     name: Test build
@@ -62,10 +58,9 @@ jobs:
         uses: dart-lang/setup-dart@v1
 
       - name: Install dependencies
-        run: |
-          dart pub get
+        run: dart pub get
 
       - name: Build with Jaspr
-        run: |
+        run: |-
           dart pub global activate jaspr_cli
           dart pub global run jaspr_cli:jaspr build --sitemap-domain diquoks.github.io --verbose
