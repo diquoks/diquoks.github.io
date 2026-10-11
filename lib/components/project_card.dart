@@ -24,12 +24,14 @@ class ProjectCard extends StatelessComponent {
           CustomLogo(
             image: _project.image,
             title: _project.title,
-            titleStyles: .new(color: _project.backgroundImage.contrast.color),
+            titleStyles: .new(
+              color: _project.backgroundImage.contrast.toColor(),
+            ),
           ),
           SkillsIconsDisplay(skillsIcons: _project.skillsIcons),
         ]),
         p(
-          styles: .new(color: _project.backgroundImage.contrast.color),
+          styles: .new(color: _project.backgroundImage.contrast.toColor()),
           <Component>[.text(_project.description)],
         ),
       ],

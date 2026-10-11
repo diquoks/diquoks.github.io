@@ -13,5 +13,5 @@ enum SkillsIcon {
     .jaspr => "Jaspr",
   };
 
-  Image get image => .new(src: "assets/images/skills-icons/$name.svg");
+  Image toImage() => .new(src: "assets/images/skills-icons/$name.svg");
 }

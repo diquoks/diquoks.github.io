@@ -22,7 +22,7 @@ enum BackgroundImageContrast {
   light,
   dark;
 
-  Color get color => switch (this) {
+  Color toColor() => switch (this) {
     .light => Colors.black,
     .dark => Colors.white,
   };
