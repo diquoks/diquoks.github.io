@@ -66,18 +66,6 @@ class const WebsiteContent({required final Pubspec _pubspec}) extends Model {
         ),
         skillsIcons: <SkillsIcon>[.dart, .flutter],
       ),
-      const .new(
-        title: "ElkollegeGuidanceBot",
-        description: "Telegram-бот для прохождения\nпрофориентации в ЭК",
-        link: "https://github.com/diquoks/ElkollegeGuidanceBot",
-        image: .new(src: "assets/images/projects/elkollege/LogoEK.webp"),
-        backgroundImage: .new(
-          src: "assets/images/projects/elkollege/BackgroundEK.webp",
-          contrast: .light,
-          isRepeating: true,
-        ),
-        skillsIcons: <SkillsIcon>[.csharp],
-      ),
     ],
   );
 
