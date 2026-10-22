@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="build" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="jaspr build --sitemap-domain diquoks.github.io --verbose" />
+    <option name="SCRIPT_TEXT" value="dart pub global run jaspr_cli:jaspr build --sitemap-domain diquoks.github.io -v" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />
@@ -12,8 +12,6 @@
     <option name="EXECUTE_IN_TERMINAL" value="false" />
     <option name="EXECUTE_SCRIPT_FILE" value="false" />
     <envs />
-    <method v="2">
-      <option name="RunConfigurationTask" enabled="true" run_configuration_name="kill dartvm.exe" run_configuration_type="ShConfigurationType" />
-    </method>
+    <method v="2" />
   </configuration>
 </component>

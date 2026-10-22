@@ -27,7 +27,7 @@ linter:
 
 plugins:
   jaspr_lints:
-    version: ^0.7.2
+    version: ^0.8.0-beta.0 # TODO: update to stable version
     diagnostics:
       prefer_html_components: true
       prefer_styles_getter: true
