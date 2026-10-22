@@ -4,7 +4,7 @@ import "package:jaspr/jaspr.dart";
 import "package:jaspr_riverpod/jaspr_riverpod.dart";
 
 class HomePage extends StatelessComponent {
-  const HomePage({super.key});
+  const new({super.key});
 
   static String get path => "/";
 

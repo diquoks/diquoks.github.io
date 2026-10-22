@@ -3,7 +3,7 @@ import "package:jaspr/dom.dart";
 import "package:jaspr/jaspr.dart";
 
 class SkillsIconsDisplay extends StatelessComponent {
-  const SkillsIconsDisplay({super.key, required this._skillsIcons});
+  const new({super.key, required this._skillsIcons});
 
   final List<SkillsIcon> _skillsIcons;
 

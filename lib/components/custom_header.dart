@@ -4,7 +4,7 @@ import "package:jaspr/jaspr.dart";
 import "package:jaspr_riverpod/jaspr_riverpod.dart";
 
 class CustomHeader extends StatelessComponent {
-  const CustomHeader({super.key});
+  const new({super.key});
 
   @override
   Component build(BuildContext context) {
@@ -17,7 +17,7 @@ class CustomHeader extends StatelessComponent {
           a(
             href: "${content.repository}/releases",
             target: .blank,
-            attributes: <String, String>{"title": "Версия сайта"},
+            attributes: const <String, String>{"title": "Версия сайта"},
             <Component>[.text(content.version)],
           ),
         ]),
