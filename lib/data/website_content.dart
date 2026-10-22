@@ -6,11 +6,7 @@ final Provider<WebsiteContent> websiteContentProvider = .new(
   (_) => throw StateError("This provider should be overridden on server side!"),
 );
 
-class WebsiteContent extends Model {
-  const WebsiteContent({required this._pubspec});
-
-  final Pubspec _pubspec;
-
+class const WebsiteContent({required final Pubspec _pubspec}) extends Model {
   String get name => _pubspec.name;
 
   String get title => "diquoks Web";
@@ -69,18 +65,6 @@ class WebsiteContent extends Model {
           isRepeating: true,
         ),
         skillsIcons: <SkillsIcon>[.dart, .flutter],
-      ),
-      const .new(
-        title: "ElkollegeGuidanceBot",
-        description: "Telegram-бот для прохождения\nпрофориентации в ЭК",
-        link: "https://github.com/diquoks/ElkollegeGuidanceBot",
-        image: .new(src: "assets/images/projects/elkollege/LogoEK.webp"),
-        backgroundImage: .new(
-          src: "assets/images/projects/elkollege/BackgroundEK.webp",
-          contrast: .light,
-          isRepeating: true,
-        ),
-        skillsIcons: <SkillsIcon>[.csharp],
       ),
     ],
   );

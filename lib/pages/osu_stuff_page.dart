@@ -4,7 +4,7 @@ import "package:jaspr/jaspr.dart";
 import "package:jaspr_riverpod/jaspr_riverpod.dart";
 
 class OsuStuffPage extends StatelessComponent {
-  const OsuStuffPage({super.key});
+  const new({super.key});
 
   static String get path => "/osu-stuff";
 

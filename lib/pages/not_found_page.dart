@@ -4,7 +4,7 @@ import "package:jaspr/jaspr.dart";
 import "package:jaspr_router/jaspr_router.dart";
 
 class NotFoundPage extends StatelessComponent {
-  const NotFoundPage({super.key, required this._state});
+  const new({super.key, required this._state});
 
   final RouteState _state;
 

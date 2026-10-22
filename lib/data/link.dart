@@ -1,8 +1,4 @@
 import "package:diquoks_web/diquoks_web.dart";
 
-class Link extends Model {
-  const Link({required this.title, required this.link});
-
-  final String title;
-  final String link;
-}
+class const Link({required final String title, required final String link})
+    extends Model;
