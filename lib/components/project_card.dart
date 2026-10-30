@@ -29,7 +29,8 @@ class ProjectCard extends StatelessComponent {
               color: _project.backgroundImage.contrast.toColor(),
             ),
           ),
-          SkillsIconsDisplay(skillsIcons: _project.skillsIcons),
+          if (_project.skillsIcons.isNotEmpty)
+            SkillsIconsDisplay(skillsIcons: _project.skillsIcons),
         ]),
         p(
           styles: .new(color: _project.backgroundImage.contrast.toColor()),

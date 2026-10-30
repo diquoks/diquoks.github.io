@@ -34,13 +34,24 @@ class const WebsiteContent({required final Pubspec _pubspec}) extends Model {
       const .new(
         title: "osu!",
         description: "rhythm is just a *click* away!",
-        link: "https://github.com/diquoks/osu",
+        link: "https://github.com/ppy/osu",
         image: .new(src: "assets/images/projects/osu/CookieLazer.svg"),
         backgroundImage: .new(
           src: "assets/images/projects/osu/BackgroundLazer.svg",
           contrast: .dark,
         ),
         skillsIcons: <SkillsIcon>[.csharp],
+      ),
+      const .new(
+        title: "osu!wiki",
+        description: "home of the osu! wiki",
+        link: "https://github.com/ppy/osu-wiki",
+        image: .new(src: "assets/images/projects/osu/LogoWiki.svg"),
+        backgroundImage: .new(
+          src: "assets/images/projects/osu/BackgroundWiki.webp",
+          contrast: .dark,
+        ),
+        skillsIcons: <SkillsIcon>[.markdown],
       ),
       .new(
         title: title,
@@ -65,6 +76,18 @@ class const WebsiteContent({required final Pubspec _pubspec}) extends Model {
           isRepeating: true,
         ),
         skillsIcons: <SkillsIcon>[.dart, .flutter],
+      ),
+      const .new(
+        title: "ElkollegeAdmissionsBot",
+        description: "Кроссплатформенный чат-бот\nдля приёмной кампании ЭК",
+        link: "https://github.com/diquoks/ElkollegeAdmissionsBot",
+        image: .new(src: "assets/images/projects/elkollege/LogoEK.webp"),
+        backgroundImage: .new(
+          src: "assets/images/projects/elkollege/BackgroundEK.webp",
+          contrast: .light,
+          isRepeating: true,
+        ),
+        skillsIcons: <SkillsIcon>[.csharp],
       ),
     ],
   );

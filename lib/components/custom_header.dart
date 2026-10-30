@@ -23,7 +23,7 @@ class CustomHeader extends StatelessComponent {
         ]),
       ]),
       if (content.isPreRelease)
-        div(classes: "under-construction-tape", .empty()),
+        const div(classes: "under-construction-tape", <Component>[]),
     ]);
   }
 

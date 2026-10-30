@@ -27,7 +27,7 @@ class OsuImageMap extends StatelessComponent {
               height: member.height.percent,
             ),
             attributes: <String, String>{"title": member.username},
-            .empty(),
+            const <Component>[],
           ),
         p(<Component>[.text(_collab.title)]),
         CustomCopyButton(title: "BBCode", data: _collab.bbcode(content)),
