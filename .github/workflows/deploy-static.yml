@@ -37,7 +37,7 @@ jobs:
 
       - name: Build with Jaspr # TODO: update to stable version
         run: |-
-          dart pub global activate jaspr_cli 0.24.0-beta.0
+          dart pub global activate jaspr_cli 0.24.0-beta.2
           dart pub global run jaspr_cli:jaspr build --sitemap-domain diquoks.github.io -v
 
       - name: Upload artifact
